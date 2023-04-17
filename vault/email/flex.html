@@ -1,0 +1,104 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+{% set width = 600 %}
+{% set font = "'Fira Sans', Arial, sans-serif" %}
+
+{% set button = '
+{% set href = section.button.link.url.href %}
+{% if section.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+{% endif %}
+{% if href && section.button.text %}
+  <div>
+		<!--[if mso]>
+		<v:rect class="button" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ href }}" style="height:40px;v-text-anchor:middle;width:{{ section.button.width }}px;" stroke="f" 
+		fillcolor="{% if section.button.color == "beta" %}#2ba8d0{% else %}#222b64{% endif %}">
+		<w:anchorlock/>
+		<center>
+		<![endif]-->
+			<a href="{{ href }}" class="button button-{{ section.button.color }}" style="width:{{ section.button.width }}px;">{{ section.button.text }}</a>
+		<!--[if mso]>
+		</center>
+		</v:rect>
+		<![endif]-->
+		</div>
+{% endif %}' %}
+
+<!-- XHTML Transitional to allow for deprecated attributes necessary for some email clients -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- VML declaration to solve DPI Scaling Issues -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remove format detection to avoid unwanted blue links -->
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no"/>
+    
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+
+    <!-- Solve DPI Scaling Issues in Outlook -->
+    <!--[if gte mso 9]><xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml><![endif]-->    
+    
+    {% module "Styles" path="/vault/email/_assets/styles", no_wrapper=True %} 
+  </head>
+  <body id="email-body">
+    <div id="preview_text">
+			{% text "preview_text" label="Preview Text", value="", no_wrapper=True %}
+		</div> 
+		
+    <table align="center" id="container-wrapper" border="0" cellpadding="0" cellspacing="0" role="presentation">
+	    <tr>
+		    <td align="center" class="container" align="center">
+          
+          {% block header %}
+					  {% module "View as Webpage" path="/vault/email/_modules/Email - View as Webpage" %}
+            {% module "Header" path="/vault/email/_modules/Email - Header", no_wrapper=True %}
+          {% endblock %}
+          
+          {% block body %}
+            {% module "Full Width" path="/vault/email/_modules/Email - Full Width", no_wrapper=True %}
+            {% module "CTA" path="/vault/email/_modules/Email - CTA", no_wrapper=True %}
+          {% endblock %}
+          
+          {% block footer %}
+					  {% widget_block module "Email - Footer"
+								path = "/vault/email/_modules/Email - Footer"
+								label = "Footer"
+						 %}
+					  {% widget_attribute "social" is_json=True %}
+							[
+								{
+								"platform": "facebook",
+								"link": "https://www.facebook.com/deandraperinsurance"
+								},
+								{
+								"platform": "twitter",
+								"link": "https://twitter.com/deandraper"
+								},
+								{
+								"platform": "youtube",
+								"link": "https://example.com/"
+								},
+								{
+								"platform": "linkedin",
+								"link": "https://www.linkedin.com/company/dean-&-draper-insurance-agency/"
+								}
+					    ]
+					  {% end_widget_attribute %}
+					  {% end_widget_block %}
+          {% endblock %}
+ 
+        </td><!-- /container -->
+      </tr>
+    </table><!-- /container-wrapper-->
+		
+  </body>
+</html>

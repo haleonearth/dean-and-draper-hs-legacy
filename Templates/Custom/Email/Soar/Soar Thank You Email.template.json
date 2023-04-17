@@ -1,0 +1,258 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_147757457507632230",
+        "label" : "Settings & Styles",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "{##########################\n###    Color Pickers    ###\n##########################}\n{% set sans_serif = \"Helvetica, Arial, Verdana, Trebuchet MS, sans-serif\" %}\n{% set serif = \"Georgia, Palatino, Times New Roman, Courier\" %}\n\n{% color \"mainFontColor_picker\" label='Choose a main accent color', color='#494d4e', export_to_template_context=True %}\n{% set mainFontColor = widget_data.mainFontColor_picker.color %}\n\n{% color \"accentColor_picker\" label='Choose a hero text/outline caption color', color='#0d91d1', export_to_template_context=True %}\n{% set accentColor = widget_data.accentColor_picker.color %}\n\n{% color \"accentTextColor_picker\" label='Choose a hero caption background color', color='#ffffff', export_to_template_context=True %}\n{% set accentTextColor = widget_data.accentTextColor_picker.color %}\n\n{% color \"heroBackgroundColor_picker\" label='Choose a hero section background color<br><em>(this will only display when no image is selected)</em>', color='#0d91d1', export_to_template_context=True %}\n{% set heroBackgroundColor = widget_data.heroBackgroundColor_picker.color %}\n\n\n{##########################\n###      CSS Styles     ###\n##########################}\n<style>\n    \n    /* Show Web Font (does not work in all clients) */\n    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');\n    [style*=\"sans-serif\"] {\n        font-family: 'Montserrat', Helvetica, Arial, Verdana, Trebuchet MS !important;\n    }\n    \n    /* Constrain Images to the width of the email */\n    img {\n        max-width: 600px !important;\n        height: auto !important;\n    }\n    \n    .footer-text a, #footer a {\n        color: #ffffff !important;\n    }\n    \n    /* Forces no padding on email (does not work in all clients) */\n    body #headerTable {\n        padding-right: 0px !important;\n    }\n    body, body > table, #contentCell, .widget-type-email_view_as_web_page {\n        background-color: #efefef !important;\n    }\n    body #contentTableOuter {\n        box-shadow: none !important;\n        border: none !important;\n        border-bottom: none !important;\n        padding: 0px !important;\n    }\n    \n    /* Responsive Styles for mail clients that support them */\n    @media only screen and (max-width: 650px) {\n        /* Fix for Android Mobile Devices */\n        .android-spacer {\n            letter-spacing: initial !important;\n        }\n        \n        /* Makes columns mobile responsive */\n        .full {\n            display: block;\n            min-height: 230px;\n            width: 100%;\n        }\n        \n        .h-space {\n            width: 10% !important;\n        }\n    }\n</style>\n<div style=\"letter-spacing: 596px; line-height: 0; mso-hide: all\" class=\"android-spacer\">&nbsp;</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1493745153828200",
+        "label" : "Soar - Email Header",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Soar - Email Header"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_151794988089117",
+        "label" : "Soar - Email Hero 1",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Soar - Email Hero 1",
+          "schema_version" : 1
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1493745842862194",
+        "label" : "Soar - Email Section Header",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Soar - Email Section Header",
+          "schema_version" : 1
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1493745140299196",
+        "label" : "Main Email Body",
+        "type" : "email_body",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "default_html" : "<div style=\"text-align: center;\"><span>The thank you email&nbsp;does not have to be the last time you connect with a lead. Don't waste this thank you email&nbsp;with a short \"Thanks! Bye!\" message! Continue to engage your lead and nurture them further by delivering to them a genuine thank you and providing them with even more value.</span><br><br><span>You can take this opportunity to provide your lead with other ways to engage with your company. Is there anything else that your lead should know at this stage in the funnel? Can you earn more lead information with an additional ask?</span><br>&nbsp;</div>\n<div style=\"text-align: center;\">{{cta('0d237887-b78c-408c-abd7-d6edab6bd716')}}</div>",
+          "css_color" : "",
+          "css_background_color" : "",
+          "css_border_color" : "",
+          "css_border_width" : "",
+          "css_margin_bottom" : "",
+          "css_margin_left" : "",
+          "css_margin_right" : "",
+          "css_margin_top" : "",
+          "css_padding_bottom" : "60",
+          "css_padding_left" : "20",
+          "css_padding_right" : "20",
+          "css_padding_top" : "10"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_149503389053877",
+        "label" : "Soar - Email Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Soar - Email Footer",
+          "schema_version" : 1
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

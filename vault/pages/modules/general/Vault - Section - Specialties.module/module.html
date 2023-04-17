@@ -1,0 +1,66 @@
+<div class="vault-section__specialties">
+  <div class="row-fluid">
+    <div class="widget-span span6 vault-section__specialties-boxes">
+      
+      {% for box in module.boxes %}
+        {% set href = box.link.url.href %}
+        {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.link.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+
+        {% if loop.index is odd %}
+        <div class="row-fluid">
+        {% endif %}
+          <div class="widget-span span6">
+            <a href="{{ href }}" class="vault-speciality-box colored-section colored-section--dark no-parallax"
+              {% if box.link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+              style="background-image: url({{ box.bg_image.src }});"
+              >
+              <div class="vault-speciality-box__heading">
+                <h3>{{ box.heading }}</h3>
+              </div> 
+              <div class="vault-speciality-box__details">
+                <p class="link-cta">
+                  {{ box.link_text }}
+                </p>
+              </div>
+            </a>
+          </div>
+        {% if loop.index is even %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="widget-span span6 vault-section__specialties-richtext">
+      <div class="
+            vault-richtext 
+            {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+            {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %} 
+            {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %} 
+            {% if module.design.module_alignment %}module--{{ module.design.module_alignment }}{% endif %}
+            {% if module.design.column_lists %}lists--split{% endif %}"
+      >
+        <div class="vault-richtext__wrapper" style="{% if module.design.max_width %}max-width: {{ module.design.max_width }}px;{% endif %}">
+          {{ module.text }}
+
+          {% if module.cta %}
+            <div class="vault-richtext__ctas">
+              {% for guid in module.cta %}
+                {% cta guid="{{ guid }}" %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>

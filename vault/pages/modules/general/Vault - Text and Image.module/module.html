@@ -1,0 +1,27 @@
+<div class="
+      vault-image-text 
+      row-fluid
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+      {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %} 
+      {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %} 
+      {% if module.design.module_alignment %}module--{{ module.design.module_alignment }}{% endif %}
+      {% if module.design.column_lists %}lists--split{% endif %}
+      {% if module.desktop_layout %}{{ module.desktop_layout }}{% endif %}
+      {% if module.mobile_layout %}{{ module.mobile_layout }}{% endif %}"
+>
+  <div class="vault-image-text__image widget-span span6">
+    <img src="{{ module.image.src }}" width="{{ module.image.width }}" alt="{{ module.image.alt }}" />
+  </div>
+
+  <div class="vault-image-text__wrapper widget-span span6">
+    {{ module.text }}
+
+    {% if module.cta %}
+      <div class="vault-image-text__ctas">
+        {% for guid in module.cta %}
+          {% cta guid="{{ guid }}" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>  
+</div>

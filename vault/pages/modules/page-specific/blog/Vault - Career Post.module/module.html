@@ -1,0 +1,72 @@
+<!-- module html  -->
+<header class="vault-blog__post--header padded-section padded-section--flush-top">
+  <div class="container">
+    <div class="vault-blog__post--header__details">
+      {% for tag in content.tag_list %}
+      <a class="tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %} |
+      {% endif %}
+      {% endfor %}
+      <h1>{{ content.name }}</h1>
+      <p>{% if content.blog_author %}Posted by: {{ content.blog_author.display_name }} |
+        {% endif %}{{ content.publish_date|datetimeformat('%B %e, %Y') }}</p>
+    </div>
+    {% if content.featured_image %}
+    <div class="vault-blog__post--header__thumbnail"
+      style="background: url('{{ content.featured_image }}') center no-repeat;">
+      <img class="trigger-when-visible" src="{{ content.featured_image }}"
+        alt="{% if content.featured_image_alt_text %}{{ content.featured_image_alt_text }}{% else %}{% endif %}" />
+    </div>
+    {% endif %}
+  </div>
+</header>
+<div class="vault-blog__post--sharing">
+  <div class="container" style="position: relative;">
+    <div class="blog-post__sharing sticky-row">
+      <div class="social-media social-media--sharing">
+        <p class="social-media__label">Share</p>
+        {% set url = content.absolute_url %}
+        {% set title = content.name|striptags %}
+        {% set summary = widget_data.listing_description.html|striptags or (content.post_list_content or content.post_body)|striptags|truncate(110) %}
+        <a href="https://twitter.com/intent/tweet/?text={{ title|urlencode }}&url={{ url|urlencode }}&via=lyntonweb"
+          title="Twitter" class="social-media__service social-media__service--twitter"
+          target="_blank">{{ components.inline_svg('social/' ~ components.slug('Twitter')) }}</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url|urlencode }}" title="Facebook"
+          class="social-media__service social-media__service--facebook"
+          target="_blank">{{ components.inline_svg('social/' ~ components.slug('Facebook')) }}</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url|urlencode }}&title={{ title|urlencode }}&source={{ company_domain|urlencode }}&summary={{ summary|urlencode }}"
+          title="LinkedIn" class="social-media__service social-media__service--linkedin"
+          target="_blank">{{ components.inline_svg('social/' ~ components.slug('LinkedIn')) }}</a>
+        <a href="mailto:?body=Check this article {{ url|urlencode }}&subject={{ title|urlencode }}"
+          title="Share by Email" class="social-media__service social-media__service--email"
+          target="_blank">{{ components.inline_svg('social/' ~ components.slug('Email')) }}</a>
+      </div>
+    </div>
+  </div>
+  <section class="vault-blog__post--body padded-section padded-section--flush-top">
+    <div class="container container--tiny">
+      {{ content.post_body }}
+    </div>
+  </section>
+  <footer class="vault-blog__post--footer sticky-row-stop">
+    <div class="container container--tiny">
+      <div class="blog-author" style="background-image: url('{{ module.cta_thumbnail.src }}');">
+        {% if content.blog_author %}
+        <div class="blog-author__details">
+          <h2 class="blog-author__details--title">Written By:
+            {{ content.blog_author.display_name }}{% if module.author_title %} | {{ module.author_title }}{% endif %}
+          </h2>
+          <p class="blog-author__details--subtitle">{{ content.blog_author.bio }}</p>
+        </div>
+        {% if content.blog_author.avatar %}
+        <div class="blog-author__thumbnail">
+          <div class="blog-author__thumbnail--wrapper"
+            style="background-image: url('{{ content.blog_author.avatar }}');">
+            <img src="{{ content.blog_author.avatar }}" alt="{{ content.blog_author.display_name }}" />
+          </div>
+        </div>
+        {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+</div>

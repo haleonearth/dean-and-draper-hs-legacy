@@ -1,0 +1,407 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/css/Hubspot-default-basic.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Basic Groups/Header",
+        "label" : "Basic Groups/Header",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/basic_groups/basic_groups/Header.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 8,
+        "name" : "wizard_module_168298886768643652826941906527705831352",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "wizard_module_294546466865351178956535523231519910604",
+            "label" : "Page Name",
+            "type" : "header",
+            "params" : {
+              "header_tag" : "h1",
+              "css_class" : "page-name",
+              "value" : "Enter your page name",
+              "overrideable" : true,
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "wizard_module_250188678592252860713240510021014277954",
+            "label" : "Column",
+            "type" : "widget_container",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "wizard_module_24899399198502060662051706699678517268",
+              "label" : "Main body content",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>New Module</h2>\n<p>Add content here.</p>",
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      },
+      "8" : {
+        "x" : 8,
+        "w" : 4,
+        "name" : "wizard_module_12628612074793553408409930489475156217",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "sidebar",
+          "overrideable" : false,
+          "css_id" : "",
+          "css_style" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "wizard_module_26075965322623547195841459413786419101",
+            "label" : "Module Group",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "wizard_module_239470528716712089657393309981824610991",
+                "label" : "Google Search",
+                "type" : "google_search",
+                "params" : {
+                  "search_field_label" : "Search this site",
+                  "prefill_input_with_pathname" : false,
+                  "search_button_text" : "Search",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "wizard_module_115666284744062211623169324598439263348",
+                "label" : "Vertical Main Menu",
+                "type" : "menu",
+                "params" : {
+                  "root_type" : "top_parent",
+                  "flow" : "vertical",
+                  "site_map_name" : "default",
+                  "overrideable" : true,
+                  "flyouts" : "true",
+                  "max_levels" : "1"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "wizard_module_251157254332166751315195901541584408862",
+            "label" : "Column",
+            "type" : "widget_container",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_1376570301869444",
+              "label" : "Sidebar Rich Text Editor",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>About the sidebar</h2><p>You can use the sidebar to talk about something you really want to stand out in people's minds. What's your driving mission? Sum it up here. Be brief.&nbsp;</p>",
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            }, {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_1376570851855499",
+              "label" : "Post Listing",
+              "type" : "post_listing",
+              "params" : {
+                "select_blog" : "default",
+                "list_title" : "Recent Blog Posts",
+                "listing_type" : "recent",
+                "overrideable" : false,
+                "max_links" : "5"
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_329642782886819771433494721223679628293",
+          "label" : "Google Search",
+          "type" : "google_search",
+          "params" : {
+            "search_field_label" : "Search this site",
+            "prefill_input_with_pathname" : false,
+            "search_button_text" : "Search",
+            "overrideable" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_248101596215905087345910292568956636121",
+          "label" : "Vertical Main Menu",
+          "type" : "menu",
+          "params" : {
+            "flow" : "vertical",
+            "max_levels" : 1,
+            "overrideable" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_124906312876576041516432403087095884804",
+          "label" : "Sidebar Rich Text Editor",
+          "type" : "rich_text",
+          "params" : {
+            "html" : "<h2>New Module</h2>\n<p>Add content here.</p>",
+            "overrideable" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        }, {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_260965520819765195793698906163479193581",
+          "label" : "Post Listing",
+          "type" : "post_listing",
+          "params" : {
+            "select_blog" : "default",
+            "list_title" : "Recent Blog Posts",
+            "listing_type" : "recent",
+            "overrideable" : false,
+            "max_links" : "5"
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Basic Groups/Footer",
+        "label" : "Basic Groups/Footer",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/basic_groups/basic_groups/Footer.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

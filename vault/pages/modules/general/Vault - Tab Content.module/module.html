@@ -1,0 +1,56 @@
+<div class="vault-tabs
+      {% if module.design.color_diveme != 'base' %}colored-section colored-section--{{ module.design.color_diveme }}{% endif %} 
+      {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %} 
+      {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %} 
+      {% if module.design.column_lists %}lists--split{% endif %}"
+>
+  <div class="vault-tabs__tabs" role="tablist">
+    {% for tab in module.tab %}
+      <button class="vault-tabs__tab {% if loop.first %}active{% endif %}" 
+              data-tab="#tab{{ loop.index }}"
+              aria-selected="{% if loop.first %}true{% else %}false{% endif %}"
+              id="#tab{{ loop.index }}"
+              aria-controls="tab{{ loop.index }}"
+              role="tab">
+        {{ tab.tab_label }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="vault-tabs__content">
+    {% for tab in module.tab %}
+      <button class="vault-tabs__tab {% if loop.first %}active{% endif %}" 
+              data-tab="#tab{{ loop.index }}"
+              aria-selected="{% if loop.first %}true{% else %}false{% endif %}"
+              id="#tab{{ loop.index }}-button"
+              aria-controls="tab{{ loop.index }}">
+        {{ tab.tab_label }}
+      </button>
+
+      <div class="vault-tabs__content-wrapper {% if loop.first %}active{% endif %}" 
+           id="tab{{ loop.index }}" 
+           role="tabpanel"
+           aria-labelledby="#tab{{ loop.index }}-button">
+        {% if tab.text_main %}
+          <div class="vault-tabs__content-main">{{ tab.text_main }}</div>
+        {% endif %}
+
+        {% if tab.text_secondary %}
+          <div class="vault-tabs__content-second">{{ tab.text_secondary }}</div>
+        {% endif %}
+
+        {% if tab.text_left || tab.text_right %}
+          <div class="vault-tabs__content-columns">
+            {% if tab.text_left %}
+              <div class="vault-tabs__content-columns__left">{{ tab.text_left }}</div>
+            {% endif %}
+
+            {% if tab.text_right %}
+              <div class="vault-tabs__content-columns__right">{{ tab.text_right }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>  
+</div>

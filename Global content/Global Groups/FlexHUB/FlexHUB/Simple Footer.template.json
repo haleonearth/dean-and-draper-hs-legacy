@@ -1,0 +1,88 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14672219505163",
+        "label" : "Footer w/ Hubl",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "page-center",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "<a href=\"/\" class=\"footerLogo\">{% logo \"my_logo\" label=\"Logo\", src=\"http://cdn2.hubspot.net/hubfs/547014/FlexHub/flexhub-logo4-sm.png\", width=120, overrideable=False %}</a>\n<p style=\"margin-bottom:12px!important;\">\n{{ site_settings.company_street_address_1 }} {{ site_settings.company_street_address_2 }}<br>\n{{ site_settings.company_city }}, {{ site_settings.company_state }} {{ site_settings.company_zip }}\n</p>\n<p style=\"margin-bottom:12px!important;\">\n{% widget_block social_sharing \"my_social_sharing\" label=\"Social Sharing\", use_page_url=True, overrideable=False %}\n{% widget_attribute \"pinterest\" is_json=True %}{\"custom_link_format\": \"\", \"pinterest_media\": \"http://cdn1.hubspot.com/hub/158015/305390_10100548508246879_837195_59275782_6882128_n.jpg\", \"enabled\": true, \"network\": \"pinterest\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/pinterest-24x24.png\"}{% end_widget_attribute %}\n{% widget_attribute \"twitter\" is_json=True %}{\"custom_link_format\": \"\", \"enabled\": true, \"network\": \"twitter\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/twitter-24x24.png\"}{% end_widget_attribute %}\n{% widget_attribute \"google_plus\" is_json=True %}{\"custom_link_format\": \"\", \"enabled\": true, \"network\": \"google_plus\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/googleplus-24x24.png\"}{% end_widget_attribute %}\n{% widget_attribute \"linkedin\" is_json=True %}{\"custom_link_format\": \"\", \"enabled\": true, \"network\": \"linkedin\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/linkedin-24x24.png\"}{% end_widget_attribute %}\n{% widget_attribute \"facebook\" is_json=True %}{\"custom_link_format\": \"\", \"enabled\": true, \"network\": \"facebook\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/facebook-24x24.png\"}{% end_widget_attribute %}\n{% widget_attribute \"email\" is_json=True %}{\"custom_link_format\": \"\", \"enabled\": true, \"network\": \"email\", \"img_src\": \"https://static.hubspot.com/final/img/common/icons/social/email-24x24.png\"}{% end_widget_attribute %}\n{% end_widget_block %}\n<span style=\"display:none;\">{{standard_footer_includes}}</span>\n</p>",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_147007287311472814",
+        "label" : "SOURCE JS (Do Not Remove)",
+        "type" : "raw_html",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "<!-- Main FlexHUB JS -->\n<script type=\"text/javascript\" src=\"{{ get_public_template_url('Coded files/Custom/page/FlexHub/flexhub.js') }}\"></script>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

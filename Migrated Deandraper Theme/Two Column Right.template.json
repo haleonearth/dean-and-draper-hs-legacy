@@ -1,0 +1,377 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/Dean_Draper_Dec2014-theme/Dean Draper Dec2014-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "cms-migrated two-column-right-template",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Header",
+        "label" : "Dean_Draper_Dec2014 Theme/Header",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Header.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "deduplicated_cell_14183659105682490",
+        "label" : "Layout Container .content-wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "content-wrapper",
+          "value" : "",
+          "css_id" : "",
+          "overrideable" : false,
+          "css_style" : "",
+          "wrapping_html" : "<div class=\"site-page two-column-right\">{{ html }}</div>"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "deduplicated_cell_14183659105682493",
+            "label" : "Layout Container 2",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_14183659105682492",
+                "label" : "Top Container .top-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "wrapping_html" : "",
+                  "value" : "",
+                  "css_id" : "",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>",
+                  "css_class" : "top-content page-center"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "toppane",
+                    "label" : "Top Widget Container",
+                    "type" : "widget_container",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_14183659105682495",
+                "label" : "Main Content Container .middle-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "middle-content page-center",
+                  "overrideable" : false,
+                  "module_title_tag" : "h1"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 9,
+                    "name" : "deduplicated_cell_14183659105682497",
+                    "label" : "Main Content .main-content",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "main-content",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "contentpane",
+                        "label" : "Main Content Container",
+                        "type" : "widget_container",
+                        "params" : {
+                          "overrideable" : false,
+                          "module_title_tag" : "h1"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "9" : {
+                    "x" : 9,
+                    "w" : 3,
+                    "name" : "deduplicated_cell_14183659105682499",
+                    "label" : "Right Content .sidebar .right",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "sidebar right",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1418992612627743",
+                        "label" : "Flexible Column",
+                        "type" : "widget_container",
+                        "params" : {
+                          "overrideable" : false
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1418889645187680",
+                        "label" : "Advanced Menu",
+                        "type" : "menu",
+                        "params" : {
+                          "root_type" : "top_parent",
+                          "wrapping_html" : "",
+                          "flow" : "horizontal",
+                          "site_map_name" : "migrated-classic-cms-sitemap",
+                          "overrideable" : false,
+                          "css_style" : "",
+                          "flyouts" : "false",
+                          "max_levels" : "3",
+                          "css_class" : "custom_right_nav"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "col3pane",
+                        "label" : "Right Column Container",
+                        "type" : "widget_container",
+                        "params" : {
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "migrated_unnamed_cell_14183659105682500",
+                "label" : "Content Bottom Container .bottom-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "bottom-content page-center",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "bottompane",
+                    "label" : "Bottom Widget Container",
+                    "type" : "widget_container",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Footer",
+        "label" : "Dean_Draper_Dec2014 Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Footer.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

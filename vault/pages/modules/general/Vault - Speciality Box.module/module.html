@@ -1,0 +1,26 @@
+{% set href = module.link.url.href %}
+{% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+{% endif %}
+{% set rel = [] %}
+{% if module.link.no_follow %}
+  {% do rel.append("nofollow") %}
+{% endif %}
+{% if module.link.open_in_new_tab %}
+  {% do rel.append("noopener") %}
+{% endif %}
+
+<a href="{{ href }}" class="vault-speciality-box colored-section colored-section--dark no-parallax"
+  {% if module.link.open_in_new_tab %}target="_blank"{% endif %}
+  {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+  style="background-image: url({{ module.bg_image.src }});"
+  >
+  <div class="vault-speciality-box__heading">
+    <h3>{{ module.heading }}</h3>
+  </div> 
+  <div class="vault-speciality-box__details">
+    <p class="link-cta">
+      {{ module.link_text }}
+    </p>
+  </div>
+</a>

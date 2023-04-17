@@ -1,0 +1,7 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+.thumbnail-links-wrapper__actions{text-align:center;margin-top:-2em;position:relative;z-index:100}.vault-blog-posts__post{margin-bottom:6em}@media (min-width:1024px){.vault-blog-posts__post-details{padding-top:3em;padding-bottom:3em}}@media (min-width:1024px){.vault-blog-posts__event{display:flex}}@media (min-width:1024px){.vault-blog-posts__event-date{margin-right:20px;text-align:center}}.vault-blog-posts__event-date span{color:#575757}@media (min-width:1024px){.vault-blog-posts__event-date span{display:block}}.vault-blog-posts__event-date span.month{text-transform:uppercase;font-size:15px}@media (min-width:1024px){.vault-blog-posts__event-date span.day{font-size:34px;line-height:34px}}@media (max-width:1023px){.vault-blog-posts__event-date span.day{margin-left:5px}}.vault-blog-posts__event h3{margin-top:0}@media (min-width:800px) and (max-width:1279px){.vault-blog-posts__event h3{font-size:18px;line-height:24px}}

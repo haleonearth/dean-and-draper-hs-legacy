@@ -1,0 +1,205 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517869385749190",
+        "label" : "Partners",
+        "type" : "raw_jinja",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false,
+          "value" : "{% set logos = [\n    (\"AIG\", \"https://cdn2.hubspot.net/hubfs/56434/jade/aig-logo.png\", \"https://www.aig.com/\"),\n    (\"Amerisafe\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Amerisafe%20logo.png\", \"https://www.amerisafe.com/site.php\"), \n    (\"Amtrust\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Amtrust-Logo.png\", \"https://amtrustfinancial.com/\"),\n    (\"Berkshire Hathaway\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Berkshire%20Hathaway%20logo.png\", \"https://www.bhhc.com/\"),\n    (\"Chubb\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/CHUBB%20logo.png\", \"https://www2.chubb.com/us-en/\"),\n    (\"CNA\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/CNA-logo.png\", \"https://www.cna.com/\"),\n    (\"Encompass\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/encompass-logo%20(1).png\", \"https://www.encompassinsurance.com/\"), \n    (\"Foremost\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Foremost_color_med-logo.png\", \"http://www.foremost.com/\"),\n    (\"Hanover\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/HIG_wordmrk_k-logo.png\", \"https://www.hanover.com/\"),\n    (\"Hartford\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/the-hartford-logo.png\", \"https://www.thehartford.com/\"),\n    (\"Hochheim Prairie\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Hochheim-Logo-Blue-Grey.png\", \"https://www.hochheim.com/\"),\n    (\"ICW\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/ICW_logo_blue_lg.png\", \"http://www.icwgroup.com/\"), \n    (\"Liberty Mutual\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/liberty-mutual-logo-no-bg.png\", \"https://www.libertymutualgroup.com/\"),\n    (\"Lighthouse\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/lighthouse-logo-main@2x.png\", \"https://www.lighthouse.insurance/\"),\n    (\"Kemper\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Kemper_Logo.png\", \"http://www.kemper.com/\"),\n    (\"Markel\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/markel_logo_416x416.png\", \"https://www.markelcorp.com/\"),\n    (\"Met Life\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/MetLife-logo.png\", \"https://www.metlife.com/\"), \n    (\"Philadelphia\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/PHLY_logoA1.png\", \"https://www.phly.com/\"),\n    (\"Progressive\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/logo-progressive.png\", \"https://www.progressive.com/\"),\n    (\"Pure\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/pure-logo-300.png\", \"https://www.pureinsurance.com/\"),\n    (\"QEO\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/qeo-new-logo.png\", \"http://www.qeo.com/\"),\n    (\"Republic Group\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Insurance-Partner-Republic-Group-logo.png\", \"https://www.republicgroup.com/\"), \n    (\"Safeco\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/Safeco%20Insurance.png\", \"https://www.safeco.com/\"),\n    (\"Service Lloyds\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/service-lloyds.png\", \"http://www.servicelloyds.com/\"),\n    (\"Texas Mutual\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/TexasMutual-primary-logo-cones.png\", \"https://www.texasmutual.com/\"),\n    (\"Texas Windstorm (TWIA)\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/texas-windstorm-insurance-association-logo.png\", \"https://www.twia.org/\"),\n    (\"Travelers\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/travelers-insurance-logo-png.png\", \"https://www.travelers.com/\"), \n    (\"United Fire\", \"https://cdn2.hubspot.net/hub/56434/hubfs/jade/AMCOMP.png\", \"https://www.ufginsurance.com/\"),\n    (\"UPC\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/UPC%20-%20Logo.png\", \"https://www.upcinsurance.com/\"),\n    (\"USLI\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/USLI-logo.png\", \"http://www.usli.com/\"),\n    (\"Utica\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/unig-logo.png\", \"http://www.uticanational.com/\"),\n    (\"Zenith\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/the-zenith-site-logo.png\", \"https://www.thezenith.com/\"),\n    (\"Zurich\", \"https://cdn2.hubspot.net/hubfs/56434/jade/Partner%20Slider%20Logos/zurich-logo-big.png\", \"https://www.zurich.com/\")\n] %}\n\n<div class=\"partners\">\n    <div class=\"container\">\n        <h3 class=\"partners__heading\">\n            Our Partners\n            <em>Key Companies We Represent</em>\n        </h3>\n        <div class=\"partners__slider slider\">\n            <div class=\"slider__slides\">\n                {% for slide in logos|batch(5) %}\n                    <div class=\"slider__slide\">\n                        {% for partner_logo in slide %}\n                            <a href=\"{{ partner_logo[2] }}\" target=\"_blank\"><img src=\"{{ partner_logo[1] }}\" alt=\"{{ partner_logo[0] }}\" class=\"partners__logo\"></a>\n                        {% endfor %}\n                    </div>\n                {% endfor %}\n            </div>\n        </div>\n    </div>\n</div>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517869987961220",
+        "label" : "container",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 6,
+            "name" : "module_1517869476670192",
+            "label" : "Contact Info",
+            "type" : "raw_html",
+            "params" : {
+              "css_class" : "footer-container__contact",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "value" : "<div class=\"contact-info\">\n    <a href=\"/careers\" class=\"contact-info__item contact-info__item--careers\">Careers</a>\n    <a href=\"tel:7135270444\" class=\"contact-info__item contact-info__item--phone\">(713) 527-0444</a>\n    <a href=\"tel:8664504432\" class=\"contact-info__item contact-info__item--phone\">(888) 266-2680</a>\n    <a href=\"/contact\" class=\"contact-info__item contact-info__item--contact\">Contact</a>\n    <span class=\"contact-info__item contact-info__item--address\">3131 West Alabama, Suite 150, Houston, TX 77098</span>\n</div>"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "6" : {
+            "x" : 6,
+            "w" : 6,
+            "name" : "module_1517869643504197",
+            "label" : "text-right--tablet text-center--mobile",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "text-right--tablet text-center--mobile",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "social_media_links",
+                "label" : "Social Media Links",
+                "type" : "global_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1517869676739200",
+                "label" : "Utility Links",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "footer-container__utility",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false,
+                  "html" : "<p><a href=\"https://www.deandraper.com/privacy-policy\">Privacy Policy</a> | <a href=\"https://www.deandraper.com/site-map\">Sitemap</a> | <a href=\"https://www.deandraper.com/terms-of-use\">Terms of Use</a>&nbsp;<span>| <a href=\"https://www.deandraper.com/disclaimer\">Disclaimer</a></span></p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1517869604595193",
+            "label" : "Copyright",
+            "type" : "raw_jinja",
+            "params" : {
+              "css_class" : "footer-container__copyright",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "value" : "<p>&copy; {{ year }} Dean & Draper Insurance, L.P. All rights reserved.</p>"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,49 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% if request.query_dict.search %}
+    {% set contents = blog_recent_posts(group.id, 200)|selectattr('post_body', 'string_containing', request.query_dict.search) %}
+{% endif %}
+{% set per_row = 4 %}
+
+
+<div class="blog-listing">
+    <div class="blog-listing__row">
+        {% for post in contents[0:per_row] %}
+            {{ blog_components.post_thumb(post) }}
+        {% endfor %}
+        {% if contents|count < per_row %}
+            {{ blog_components.blog_subscribe() }}
+        {% endif %}
+    </div>
+    {% if contents|count >= per_row %}
+        <div class="blog-listing__row">
+            {% for post in contents[per_row:(per_row * 2 - 2)] %}
+                {{ blog_components.post_thumb(post) }}
+            {% endfor %}
+            {{ blog_components.blog_subscribe() }}
+        </div>
+    {% endif %}
+    {% if contents|count > (per_row * 2) - 2 %}
+        {% for row in contents[(per_row * 2 - 2):10000]|batch(per_row) %}
+            <div class="blog-listing__row">
+                {% for post in row %}
+                    {{ blog_components.post_thumb(post) }}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <nav class="blog-listing__navigation listing-nav">
+        {% if last_page_num and not request.query_dict.search %}
+            <a href="{{ blog_page_link(last_page_num) }}" class="listing-nav__item listing-nav__item--prev">Previous</a>
+        {% endif %}
+        <a href="{{ group.absolute_url }}{% unless request.query_dict.search or topic or blog_author or simple_list_page %}/all{% endunless %}" class="listing-nav__item listing-nav__item--all">
+            {% if simple_list_page %}View Paginated{% else %}View All{% endif %}
+        </a>
+        {% if next_page_num and not request.query_dict.search %}
+            <a href="{{ blog_page_link(next_page_num) }}" class="listing-nav__item listing-nav__item--next">Next</a>
+        {% endif %}
+    </nav>
+</div>

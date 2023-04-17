@@ -1,0 +1,414 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/Marketplace_Templates/oceania_style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148160891631019",
+        "label" : "Oceania Theme 2016/Oceania LP Header 2016",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Oceania Theme 2016/Oceania Theme 2016/Oceania LP Header 2016.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1481613730057496",
+        "label" : "Banner Section",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "heroSection set-bg overlay fontWhite text-center innerHero",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481613727131494",
+            "label" : "Banner Background Image",
+            "type" : "linked_image",
+            "params" : {
+              "overrideable" : true,
+              "css_class" : "get-bg",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : "",
+              "src" : "http://www.sparkreaction.com/hubfs/Oceania%20Theme%202016/Images/Landing1-Hero.jpg",
+              "original_width" : 1299,
+              "original_height" : 777,
+              "img_alt" : "Landing1-Hero.jpg",
+              "img_load_error" : false,
+              "width" : 1299,
+              "height" : 777,
+              "alt" : "Landing1-Hero.jpg",
+              "link" : "",
+              "open_in_new_tab" : false
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "get-bg",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481613888929500",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "wrapper",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481613893265504",
+                "label" : "Header",
+                "type" : "header",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "pageTitle",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "value" : "Lorem <span>Ipsum</span>",
+                  "header_tag" : "h1"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "pageTitle",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "wrapper",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "heroSection set-bg overlay fontWhite text-center innerHero",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1481637190238667",
+        "label" : "Two Column Section",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "lp1Sec2 topStrip",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481637192231671",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "wrapper",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_1481689690590534",
+                "label" : "Left Side",
+                "type" : "cell",
+                "params" : {
+                  "overrideable" : false,
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1481637190238668",
+                    "label" : "Left Side Title",
+                    "type" : "header",
+                    "params" : {
+                      "overrideable" : true,
+                      "css_class" : "titleStyle sectionTitle left",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "starting_html" : "",
+                      "value" : "Headline Goes Here",
+                      "header_tag" : "h2"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "titleStyle sectionTitle left",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1481689690590535",
+                    "label" : "Left Side Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "overrideable" : true,
+                      "css_class" : "font18",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "starting_html" : "",
+                      "html" : "<p>Sit amet, consectetur adipiscing elit. Sed iaculis leo ac dolor</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus augue eu ante fermentum, in posuere urna elementum. Mauris congue erat ac nisl posuere rutrum. Morbi pellentesque lorem a mauris dapibus vehicula. Ut nec tristique justo. Duis eu lacus enim. Ut aliquam malesuada dui, id consequat elit dapibus vel. Proin mauris diam, tempor cursus sapien vel, auctor lacinia est. Sed pretium lacinia tincidunt.</p>\n<p>Vivamus eu nulla tincidunt mi volutpat laoreet. Nullam scelerisque nisi eu arcu feugiat faucibus pretium in mi. Ut a diam ac lorem lacinia rutrum eu et quam.</p>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "font18",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1481689800265556",
+                "label" : "Form Right Side",
+                "type" : "cell",
+                "params" : {
+                  "overrideable" : false,
+                  "css_class" : "lp1Form mtop30",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1481689685313533",
+                    "label" : "Form",
+                    "type" : "form",
+                    "params" : {
+                      "overrideable" : true,
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "starting_html" : "",
+                      "title" : "",
+                      "form_to_use" : "2c0109c1-d267-47d2-852c-58b1051e6283",
+                      "response_response_type" : "redirect",
+                      "response_redirect_url" : "",
+                      "response_message" : "Thanks for submitting the form.",
+                      "notifications_are_overridden" : false,
+                      "notifications_override_email_addresses" : [ ],
+                      "sfdc_campaign" : "",
+                      "gotowebinar_webinar_key" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "lp1Form mtop30",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "wrapper",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "lp1Sec2 topStrip",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1481690216306707",
+        "label" : "Oceania Theme 2016/Oceania LP Footer 2016",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Oceania Theme 2016/Oceania Theme 2016/Oceania LP Footer 2016.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

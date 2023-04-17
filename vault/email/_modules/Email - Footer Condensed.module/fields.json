@@ -1,0 +1,154 @@
+[ {
+  "id" : "c1ef584d-0150-e28f-e4e7-d6dd3bf3d1e4",
+  "name" : "section_color",
+  "display_width" : null,
+  "label" : "Section Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "base", "base" ], [ "light", "light" ], [ "dark", "dark" ], [ "alpha", "alpha" ], [ "beta", "beta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "dark"
+}, {
+  "id" : "7c86c181-0ef3-a383-0c5d-d34db6ffedea",
+  "name" : "hide_social",
+  "display_width" : null,
+  "label" : "Hide Social",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "cf498ec6-2ccd-f540-5bdb-770591ed8795",
+  "name" : "social",
+  "display_width" : null,
+  "label" : "Social",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c6d77895-fcde-df63-72a0-45b864d6b191",
+    "default" : 5
+  },
+  "visibility" : {
+    "controlling_field" : "7c86c181-0ef3-a383-0c5d-d34db6ffedea",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "c6d77895-fcde-df63-72a0-45b864d6b191",
+    "name" : "platform",
+    "display_width" : null,
+    "label" : "Platform",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "facebook", "Facebook" ], [ "twitter", "Twitter" ], [ "linkedin", "Linkedin" ], [ "pinterest", "Pinterest" ], [ "instagram", "Instagram" ], [ "youtube", "YouTube" ], [ "other", "Other" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "facebook"
+  }, {
+    "id" : "49f2075d-232f-c6ba-e5dc-2e189c8ebabd",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "c73b28aa-5dd4-70f0-1dd9-52cc039f626e",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Custom Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : null,
+      "width" : null,
+      "height" : null,
+      "max_width" : null,
+      "max_height" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "platform" : "facebook",
+    "link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "platform" : "facebook",
+    "link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "platform" : "facebook",
+    "link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "platform" : "facebook",
+    "link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "platform" : "facebook",
+    "link" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ]
+}, {
+  "id" : "541c9eb7-1c03-52bc-7d26-62600ae37c4e",
+  "name" : "unsubscribe",
+  "display_width" : null,
+  "label" : "Unsubscribe",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>No longer wish to receive emails from us?&nbsp;<a href=\"{{ unsubscribe_link_all }}\" rel=\" noopener\">Click here.</a></p>"
+}, {
+  "id" : "e5a0419e-daed-c784-1a40-83158f768e78",
+  "name" : "social_text",
+  "display_width" : null,
+  "label" : "Disclaimer",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><strong>Please follow us for updates as they happen on:</strong></p>"
+} ]

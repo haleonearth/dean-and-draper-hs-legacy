@@ -1,0 +1,94 @@
+<!--
+  templateType: "blog"
+  label: DD Careers Blog
+  isAvailableForNewContent: true
+-->
+
+{% extends '../partials/base.html' %}
+{% set template_body_classes = 'vault-blog' %}
+{% block body %}
+{% if is_listing_view %}
+{% module "Vault - Career Listing" path="/vault/pages/modules/page-specific/blog/Vault - Career Listing", label="Vault - Blog Listing" %}
+<section class="vault-blog__footer padded-section">
+  <div class="row-fluid-wrapper">
+    <div class="row-fluid ">
+      <div class="span12 widget-span">
+        <div class="container container--tiny">
+          {% module "Vault - Rich Text" path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2>Like What You're Reading?</h2><p>Subscribe for more!</p>", cta=[], design={"text_alignment": "center", "module_alignment": "center"} %}
+          {% blog_subscribe "subscribe_blog" select_blog='default', title='', response_message='Thanks for Subscribing!', label='Blog Email Subscription', overrideable=False %}
+        </div>
+        <!--end container -->
+      </div>
+      <!--end widget-span -->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end row-wrapper -->
+</section>
+<!--end section -->
+{% elif not simple_list_page %}
+<script type="application/ld+json">
+  {
+    "@context": "http: //schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ content.absolute_url }}"
+    },
+    "headline": "{{ page_meta.name }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ content.featured_image }}",
+      "height": {
+        {
+          content.featured_image.height
+        }
+      },
+      "width": {
+        {
+          content.featured_image.width
+        }
+      }
+    },
+    "datePublished": "{{ content.publish_date|datetimeformat('%Y - %m - %d') }}",
+    "dateModified": "{{ content.updated|datetimeformat('%Y - %m - %d') }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ content.blog_post_author.display_name }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site_settings.company_name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.deandraper.com/hubfs/jade/dd-logo-square.png",
+        "width": 64,
+        "height": 64
+      }
+    },
+    "description": "{{ content.meta_description }}"
+  }
+</script>
+<section class="vault-blog__post padded-section">
+  {% module "Vault - Career Post" path="/vault/pages/modules/page-specific/blog/Vault - Career Post", label="Vault - Career Post" %}
+</section>
+<!--end section -->
+<section class="vault-blog__footer padded-section">
+  <div class="row-fluid-wrapper">
+    <div class="row-fluid ">
+      <div class="span12 widget-span">
+        <div class="container">
+          {% module "Vault - Rich Text" path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2><em>Discover More</em>Related Stories For You</h2>", cta=[], design={"max_width": 375, "text_alignment": "center", "module_alignment": "center"} %}
+          {% module "Vault - Latest Blog Posts" path="/vault/pages/modules/general/Vault - Latest Blog Posts", label="Vault - Latest Blog Posts" %}
+        </div>
+        <!--end container -->
+      </div>
+      <!--end widget-span -->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end row-wrapper -->
+</section>
+<!--end section -->
+{% endif %}
+{% endblock %}

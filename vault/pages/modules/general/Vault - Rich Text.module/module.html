@@ -1,0 +1,20 @@
+<div class="
+      vault-richtext 
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+      {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %} 
+      {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %} 
+      {% if module.design.module_alignment %}module--{{ module.design.module_alignment }}{% endif %}
+      {% if module.design.column_lists %}lists--split{% endif %}"
+>
+  <div class="vault-richtext__wrapper" style="{% if module.design.max_width %}max-width: {{ module.design.max_width }}px;{% endif %}">
+    {{ module.text }}
+
+    {% if module.cta %}
+      <div class="vault-richtext__ctas">
+        {% for guid in module.cta %}
+          {% cta guid="{{ guid }}" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>  
+</div>

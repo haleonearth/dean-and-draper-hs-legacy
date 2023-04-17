@@ -1,0 +1,13 @@
+[ {
+  "id" : "overlay",
+  "name" : "overlay",
+  "display_width" : null,
+  "label" : "Overlay",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000000",
+    "opacity" : 30
+  }
+} ]

@@ -1,0 +1,7 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+@media (max-width:799px){.vault-richtext__wrapper{max-width:100%!important}}.vault-richtext.module--right{display:flex;justify-content:flex-end}.vault-richtext.module--center{display:flex;justify-content:center}.vault-richtext.text--large .vault-richtext__ctas{margin-top:1.5em}@media (max-width:799px){.vault-richtext__ctas a{margin-top:1.5em}}.vault-richtext__ctas a:first-child{margin-top:0;margin-right:1.5em}@media (min-width:1120px){.vault-richtext.lists--split ul{-moz-columns:2;columns:2;-moz-column-gap:30px;column-gap:30px}.vault-richtext.lists--split ul li{-moz-column-break-inside:avoid;break-inside:avoid}}@media (min-width:600px) and (max-width:799px){.vault-richtext ul{-moz-columns:2;columns:2}.vault-richtext ul li{-moz-column-break-inside:avoid;break-inside:avoid}}.vault-richtext .subtitle{font-size:20px}

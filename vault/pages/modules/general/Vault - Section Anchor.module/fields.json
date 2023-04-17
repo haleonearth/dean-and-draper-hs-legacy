@@ -1,0 +1,27 @@
+[ {
+  "id" : "anchor",
+  "name" : "anchor",
+  "display_width" : null,
+  "label" : "Anchor",
+  "inline_help_text" : "This specifies the anchor you can use to target this module. It must be unique per page!",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "[^\\s]+",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "section_label",
+  "name" : "section_label",
+  "display_width" : null,
+  "label" : "Label",
+  "inline_help_text" : "This is the visible label that will appear in the page navigation.",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

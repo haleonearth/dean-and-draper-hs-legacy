@@ -1,0 +1,100 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: false
+  label: "Style Guide"
+-->
+
+{% extends '../partials/base.html' %}
+
+{% block body %}
+  <style>
+    body {
+      padding-top: 100px;
+    }
+
+    .type-examples h1,
+    .type-examples h2,
+    .type-examples h3,
+    .type-examples h4,
+    .type-examples h5,
+    .type-examples h6 {
+      margin: 10px 0;
+    }
+  </style>
+  <div class="container type-examples">
+    <h1>Style Guide</h1>
+    <p>This is a basic example page designed to demonstrate the site's global styles. It should not be used for any actual page.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nihil. Provident excepturi accusamus minus distinctio autem recusandae repellendus? Atque obcaecati repellat consectetur magni sequi! Eaque explicabo quia saepe esse non!</p>
+
+    <hr>
+
+    <p>The following demonstrates the site's basic typographic styles:</p>
+
+    <h1>H1: The Quick Brown Fox Jumps Over The Lazy Dog.</h1>
+    <h2>H2: The Quick Brown Fox Jumps Over The Lazy Dog.</h2>
+    <h3>H3: The Quick Brown Fox Jumps Over The Lazy Dog.</h3>
+    <h4>H4: The Quick Brown Fox Jumps Over The Lazy Dog.</h4>
+    <h5>H5: The Quick Brown Fox Jumps Over The Lazy Dog.</h5>
+    <h6>H6: The Quick Brown Fox Jumps Over The Lazy Dog.</h6>
+
+    <hr>
+
+    <p>Buttons:</p>
+    <p><a href="#" class="button">Learn More</a> <a href="#" class="button button--ghost">Learn More</a></p>
+    <p><a href="#" class="button button--dark">Learn More</a> <a href="#" class="button button--dark button--ghost">Learn More</a></p>
+    <p><a href="#" class="button button--light">Learn More</a></p>
+
+    <div class="vault-email-subscribe">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "56434",
+          formInstanceId: {{ colored_section|tojson }},
+          formId: "29244d3c-0708-4a5b-8e45-4a1e7349e703",
+          css: ''
+        });
+      </script>
+    </div>
+  </div>
+
+  {% for colored_section in ['base'] %}
+    <section class="page-section colored-section colored-section--{{ colored_section }}" style="padding: 5em 0;">
+      <div class="container" style="padding-bottom: 5em;">
+        <h2><em>Eyebrow Text Lorem</em> Excepteur sint occaecat cupidatat non proident sunt</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh.</p>
+        <ul>
+          <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.</li>
+          <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.</li>
+        </ul>
+        <p>Quisque volutpat mattis eros. Nullam <a href="#">malesuada erat</a> ut turpis. Suspendisse urna nibh.</p>
+
+        <p><a href="#" class="link-cta">Learn More {{ components.inline_svg('arrow-right') }}</a></p>
+      </div>
+
+      {# Look for a form in the portal (or create a new one) which includes lots of different kinds of fields. #}
+      <div class="page-section__header">
+        <div class="container container--tiny">
+          <h2><em>Lorem Ipsum</em> Form Headline Goes Here</h2>
+          <p class="subheading">Optional subheadline text goes here.</p>
+        </div>
+      </div>
+      <div class="container container--tiny">
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "56434",
+            formInstanceId: {{ colored_section|tojson }},
+            formId: "d92bb193-4e9f-4ccd-86cb-49522ac295b3",
+            css: ''
+          });
+        </script>
+      </div>
+    </section>
+  {% endfor %}
+{% endblock %}

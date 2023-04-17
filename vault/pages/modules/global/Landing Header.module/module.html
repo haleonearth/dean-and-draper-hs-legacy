@@ -1,0 +1,12 @@
+<a href="#body" class="skip-link" data-noscroll="true">Skip to Content</a>
+
+<header class="site-header site-header--landing">
+  <div class="container container--large">
+    <a href="{{ module.logo_link.url.href }}"
+        {% if module.logo_link.open_in_new_tab %}target="_blank"{% endif %}
+        {% if module.logo_link.no_follow %}rel="nofollow"{% endif %}
+        class="site-header__logo">
+      {{ components.inline_svg('logo') }}
+    </a>
+  </div>
+</header>

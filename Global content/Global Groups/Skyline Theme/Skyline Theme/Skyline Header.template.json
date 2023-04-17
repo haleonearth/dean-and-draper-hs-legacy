@@ -1,0 +1,202 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "wizard_module_109991658154163613663450379663072910021",
+        "label" : "Page Center",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "page-center",
+          "value" : "",
+          "css_id" : "",
+          "overrideable" : false,
+          "css_style" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14104490748111049",
+            "label" : "Header Top",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "header-top",
+              "value" : "",
+              "css_id" : "",
+              "overrideable" : false,
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 9,
+                "name" : "wizard_module_105260590589906485737407536648714759246",
+                "label" : "Logo",
+                "type" : "logo",
+                "params" : {
+                  "overrideable" : false,
+                  "src" : "https://cdn2.hubspot.net/hub/439308/file-2244568685-png/images/Skyline.png?t=1419970439000&width=712&name=Skyline.png",
+                  "original_width" : 712,
+                  "original_height" : 283,
+                  "img_alt" : "",
+                  "width" : 712,
+                  "height" : 283,
+                  "img_load_error" : false,
+                  "suppress_company_name" : false,
+                  "override_inherited_src" : true,
+                  "alt" : "",
+                  "open_in_new_tab" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "9" : {
+                "x" : 9,
+                "w" : 3,
+                "name" : "module_14104483006361052",
+                "label" : "Google Search",
+                "type" : "google_search",
+                "params" : {
+                  "search_field_label" : "",
+                  "prefill_input_with_pathname" : false,
+                  "search_button_text" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1410448288840978",
+        "label" : "Menu Bar",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "menu-bar",
+          "value" : "",
+          "css_id" : "",
+          "overrideable" : false,
+          "css_style" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14104491867031763",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "value" : "",
+              "css_id" : "",
+              "overrideable" : false,
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "wizard_module_71112363651659374784832640343059713424",
+                "label" : "Horizontal Top Menu",
+                "type" : "menu",
+                "params" : {
+                  "root_type" : "site_root",
+                  "wrapping_html" : "",
+                  "flow" : "horizontal",
+                  "site_map_name" : "default",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "flyouts" : "true",
+                  "max_levels" : "6",
+                  "css_class" : "custom-menu-primary",
+                  "site_menu_name" : "default"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/Marketplace_Templates/oceania_style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148160891631019",
+        "label" : "Oceania Theme 2016/Oceania Header 2016",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Oceania Theme 2016/Oceania Theme 2016/Oceania Header 2016.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1481613730057496",
+        "label" : "Banner Section",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "heroSection set-bg overlay fontWhite text-center innerHero",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481613727131494",
+            "label" : "Banner Background Image",
+            "type" : "linked_image",
+            "params" : {
+              "overrideable" : true,
+              "css_class" : "get-bg",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : "",
+              "src" : "http://www.sparkreaction.com/hubfs/Oceania%20Theme%202016/Images/Ty-bg.jpg",
+              "original_width" : 1551,
+              "original_height" : 1053,
+              "img_alt" : "Ty-bg.jpg",
+              "img_load_error" : false,
+              "width" : 1551,
+              "height" : 1053,
+              "alt" : "Ty-bg.jpg",
+              "link" : "",
+              "open_in_new_tab" : false
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "get-bg",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481613888929500",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "wrapper",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481613893265504",
+                "label" : "Header",
+                "type" : "header",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "pageTitle",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "value" : "THANK <span>You</span>",
+                  "header_tag" : "h1"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "pageTitle",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "wrapper",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "heroSection set-bg overlay fontWhite text-center innerHero",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1481637190238667",
+        "label" : "One Column Section",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "thankYouSec2 topStrip",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1481637192231671",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "wrapper",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481637190238668",
+                "label" : "Header",
+                "type" : "header",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "titleStyle sectionTitle left fontBlue",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "value" : "Lorem Ipsum",
+                  "header_tag" : "h2"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "titleStyle sectionTitle left fontBlue",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481637203087676",
+                "label" : "Text",
+                "type" : "rich_text",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "font18 lineHeight2",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "html" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu leo condimentum, ullamcorper quam et, ullamcorper nibh. Curabitur pellentesque mi diam, non vehicula nunc gravida vitae. Sed et ex nec ligula tempus laoreet et at velit."
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "font18 lineHeight2",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481637322436706",
+                "label" : "Back To HomePage CTA",
+                "type" : "cta",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "pt40 button blue",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "embed_code" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" id=\"hs-cta-wrapper-c5ccc134-1033-44dc-9040-1cce795001cc\">\n    <span class=\"hs-cta-node hs-cta-c5ccc134-1033-44dc-9040-1cce795001cc\" id=\"hs-cta-c5ccc134-1033-44dc-9040-1cce795001cc\">\n        <!--[if lte IE 8]><div id=\"hs-cta-ie-element\"></div><![endif]-->\n        <a href=\"http://cta-redirect.hubspot.com/cta/redirect/56434/c5ccc134-1033-44dc-9040-1cce795001cc\" ><img class=\"hs-cta-img\" id=\"hs-cta-img-c5ccc134-1033-44dc-9040-1cce795001cc\" style=\"border-width:0px;\" src=\"https://no-cache.hubspot.com/cta/default/56434/c5ccc134-1033-44dc-9040-1cce795001cc.png\"  alt=\"BACK TO HOMEPAGE\"/></a>\n    </span>\n    <script charset=\"utf-8\" src=\"https://js.hscta.net/cta/current.js\"></script>\n    <script type=\"text/javascript\">\n        hbspt.cta.load(56434, 'c5ccc134-1033-44dc-9040-1cce795001cc', {});\n    </script>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                  "guid" : "c5ccc134-1033-44dc-9040-1cce795001cc",
+                  "image_html" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" data-hs-img-pg=\"c5ccc134-1033-44dc-9040-1cce795001cc\" id=\"hs-cta-wrapper-c5ccc134-1033-44dc-9040-1cce795001cc\">\n    <span class=\"hs-cta-node hs-cta-c5ccc134-1033-44dc-9040-1cce795001cc\" id=\"hs-cta-c5ccc134-1033-44dc-9040-1cce795001cc\">\n        <a href=\"http://www.sparkreaction.com/cs/ci/?pg=c5ccc134-1033-44dc-9040-1cce795001cc&pid=56434&ecid={{encrypted_contact_id}}\" > <img class=\"hs-cta-img\" id=\"hs-cta-img-c5ccc134-1033-44dc-9040-1cce795001cc\" style=\"border-width:0px;\" mce_noresize=\"1\" src=\"http://www.sparkreaction.com/cs/il/?pg=c5ccc134-1033-44dc-9040-1cce795001cc&pid=56434&ecid={{encrypted_contact_id}}\"  alt=\"BACK TO HOMEPAGE\"/></a>\n    </span>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                  "image_src" : "https://no-cache.hubspot.com/cta/default/56434/c5ccc134-1033-44dc-9040-1cce795001cc.png"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "pt40 button blue",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1481638527782954",
+                "label" : "Social Icon",
+                "type" : "raw_html",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "socialIcons blue leftAligned pt60",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "value" : "<a href=\"#\" class=\"facebook\"><i class=\"fa fa-facebook\"></i></a>\r\n<a href=\"#\" class=\"twitter\"><i class=\"fa fa-twitter\"></i></a>\r\n<a href=\"#\" class=\"linkedin\"><i class=\"fa fa-linkedin\"></i></a>\r\n<a href=\"#\" class=\"youtube\"><i class=\"fa fa-youtube\"></i></a>\r\n<a href=\"#\" class=\"googlePlus\"><i class=\"fa fa-google-plus\"></i></a>\r\n<a href=\"#\" class=\"instagram\"><i class=\"fa fa-instagram\"></i></a>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "socialIcons blue leftAligned pt60",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "wrapper",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "thankYouSec2 topStrip",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148160899397424",
+        "label" : "Oceania Theme 2016/Oceania Footer 2016",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Oceania Theme 2016/Oceania Theme 2016/Oceania Footer 2016.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,126 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Landing Page"
+-->
+
+{% set branch = 'blog' %}
+{% set template_body_classes = 'landing' %}
+{% extends '../partials/base-landing.html' %}
+
+{% block body %}
+  {% dnd_area "form", class="colored-section colored-section--landing landing-hero" %}
+
+    {# ---- Hero ---- #}
+
+    {% dnd_section 
+      max_width=1240,
+      vertical_alignment='MIDDLE',
+      padding={
+        'top': 70,
+        'bottom': 70
+      }
+    %}
+      {% dnd_column offset=0, width=6 %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h1><em>Resource Type</em>Article Title Goes Right Here Lorem Ipsum Dolort</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>", cta=[""], design={"max_width": 425, "color_theme": "landing"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Social Sharing", label="Vault - Social Sharing" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+      {% dnd_column offset=6, width=6 %}
+        {% dnd_row %}
+          {% dnd_module "horizontal_spacer" path="@hubspot/horizontal_spacer" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    
+  {% end_dnd_area %}
+
+  {% dnd_area "main", class="main" %}
+
+    {# ---- Form ---- #}
+
+    {% dnd_section 
+      max_width=1240,
+      vertical_alignment='TOP',
+      padding={
+        'top': 50,
+        'bottom': 100
+      }
+    %}
+      {% dnd_column offset=0, width=6 %}
+        {% dnd_row %}
+          {% dnd_module path="@hubspot/rich_text", label="Rich Text" %}
+            {% module_attribute "html" %}
+              <h4>Optional Sub-Headline Text Goes Heret</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna et aliquyam erat, sed iam voluptua. At vero eos et accusam et justo duo dolores et ea rebum a diam sit amet mi ullamcorpe.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Amet, consectetuer tempor</li>
+                <li>Adipiscing elit dolore magna</li>
+              </ul>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Signature", label="Vault - Signature" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+      {% dnd_column offset=6, width=6 %}
+        {% dnd_row %}
+          {% dnd_module "form" path="@hubspot/form" title="Form Headline Goes Here" form={"form_id": "c438b74e-7b7e-4caf-b8b0-06538f21cbe6"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section 
+      max_width=800,
+      vertical_alignment='TOP'
+      padding={
+        'top': 0,
+        'bottom': 100
+      }
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2 style='text-align: center;'>Optional Section for More Content</h2><p class='subtitle' style='text-align: center;'>Optional subheadline text goes here</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>", cta=[], design={"max_width": 800, "module_alignment": "center"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Columns", label="Vault - Columns", design={"max_width": 800, "module_alignment": "left"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="", cta=["96e18057-eef0-476f-bd09-c226f73faeb9"], design={"max_width": 800, "module_alignment": "center"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# ---- Blog ---- #}
+    {% dnd_section
+       max_width=1050,
+       vertical_alignment='MIDDLE',
+       background_image = {
+         'backgroundPosition': 'MIDDLE_CENTER',
+         'backgroundSize': 'cover',
+         'imageUrl': '//f.hubspotusercontent30.net/hubfs/56434/vault/backgrounds/light-texture-background.png'
+       },
+       padding={
+         'top': 100,
+         'bottom': 100
+       } %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2><em>Discover More</em>Latest From Our Blog</h2>", cta=[], design={"max_width": 375, "text_alignment": "center", "module_alignment": "center"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+
+        {% dnd_row padding={'top': 75} %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Latest Blog Posts", label="Vault - Latest Blog Posts"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock %}

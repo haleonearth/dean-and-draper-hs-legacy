@@ -1,0 +1,214 @@
+[ {
+  "id" : "8683032e-5d4c-a9d7-efc5-28521391efb3",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "6d1fc146-b05c-98c8-5a10-e525671d5685",
+  "name" : "section",
+  "display_width" : null,
+  "label" : "Section",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "6e45594c-db4a-acd0-264b-45911266bf1b",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "bd47e76a-ebf4-2166-7289-13e99072da8c",
+    "name" : "section_color",
+    "display_width" : null,
+    "label" : "Section Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "light", "Light" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "beta", "Beta" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "855d7928-0893-3287-444b-3eb5ebd765f1",
+    "name" : "alignment",
+    "display_width" : null,
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "6e45594c-db4a-acd0-264b-45911266bf1b",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h1>Your Catchy Headline Here Lorem</h1>"
+  }, {
+    "id" : "9fb5bfc0-571a-e826-c58e-9214a62f85ec",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image (540px wide)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/images/email/email-placeholder.png",
+      "alt" : "email-placeholder",
+      "width" : 540,
+      "height" : 262
+    }
+  }, {
+    "id" : "195bc8bd-514d-5f0c-126c-32c481c0a40a",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis pretium venenatis. Sed fringilla tempus turpis eget molestie. Ut non libero purus. Aenean eu posuere tellus, vel vehicula augue. Curabitur vulputate consequat turpis, vel malesuada augue facilisis a. Donec eu dolor pharetra, lacinia tellus iaculis, varius ex. Duis elementum, dolor sed rutrum euismod, nisl neque commodo massa, eget feugiat mi elit at justo.</p><h3>Subheadline Goes here</h3><p>Donec dapibus auctor pharetra. Curabitur egestas nisi at nunc fermentum, eget pharetra nisi facilisis.</p><p>Sincerly,<br/>Judy Grimes</p>"
+  }, {
+    "id" : "aae5aa83-10de-9154-727a-7e7eb053eba3",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "23dccd4b-8128-7c77-4fbc-ff8cfa3334c8",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "center"
+    }, {
+      "id" : "d0069895-3496-ae2d-5e81-306f93b281fc",
+      "name" : "width",
+      "display_width" : null,
+      "label" : "Width",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 150
+    }, {
+      "id" : "b8c9f62a-4e45-9e4c-c7e5-62ff8cb7f00d",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "beta", "Beta" ], [ "alpha", "Alpha" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : ""
+    }, {
+      "id" : "f785e462-1b9b-f865-6012-485ceb304917",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    }, {
+      "id" : "cc71130c-5d38-a9d8-f615-7635fecc2792",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "alignment" : "center",
+      "width" : 150,
+      "color" : "beta",
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "section_color" : "base",
+    "alignment" : "left",
+    "heading" : "<h1>Your Catchy Headline Here Lorem</h1>",
+    "image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/images/email/email-placeholder.png",
+      "alt" : "email-placeholder",
+      "width" : 540,
+      "height" : 262
+    },
+    "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis pretium venenatis. Sed fringilla tempus turpis eget molestie. Ut non libero purus. Aenean eu posuere tellus, vel vehicula augue. Curabitur vulputate consequat turpis, vel malesuada augue facilisis a. Donec eu dolor pharetra, lacinia tellus iaculis, varius ex. Duis elementum, dolor sed rutrum euismod, nisl neque commodo massa, eget feugiat mi elit at justo.</p><h3>Subheadline Goes here</h3><p>Donec dapibus auctor pharetra. Curabitur egestas nisi at nunc fermentum, eget pharetra nisi facilisis.</p><p>Sincerly,<br/>Judy Grimes</p>",
+    "button" : {
+      "alignment" : "center",
+      "width" : 150,
+      "color" : "beta",
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

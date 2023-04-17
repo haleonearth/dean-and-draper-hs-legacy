@@ -1,0 +1,7 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+.collapsible-text{border-top:1px solid #e4e4e4}.collapsible-text:last-child{border-bottom:1px solid #e4e4e4}.collapsible-text__body,.collapsible-text__title{padding:20px}.collapsible-text__body{padding-top:0}.collapsible-text__title h3{cursor:pointer;font-stretch:condensed;transition:.2s color;outline:0;padding-right:54px;position:relative;font-size:18px;line-height:28px}.collapsible-text__title h3:focus,.collapsible-text__title h3:hover{color:var(--links-hover-color);font-weight:700}.collapsible-text__title h3::after{content:"";position:absolute;right:20px;top:0;bottom:0;width:13px;height:20px;margin:auto;background-image:url(//cdn2.hubspot.net/hubfs/56434/raw_assets/public/vault/assets/images/icons/icon-select-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat}.collapsible-text--active .collapsible-text__title h3::after{transform:rotate(180deg)}.collapsible-text__body-wrapper{margin-top:0;display:none}.collapsible-text--active .collapsible-text__body-wrapper{display:block}.collapsible-text--active .collapsible-text__title h3{font-weight:500}

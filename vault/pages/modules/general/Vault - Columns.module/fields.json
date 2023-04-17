@@ -1,0 +1,114 @@
+[ {
+  "id" : "columns",
+  "name" : "columns",
+  "display_width" : null,
+  "label" : "Columns",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "columns.text",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Pellentesque Ut Adipiscing Eros</h3><ul><li>Lorem ipsum dolor sit amet, consetet et ut a</li><li>Sadipscing elitr, sed diam nonumy tortor ne</li><li>Eirmod tempor invidunt ut labore et dolor sit</li></ul>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text" : "<h3>Pellentesque Ut Adipiscing Eros</h3><ul><li>Lorem ipsum dolor sit amet, consetet et ut a</li><li>Sadipscing elitr, sed diam nonumy tortor ne</li><li>Eirmod tempor invidunt ut labore et dolor sit</li></ul>"
+  }, {
+    "text" : "<h3>Pellentesque Ut Adipiscing Eros</h3><ul><li>Lorem ipsum dolor sit amet, consetet et ut a</li><li>Sadipscing elitr, sed diam nonumy tortor ne</li><li>Eirmod tempor invidunt ut labore et dolor sit</li></ul>"
+  } ]
+}, {
+  "id" : "design",
+  "name" : "design",
+  "display_width" : null,
+  "label" : "Design",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "color_theme",
+    "name" : "color_theme",
+    "display_width" : null,
+    "label" : "Color Theme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "alpha-dark", "Alpha Dark" ], [ "landing", "Landing" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "text_size",
+    "name" : "text_size",
+    "display_width" : null,
+    "label" : "Text Size",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "base", "Base" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "max_width",
+    "name" : "max_width",
+    "display_width" : null,
+    "label" : "Max Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "design.text_alignment",
+    "name" : "text_alignment",
+    "display_width" : null,
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "design.module_alignment",
+    "name" : "module_alignment",
+    "display_width" : null,
+    "label" : "Module Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

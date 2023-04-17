@@ -1,0 +1,149 @@
+<section id="resources-listing" class="thumbnail-links-wrapper thumbnail-links-wrapper--resources" v-cloak>
+		{% if module.display_options.display_filters %}
+			<!-- Filters -->
+			<header class="thumbnail-links-wrapper__header filters" tabindex="0">
+				{% if module.display_options.display_filters %}
+				  <filter-dropdown v-for="filter in filters"
+													 :key="'filter-' + filter.name"
+													 :filter="filter"
+													 :options="filterOptions(filter.name)"
+													 :active-item="activeFilters[filter.name]"
+													 @set-active="setActiveFilter"
+													 @clear-active="clearActiveFilter"></filter-dropdown>
+			 {% endif %}
+			 <!-- Search-->
+			 {% if module.display_options.display_search %}
+				<div class="filters__item filters__item--search">
+				 <div :class="['search-form', 'search-form--resources', searchActive ? 'search-form--active' : '']">
+					 <div class="search-form__inner">
+							<button class="search-form__submit" aria-label="Search" @click="toggleSearch"></button>
+							<label for="resources-search" class="search-form__label">Search</label>
+							<input type="search" v-model="search" id="resources-search" class="search-form__input" placeholder="Search" @blur="handleSearchBlur" @keydown.esc="search = ''">
+					 </div>
+					</div>
+				</div>
+				{% endif %}
+			</header>
+		{% endif %}
+		<!-- Item Listing -->
+		<!-- If 0 items match filter criteria -->
+		<p v-if="filteredResources.length === 0" class="thumbnail-links-wrapper__error">
+			No resources found. Try adjusting your filters or
+			<button class="thumbnail-links-wrapper__reset button" @click="resetFilters">view all</button>
+		</p>
+		<div class="thumbnail-links-wrapper__items" data-per-row="{{ module.display_options.items_per_row }}">
+			<thumbnail-link v-if="sort.length > 0"
+											v-for="resource in sort"
+                      :key="resource.hs_id"
+                      :day="resource.date_num"
+                      :month="resource.date_month"
+											:title="resource.title"
+											:summary="resource.summary"
+											:url="resource.url"
+											:thumbnail="resource.image"></thumbnail-link>
+		</div>
+		<!-- Show More Items -->
+		<div class="thumbnail-links-wrapper__actions">
+			<button class="thumbnail-links-wrapper__more button" @click="nextPage" v-if="filteredResources.length > maxShown" role="button">Load More</button>
+		</div>
+
+</section>
+
+<!-- Filter Template -->
+<template id="filter-dropdown">
+  <div :class="['filters__item', 'filters__item--filter', 'select-nav', open ? 'select-nav--active' : '']">
+	  {% if module.display_options.filters|length > 1 || module.display_options.filter_dropdowns %}
+      {% raw %}
+        <button class="select-nav__label" v-if="activeItem" tabindex="0" @click="open = !open">{{ activeItem.name }}</button>
+        <button class="select-nav__label select-nav__label--active" tabindex="0" v-else @click="open = !open">Filter by {{ filter.label}}</button>
+      {% endraw %}
+		{% endif %}
+    <ul class="select-nav__options">
+      <li @click="clearActive" @keypress.enter="clearActive" tabindex="0" v-if="activeItem">All</li>
+			<li v-if="options.length === 0">There are no options available matching your other filters.</li>
+      {% raw %}
+        <li v-for="option in options" @click="setActive(option)" @keypress.enter="setActive(option)" tabindex="0" v-if="typeof activeItem === 'undefined' || option.name !== activeItem.name">
+          {{ option.name }}
+        </li>
+      {% endraw %}
+    </ul>
+  </div>
+</template>
+<!-- Thumbnail -->
+<template id="thumbnail-link">
+  {% raw %}
+    <a :href="url" class="vault-blog-posts__post span4">
+      <div class="vault-blog-posts__post-image__wrapper">
+        <div class="vault-blog-posts__post-image" :style="thumbnail.src || thumbnail.url ? 'background-image: url(\'' + (thumbnail.src ? thumbnail.src : thumbnail.url) + '\');' : ''"></div>
+      </div>
+
+      <div class="vault-blog-posts__post-details">
+        <div class="vault-blog-posts__event">
+          <div class="vault-blog-posts__event-date"><span class="month">{{ month }}</span><span class="day">{{ day }}</span></div>
+          <h3>{{ title }}</h3>
+        </div>
+
+        <p class="colored-section colored-section--dark vault-blog-posts__post-more"><span class="link-cta">Reserve Your Spot</span></p>
+      </div>
+    </a>
+  {% endraw %}
+</template>
+<!-- Grab Info From HubDB -->
+<script>
+  window.sortOrder = {{ module.display_options.order_by|tojson }};
+  window.rowsPerPage = {{ module.display_options.rows_per_page|tojson }};
+	window.itemsPerRow = {{ module.display_options.items_per_row|tojson }};
+	window.filters = {
+		{% for column in module.display_options.filter %}
+			{% set column_info = hubdb_table_column(module.hubdb.hubdb_table, column) %}
+			"{{ column }}": {{ column_info|tojson }}{% if not loop.last %},{% endif %}
+    {% endfor %}
+  }
+
+  window.resources = [
+    {% set filter = '' %}
+    {% if module.hubdb.sort_column %}
+      {% set filter = filter ~ '&orderBy=' ~ module.hubdb.sort_column %}
+    {% endif %}
+
+    {% set hubdb = hubdb_table_rows(module.hubdb.hubdb_table, filter) %}
+    {% for resource in hubdb %}
+      {
+        hs_id: {{ resource.hs_id }},
+        title: {{ resource[module.hubdb.title_column]|tojson }},
+        summary: {{ resource[module.hubdb.summary_column]|tojson }},
+        url: {{ resource[module.hubdb.url_column]|tojson }},
+        image: {
+          src: {{ resource[module.hubdb.image_column].url|tojson if resource[module.hubdb.image_column].url else module.default_image.src|tojson }}
+        },
+        sortable_date: {{ resource.sortable_date }},
+        date_num: {{ resource[module.hubdb.date_column]|datetimeformat('%d')|tojson }},
+        date_month: {{ resource[module.hubdb.date_column]|datetimeformat('%b')|tojson }},
+        {% for column in module.display_options.filter %}
+          {{ column }} : {{ resource[column]|tojson }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      },
+    {% endfor %}
+	];
+</script>
+
+<script type="application/ld+json">
+  {% for resource in hubdb %}
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": {{ resource[module.hubdb.title_column]|tojson }},
+    "startDate": {{ resource.sortable_date|datetimeformat('%Y - %m - %d')|tojson }},
+    "endDate": {{ resource.sortable_date|datetimeformat('%Y - %m - %d')|tojson }},
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": {{ resource[module.hubdb.url_column]|tojson }}
+    },
+    "image": [
+      {{ resource[module.hubdb.image_column].url|tojson }}
+    ]
+  }
+  {% endfor %}
+</script>

@@ -1,0 +1,16 @@
+[ {
+  "id" : "form_field",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form field",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "29244d3c-0708-4a5b-8e45-4a1e7349e703",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

@@ -1,0 +1,54 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Thank You Page"
+-->
+
+{% set branch = 'blog' %}
+{% extends '../partials/base.html' %}
+
+{% block body %}
+  {% dnd_area "main", class="main" %}
+
+    {# ---- Thank You ---- #}
+
+    {% dnd_section 
+      max_width=800,
+      vertical_alignment='MIDDLE'
+      padding={
+        'top': 100,
+        'bottom': 100
+      }
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h1>Thank You!</h1><p class='subtitle' style='margin-top: 0;'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>", cta=["7723c700-40ff-49e3-bed3-a076e19ab6fa"], design={"max_width": 800, "text_alignment": "center", "module_alignment": "center"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# ---- Blog ---- #}
+    {% dnd_section
+       max_width=1050,
+       vertical_alignment='MIDDLE',
+       background_image = {
+         'backgroundPosition': 'MIDDLE_CENTER',
+         'backgroundSize': 'cover',
+         'imageUrl': '//f.hubspotusercontent30.net/hubfs/56434/vault/backgrounds/light-texture-background.png'
+       },
+       padding={
+         'top': 100,
+         'bottom': 100
+       } %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2><em>Discover More</em>Latest From Our Blog</h2>", cta=[], design={"max_width": 375, "text_alignment": "center", "module_alignment": "center"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+
+        {% dnd_row padding={'top': 75} %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Latest Blog Posts", label="Vault - Latest Blog Posts"} %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock %}

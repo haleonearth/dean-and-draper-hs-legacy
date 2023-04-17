@@ -1,0 +1,338 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{# ************************************************************ #}
+{#                                                              #}
+{#                _/_/_/    _/    _/        _/_/_/_/            #}
+{#                    _/   _/    _/              _/             #}
+{#                  _/    _/_/_/_/  _/_/_/      _/              #}
+{#               _/            _/              _/               #}
+{#            _/_/_/_/        _/              _/                #}
+{#                                                              #}
+{#         HubSpot Email Template 'Season's Greetings'          #}
+{#                                                              #}
+{# ************************************************************ #}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+{% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}">{% endif %}
+
+<style>
+body {
+margin: 0;
+padding: 0;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+table {
+border-spacing: 0;
+}
+table td {
+border-collapse: collapse;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+line-height: 100%;
+}
+.ReadMsgBody {
+width: 100%;
+background-color: #ebebeb;
+}
+table {
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+img {
+-ms-interpolation-mode: bicubic;
+}
+.yshortcuts a {
+border-bottom: none !important;
+}
+
+@media screen and (max-width: 599px) {
+.force-row,
+.container {
+width: 100% !important;
+max-width: 100% !important;
+}
+}
+@media screen and (max-width: 400px) {
+.container-padding {
+padding-left: 12px !important;
+padding-right: 12px !important;
+}
+}
+.ios-footer a {
+color: #aaaaaa !important;
+text-decoration: underline;
+}
+@media screen and (max-width: 599px) {
+.col {
+width: 100% !important;
+}
+.col-static {
+padding-bottom: 0 !important;
+}
+.cols-quote .col {
+width: inherit !important;
+}
+.cols-quote .col {
+width: inherit !important;
+}
+.cols-header .col {
+width: inherit !important;
+}
+.col-book .col {
+padding-bottom: 24px !important;
+}
+.cols-company .col,
+.cols-unsubscribe .col {
+padding-top: 12px !important;
+padding-bottom: 12px !important;
+}
+.cols-wrapper.cols-nav {
+padding-top: 0;
+}
+.img-wrapper {
+float: right;
+max-width: 40% !important;
+height: auto !important;
+margin-left: 12px;
+}
+.img-wrapper.no-float {
+float: none;
+max-width: 100% !important;
+margin-left: 0;
+}
+.img-wrapper img {
+width: auto !important;
+}
+.cols4 .img-wrapper {
+float: left;
+margin-left: 0;
+margin-right: 12px;
+}
+.subtitle {
+margin-top: 0 !important;
+}
+}
+@media screen and (max-width: 400px) {
+.cols-wrapper {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.content-wrapper {
+padding-left: 12px !important;
+padding-right: 12px !important;
+}
+.col-nav td {
+padding-left: 12px !important;
+padding-right: 6px !important;
+}
+}
+
+.col-nav a {
+color: {{ accent_color }} !important;
+}
+
+</style>
+
+
+</head>
+
+{% set outer_background_color = "#eeeeee" %}
+{% set base_text_color = "#888888" %}
+{% set base_headlines_color = "#000000" %}
+{% set accent_background_color = "#EFC64F" %}
+{% set accent_color = "#ffffff" %}
+{% set border_radius = "5px" %}
+
+<body bgcolor="{{ outer_background_color }}" link="{{ accent_color }}" alink="{{ accent_color }}" vlink="{{ accent_color }}" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color: {{ outer_background_color }}; color: {{ base_text_color }}; font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; margin: 0; padding: 0;">
+
+<!-- 100% background wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="{{ outer_background_color }}">
+<tr>
+<td align="center" valign="top" bgcolor="{{ outer_background_color }}" style="background-color: {{ outer_background_color }};">
+<br>
+<!-- 600px container (white background) -->
+<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" style="border-top: 5px solid #EFC64F; max-width: 600px; width: 600px;">
+<tr>
+<td class="content" align="left" style="background-color: #ffffff; font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+
+<table width="600" border="0" cellpadding="0" cellspacing="0" class="force-row" style="width: 600px;">
+
+<tr>
+<td class="cols-wrapper cols2 cols-header" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-bottom: 15px; padding-left: 12px; padding-right: 12px; padding-top: 15px;">
+
+<!--[if mso]>
+<table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;">
+<tr><td width="576" style="width: 576px;" valign="top">
+<![endif]-->
+<table width="576" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 576px;">
+<tr>
+<td class="col" valign="top" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; padding-top: 18px;">
+<!--[if mso]>
+<table border="0" width="552" cellpadding="0" cellspacing="0" style="width: 552px;">
+<tr><td width="552" style="width: 552px;" valign="top">
+<![endif]-->
+<table width="552" border="0" cellpadding="0" cellspacing="0" class="force-row" style="width: 552px;">
+<tr>
+<td style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+{% image 'logo' src='https://cdn2.hubspot.net/hubfs/212206/marketplace/email-seasons/hello-summer-hero-logo.png' label='Logo' width='92' class='image' style='max-width:100%' no_wrapper=true border='0' hspace='0' vspace='0' %}
+</td>
+<td valign="middle" align="right" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+{% social_sharing "social_sharing" no_wrapper=true %}
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+
+<tr>
+<td style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+{% image 'hero' src='https://cdn2.hubspot.net/hubfs/212206/marketplace/email-seasons/hello-summer-hero.png' label='Hero image' width='600' class='image' style='max-width:100%' no_wrapper=true border='0' hspace='0' vspace='0' %}
+</td>
+</tr>
+
+
+<tr>
+<td class="cols-wrapper cols1" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-left: 12px; padding-right: 12px;">
+<!--[if mso]>
+<table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;">
+<tr><td width="576" style="width: 576px;" valign="top">
+<![endif]-->
+{% widget_block rich_text 'content' label='Content' overridable=true no_wrapper=true %}
+{% widget_attribute 'html' no_wrapper=true %}
+<table width="576" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 576px;">
+<tr>
+<td class="col" valign="top" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; padding-top: 18px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="subtitle" style="color: {{ base_headlines_color }}; font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; font-size: 20px; font-weight: 600; padding-bottom: 10px;">
+Lorem ipsum dolor sit amet
+</td>
+</tr>
+</table>
+<div class="col-copy" style="color: {{ base_text_color }}; font-size: 13px; line-height: 1.7em; text-align: left;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+<br>
+<table width="260" height="48" border="0" cellpadding="0" cellspacing="0" align="center" class="button" style="background-color: {{ accent_background_color }}; border-radius: {{ border_radius }}; color: {{ accent_color }}; height: 48px; line-height: 100%; margin: 0 auto; padding-bottom: 12px; padding-top: 12px; text-align: center; width: 260px;">
+<tr>
+<td style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+<a href="#" style="color: {{ accent_color }}; font-weight: bold; text-decoration: none;">READ MORE</a>
+</td>
+</tr>
+</table>
+<br>
+<div class="col-copy-01" style="color: {{ base_text_color }}; font-size: 13px; line-height: 1.7em; padding-bottom: 15px; text-align: left;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+</td>
+</tr>
+</table>
+{% end_widget_attribute %}
+{% end_widget_block %}
+
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+
+<tr>
+<td class="cols-wrapper col1" style="background: #EFC64F; font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-left: 12px; padding-right: 12px;">
+<!--[if mso]>
+<table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;">
+<tr><td width="576" style="width: 576px;" valign="top">
+<![endif]-->
+<table width="576" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 576px;">
+<tr>
+<td class="col" valign="top" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; padding-top: 18px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+<div class="col-copy company-footer" style="color: #fff; font-size: 13px; line-height: 1.7em; text-align: left;">
+{% widget_block rich_text 'company_information' label='Company information' overridable=true no_wrapper=true %}
+{% widget_attribute 'html' %}
+© {{ year }} {{ site_settings.company_name }}<br>
+{{site_settings.company_street_address_1}} {{site_settings.company_street_address_2}} {{site_settings.company_state}} {{site_settings.company_city}}<br>
+http://24-7.co.jp/
+{% end_widget_attribute %}
+{% end_widget_block %}
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+
+</table>
+
+</td>
+</tr>
+
+
+<!-- Unsubscribe -->
+<tr>
+<td class="cols-wrapper cols-unsubscribe" style="color: #aaa; font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-left: 12px; padding-right: 12px;">
+<!--[if mso]>
+<table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;">
+<tr><td width="576" style="width: 576px;" valign="top">
+<![endif]-->
+<table width="576" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 576px;">
+<tr>
+<td class="col" valign="top" style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; padding-top: 18px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', 'Osaka', Arial, sans-serif;">
+<div class="col-copy" style="color: {{ base_text_color }}; font-size: 13px; line-height: 1.7em; text-align: left;">
+{% widget_block rich_text 'unsubscribe' label='Unsubscribe' overridable=true no_wrapper=true %}
+{% widget_attribute 'html' %}
+You received this email because you are subscribed to {{ subscription_name }} from {{site_settings.company_name}}. If you prefer no to receive emails from {{site_settings.company_name}} you may <a target="_blank" href="{{unsubscribe_link_all}}" data-unsubscribe="true" style="color: #aaa;">unsubscribe</a> or set your email <a target="_blank" href="{{unsubscribe_link}}" data-unsubscribe="true" style="color: #aaa;">preferences</a>.
+{% end_widget_attribute %}
+{% end_widget_block %}
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<!-- /Unsubscribe -->
+
+</table>
+<!--/600px container -->
+
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

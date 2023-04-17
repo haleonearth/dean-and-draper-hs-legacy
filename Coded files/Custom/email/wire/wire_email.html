@@ -1,0 +1,266 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    <meta content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}" property="og:title">
+	<meta content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}" name="twitter:title">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+	<style id="hs-inline-css" type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+        
+        [style*="Franklin"] {
+            font-family: 'Libre Franklin', Helvetica, Arial, Verdana, Trebuchet MS !important;
+            line-height: 1.1;
+        }
+        [style*="Open Sans"] {
+            font-family: 'Open Sans', Helvetica, Arial, Verdana, Trebuchet MS !important;
+        }
+    
+		{% set horizontalPadding = "20px" %}
+		{% set textBaselineColor = "#444" %}
+		{% set textBaselineSize = "15px" %}
+
+   		/*<![CDATA[*/
+		/* everything in this node will be inlined */
+
+		/* ==== Specific to this email ==== */
+		body{
+			background: #efefef;
+            font-family: sans-serif, 'Open Sans';
+		}
+
+		#backgroundTable{
+			width: 600px; 
+			margin: 10px auto 20px; 
+			background: #ffffff;
+			border: 1px solid #ddd;
+		}
+
+		.main-heading,
+		.main-content{
+			font-family: sans-serif, 'Open Sans';
+            text-align: center;
+		}
+
+		/* cross platform inset */
+		.main-inset{
+			padding: 15px {{ horizontalPadding }} 50px;
+		}
+        h1 {
+            font-weight: 900;
+            font-size: 36px;
+        }
+
+		p{
+            font-size: 14px;
+            line-height: 1.5;
+		}
+
+		/* ==== Baseline Styles ==== */
+
+       	*{
+	        -webkit-font-smoothing: antialiased;
+		}
+
+		/* ==== Base utility classes ==== */
+		/* cross platform full width */
+		.hundred-wide{
+			width: 100%;
+			min-width: 100%;
+		}
+
+		/* ==== Resets ==== */
+		.ExternalClass{
+		   width:100%;
+		} /* Force Hotmail to display emails at full width */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+		   line-height: 100%;
+		} /* Force Hotmail to display normal line spacing */
+		body, table, td, p, a, li, blockquote{
+		   -webkit-text-size-adjust:100%;
+		   -ms-text-size-adjust:100%;
+		} /* Prevent WebKit and Windows mobile changing default text sizes */
+		table, td {
+		   mso-table-lspace:0pt;
+		   mso-table-rspace:0pt;
+		} /* Remove spacing between tables in Outlook 2007 and up */
+		img {
+		   vertical-align: bottom;
+		   -ms-interpolation-mode:bicubic;
+		} /* Allow smoother rendering of resized image in Internet Explorer */
+
+		/* Reset Styles */
+		body {
+		   margin:0;
+		   padding:0;
+		}
+		table {
+		  /* border-collapse:collapse !important;*/
+		}
+		a:link, a:visited {
+		   border-bottom: none;
+		}
+
+		/* iOS automatically adds a link to addresses */
+		/* Style the footer with the same color as the footer text */
+		#footer a {
+		   color: {{ secondary_font_color }};;
+		   -webkit-text-size-adjust: none;
+		   text-decoration: underline;
+		   font-weight: normal;
+		}
+   
+       	/*]]>*/
+	</style>
+	<style type="text/css">
+
+		/* ==== Styles for progressive clients ==== */
+		
+		@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
+		[style*="serif"] {
+			font-family: 'Merriweather', Georgia, serif !important;
+		}
+    	[style*="sans-serif"] {
+			font-family: 'Open Sans', Helvetica, Arial serif !important;
+		}
+
+		@media screen{
+			.newsletter-name{
+			//	font-weight: 300 !important;
+				letter-spacing: -.02em;
+			}
+			.main-heading{
+			//	font-weight: 700 !important;
+			}
+			h2, 
+			strong,
+			.newsletter-name,
+			.caption{
+				font-family: 'Open Sans', Helvetica, Arial, Verdana, Trebuchet MS !important;
+			}
+			h2,
+			strong{
+			//	font-weight: 700 !important;
+			}
+			p{
+			//	font-weight: 300 !important;
+			}
+		}
+		@media (max-width: 650px){
+			.main-heading{
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+			.social-media img{
+				width: 20px !important;
+			}
+			img{
+				width: 100% !important;
+				height: auto !important;
+			}
+		}
+		@media (max-width: 480px){
+			body,
+			#backgroundTable,
+            #vapTable{
+				width: 100% !important;
+			}
+			.main-inset{
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+			.main-heading{
+				font-size: 32px !important;
+			}
+			.social-media{
+				margin: 0 auto;
+				float: none;
+			}
+			.logo,
+			.social{
+				text-align: center !important;
+			}
+			.social{
+				padding-bottom: 50px;
+			}
+		}
+
+	</style>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 20px auto 0px;" id="vapTable">
+        <tr>
+            <td class="hundred-wide" style="text-align: right; font-size: 11px; font-family: sans-serif;">
+                {{ view_as_page_section }}
+            </td>
+        </tr>
+    </table>
+	<table align="center" bgcolor="{{ background_color }}" border="0" cellpadding="0" cellspacing="0" id="backgroundTable">
+		<tr><td class="main-inset hundred-wide" style="background-color:#000;"><!-- For cross platform padding -->
+		<table class="hundred-wide"><!-- Main content table -->
+		<tbody>
+		<tr>
+			<td class="hundred-wide" style="padding-top: 20px; padding-bottom: 60px;">
+				<table class="hundred-wide">
+					<tr>
+						<td style="text-align: center;">{% logo "logo_image" overrideable=true, suppress_company_name=true, src='https://cdn2.hubspot.net/hubfs/762525/Wire/wire-logo.png', img_alt='wire-logo.png', width=86, height=33, img_load_error=false, override_inherited_src=true, alt='Wire Logo', link='null', open_in_new_tab=false, label='Logo'%}</td>
+					
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="" style="font-size: 34px; text-align: center; font-weight: 500; text-transform: uppercase; font-weight: 600; padding-bottom: 15px; color: #fff; font-family: sans-serif, Franklin Libre;">{% text "newsletter_name" overrideable=true, ending_html='', starting_html='', value='Introducing', label='Line 1'%}</td>
+		</tr>
+    	<tr>
+			<td class="" style="text-align: center; font-weight: 100; font-size: 72px; color: #fff; font-family: sans-serif, Franklin Libre; padding-bottom: 30px;line-height: 1.1;">{% text "main_heading" overrideable=true, ending_html='', starting_html='', value='Version 2.0', label='Line 2'%}</td>
+		</tr>
+    	<tr>
+			<td class="" style="text-align: center; font-size: 24px; font-weight: 200;  color: #fff; font-family: sans-serif, Franklin Libre;line-height: 1.4; padding-left: 40px; padding-right: 40px; padding-bottom: 70px;">{% textarea "main_sub_heading", value='Now that you\'ve grabbed some attention, give your reader a little more context and a compelling reason to click the CTA.', label='Line 3'%}</td>
+		</tr>
+        <tr>
+            <td style="text-align: center;padding-bottom: 50px;">{% cta "wire_cta" label='Select a CTA', guid='bc373872-12db-4210-92ee-857f68b01e14' %}</td>
+        </tr>
+		</tbody>
+	</table><!-- Main content table -->
+	</td><!-- Cross platform padding cell -->
+	</tr>
+	<tr>
+    	 <td>
+             {% linked_image "splash_image" overrideable=true, ending_html='', starting_html='', src='https://cdn2.hubspot.net/hubfs/762525/Wire/wire-main-image.png', original_width=700, original_height=468, img_alt='wd3y2ygdjpk-josh-boot.jpg', img_load_error=false, width=600, height=400, alt='wd3y2ygdjpk-josh-boot.jpg', link='', open_in_new_tab=false, label='Main Image', style='max-width: 100% !important; width: 100%;' %}
+    	 </td>   
+		</tr>
+         <tr><td class="main-inset hundred-wide" style="background-color:#f6f6f6;"><!-- For cross platform padding -->
+		<table class="hundred-wide"><!-- Main content table -->
+		<tbody>
+
+		<tr>
+			<td style="padding-top: 10px; padding-bottom: 50px;" class="main-content">
+				{% content_attribute "email_body" %}
+    			<h1>More Details</h1>
+				<p><strong>Describe what you have to offer the customer. Why should they read? What did you promise them in the subject line?</strong></p>
+				<p>Here's where you can craft a nice personable message to cover all the details your reader might like to know before they click through. Make it fun and interesting. Make it helpful and short. </p>
+				{% end_content_attribute %}
+			</td>
+		</tr>
+        <tr>
+            <td style="padding-bottom: 25px;">{% custom_widget "wire_social_media" overrideable=true, ending_html='', starting_html='', widget_name='Wire Social Media', label='Social Media'%}</td>
+    	</tr>
+		<tr>
+			<td>
+				<p id="footer" style="text-align: center; font-size: 12px; line-height: 1em; color: {{ secondary_font_color }}; display: block"><input class="hubspot-mergetag" data-canspam="{{ site_settings.company_name }}" type="button" value="Name"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_street_address_1 }}" type="button" value="Address 1"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_street_address_2 }}" type="button" value="Address 2"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_city }}" type="button" value="City"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_state }}" type="button" value="State"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_zip }}" type="button" value="Zip"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_country }}" type="button" value="Country"><br><br>
+                <a target="_blank" href="{{ view_as_page_url }}" style="undefined" data-viewaswebpage="true">View Online</a>&nbsp;|&nbsp;<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};">Unsubscribe</a></p>
+			</td>
+            </tr>
+		</tbody>
+	</table><!-- Main content table -->
+	</td><!-- Cross platform padding cell -->
+	</tr>
+     
+	</table>
+</body>
+</html>

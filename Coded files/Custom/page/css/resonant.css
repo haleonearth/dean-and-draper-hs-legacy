@@ -1,0 +1,127 @@
+
+
+p, h1, h2, h3, h4, h5{
+    color: {{ primary_font_color }};
+}
+#footer p{
+    color: {{ secondary_font_color }};
+}
+a:link,
+a:visited{
+    color: {{ primary_accent_color }};
+}
+.max-width-540,
+.max-width-540 *{
+    max-width: 540px;
+    max-width: 540px !important;
+}
+.max-width-600,
+.max-width-600 *{
+    max-width: 600px;
+    max-width: 600px !important;
+}
+.white-text *{
+    color: #fff;
+}
+
+table{
+    padding: 0 !important;
+    border: none !important;
+}
+
+#templateTable,
+#contentTableInner{
+    width: 700px;
+    width: 700px !important;
+}
+#contentCell{
+    padding: 0 !important;
+}
+
+
+.two-col-centered img{
+    width: auto !important;
+    max-width: 350px !important;
+}
+
+{% set breakpoints = [480, 650, 700] %}
+
+
+{% for b in breakpoints %}
+    @media (max-width: {{ b }}px){
+        .k-{{ b }}-col{
+            display: block;
+            width: 100% !important;        
+        }
+        .k-{{ b }}-padding{
+            padding: 0 !important;
+        }
+        .k-{{ b }}-text-align,
+        .k-{{ b }}-text-align *{
+            text-align: left !important;
+        }
+        .k-{{ b }}-margin{
+            margin: 0 !important;
+        }
+        .k-{{ b }}-margin-lr{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+{% endfor %}
+ @media (max-width: 700px){
+    #templateTable,
+    #contentTableInner,
+    .setFullWidth{
+        width: 100% !important;
+    }
+     .side-padding{
+         width: 40% !important;
+     }
+ }
+
+ @media (max-width: 700px){
+     #contentTableOuter{
+         padding: 0 !important;
+     }
+    .main-report{
+        margin-bottom: 60px;
+    }
+    .two-col-centered img{
+        max-width: none !important;
+        width: 100% !important;
+    }
+    .two-col-centered .small-screen-padding{
+        padding: 20px;
+    }
+    .two-col-centered .img-right{
+        display: table-footer-group;
+    }
+    .two-col-centered .img-right+td{
+        display: table-header-group;
+    }
+ }
+
+@media (max-width: 480px){
+    .two-col-centered *{
+        text-align: left !important;
+    }
+    .two-col-centered .gutter{
+        margin-left: 0 !important;
+    }
+    .mobile-td-padding{
+        padding: 25px !important;
+        padding-bottom: 50px !important;
+    }
+    .mobile-box-margin{
+        margin: 25px !important;
+    }
+    .social-media.left{
+        margin: 0 !important;
+        margin-left: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    h1.font-46-keep{
+        font-size: 46px !important;
+    }
+}

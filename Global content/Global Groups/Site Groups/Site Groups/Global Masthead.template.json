@@ -1,0 +1,87 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "courtesy_links",
+        "label" : "Courtesy Links",
+        "type" : "raw_html",
+        "params" : {
+          "overrideable" : false,
+          "value" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "global_masthead",
+        "label" : "Global Masthead",
+        "type" : "raw_html",
+        "params" : {
+          "overrideable" : false,
+          "value" : "<div id=\"menuwrapper\">\r\n<ul id=\"p7menubar\">\r\n\t<li><a class=\"trigger\" href=\"/auxiliary-links/manage-your-account/\" rel=\"nofollow\">Manage Your Account</a>\r\n\t\t<ul>\r\n\t\t\t<li><a href=\"/auxiliary-links/manage-your-account/\" rel=\"nofollow\">Enroll</a></li>\r\n\t\t\t<li><a href=\"https://intranet.artizan.com/default.asp?ak=1150083456\" target=\"_blank\" rel=\"nofollow\">Client Portal</a></li>\r\n\t\t\t<li><a href=\"/auxiliary-links/file-a-claim/\" rel=\"nofollow\">File a Claim</a></li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><a class=\"trigger\" href=\"#\" rel=\"nofollow\">Request a Quote</a>\r\n\t\t<ul>\r\n\t\t<li class=\"haschild\"><a href=\"/personal-insurance/\" rel=\"nofollow\">Personal</a></li>\r\n                        <li class=\"link\"><a href=\"/personal-insurance/personal-insurance-quote-request/\" rel=\"nofollow\"><img src=\"/Portals/56434/images/instantquote-red.png\" alt=\"Instant Quote!\" border=\"0\" /></a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/personal-insurance/personal-insurance-quote-request/\" rel=\"nofollow\">Auto Insurance</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/personal-insurance/personal-insurance-quote-request/\" rel=\"nofollow\">Homeowners Insurance</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/personal-insurance/flood-insurance/\">Flood Insurance</a></li>\r\n\t\t<li class=\"haschild\"><a href=\"/commercial-insurance/\" rel=\"nofollow\">Commercial</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/commercial-insurance/commercial-auto-insurance/\">Auto Insurance</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/commercial-insurance/commercial-property-insurance/\">Property Insurance</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/commercial-insurance/general-liability-insurance/\">General Liability</a></li>\r\n\t\t<li class=\"haschild\"><a href=\"/employee-benefits/\" rel=\"nofollow\">Benefits</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/employee-benefits/group-health-insurance/\">Group Health</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"https://www.onlineinsurancecorp.com/OIC/applicants!input.action?agentid=100779\" target=\"_blank\" rel=\"nofollow\">Individual</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/employee-benefits/life-insurance/\">Life</a></li>\r\n\t\t\t<li class=\"child\"><a href=\"/employee-benefits/dental-vision-insurance/\">Dental & Vision</a></li>\r\n\t\t<li class=\"haschild\"><a href=\"/contact/\" rel=\"nofollow\">I need Help</a></li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><a href=\"/contact/\" rel=\"nofollow\">Contact Us</a>\r\n\t<!-- <li><a class=\"trigger\" href=\"#\">Contact Us</a>\r\n\t\t<ul>\r\n\t\t\t\r\n\t\t\t<li><a href=\"/contact/\" rel=\"nofollow\">Send us an e-mail</a></li>\r\n\t\t\t<li><a href=\"/about/testimonials/\" rel=\"nofollow\">Submit a testimonial</a></li>\r\n\t\t</ul> -->\r\n\t</li>\r\n</ul>\r\n<br class=\"clearit\" />\r\n</div>\r\n\r\n<a href=\"/\" rel=\"nofollow\" class=\"sitelogo\"><img src=\"/Portals/56434/images/dean-draper-new-logo-2.png\" alt=\"Dean&Draper Insurance Agency\" border=\"0\" /></a>\r\n\r\n<div id=\"phone\">713.527.0444<br />\r\n888.266.2680</div>\r\n\r\n<!-- Social Bookmarks -->\r\n<div class=\"socialbookmarks\"><h3>Connect with us</h3>\r\n<p><a href=\"http://www.deandraper.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=167052&moduleid=264424&maxcount=25&u=38961&t=77c545ab-7896-45c2-a1dd-49b858bba934\" rel=\"nofollow\" target=\"_blank\"><img src=\"/Portals/56434/images/social-rss.png\" alt=\"RSS\" /></a> <a href=\"http://www.deandraper.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=167052&moduleid=264424&maxcount=25&u=38961&t=77c545ab-7896-45c2-a1dd-49b858bba934\" rel=\"nofollow\" target=\"_blank\"><span>Subscribe to RSS</span></a></p>\r\n<p><a href=\"http://www.twitter.com/deandraper\" rel=\"nofollow\" target=\"_blank\"><img src=\"/Portals/56434/images/social-twitter.png\" alt=\"Twitter\" /></a> <a href=\"http://www.twitter.com/deandraper\" rel=\"nofollow\" target=\"_blank\"><span>Twitter</span></a></p>\r\n<p><a href=\"http://www.facebook.com/pages/Dean-Draper-Insurance-Agency-LP/353539744982\" rel=\"nofollow\" target=\"_blank\"><img src=\"/Portals/56434/images/social-facebook.png\" alt=\"Facebook\" /></a> <a href=\"http://www.facebook.com/deandraperinsurance\" rel=\"nofollow\" target=\"_blank\"><span>Facebook</span></a></p>\r\n<p><a href=\"http://www.linkedin.com/companies/dean-&-draper-insurance-agency\" rel=\"nofollow\" target=\"_blank\"><img src=\"/Portals/56434/images/social-linkedin.png\" alt=\"Linked In\" /></a> <a href=\"http://www.linkedin.com/companies/dean-&-draper-insurance-agency\" rel=\"nofollow\" target=\"_blank\"><span>LinkedIn</span></a></p>\r\n<p><a rel=\"nofollow\" target=\"_blank\" title=\"Youtube\" href=\"http://www.youtube.com/deandraperins\"><img src=\"/Portals/56434/images/social-youtube.png\" alt=\"Youtube\" /></a> <a href=\"http://www.youtube.com/deandraperins\" rel=\"nofollow\" target=\"_blank\" title=\"Youtube\"><span>Youtube</span></a></p>\r\n<p><a rel=\"nofollow\" target=\"_blank\" title=\"Pinterest\" href=\"http://www.pinterest.com/deandraperins \"><img src=\"/Portals/56434/images/social-pinterest.png\" alt=\"Pinterest\" /></a> <a href=\"http://www.pinterest.com/deandraperins\" rel=\"nofollow\" target=\"_blank\" title=\"Pinterest\"><span>Pinterest</span></a></p></div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "classic_top_menu",
+        "label" : "Top Menu",
+        "type" : "classic_menu",
+        "params" : {
+          "site_map_name" : "migrated-classic-cms-sitemap",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

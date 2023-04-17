@@ -1,0 +1,87 @@
+<footer class="site-footer site-footer-test colored-section colored-section--footer salazar">
+  <div class="container">
+    <div class="site-footer__col site-footer__col1">
+      <!-- <a href="{{ module.logo_link.url.href }}" -->
+      <a href="https://www.deandraper.com/" {% if module.logo_link.open_in_new_tab %}target="_blank" {% endif %}
+        {% if module.logo_link.no_follow %}rel="nofollow" {% endif %} class="site-footer__logo">
+        {{ components.inline_svg('logo') }}
+      </a>
+
+      <p class="site-footer__copyright">&copy; {{ year }} {{ site_settings.company_name }}.</p>
+
+      {% if module.utility_menu|count > 0 %}
+      <div class="site-footer__menu site-footer__menu--utility">
+        <nav aria-label="Utility Menu" class="hs-menu-wrapper">
+          <ul>
+            {% for item in module.utility_menu %}
+            <li class="hs-menu-item hs-menu-depth-1"><a href="{{ item.url }}">{{ item.linkLabel }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="site-footer__col-wrapper">
+      {% if module.contact.heading || module.contact.contact_info %}
+      <div class="site-footer__col site-footer__col2">
+        {% if module.contact.heading %}<p class="h2"><em>{{ module.contact.heading }}</em></p>{% endif %}
+        {{ module.contact.contact_info }}
+      </div>
+      {% endif %}
+
+      {% if module.location.heading || module.location.location_info %}
+      <div class="site-footer__col site-footer__col2">
+        {% if module.location.heading %}<p class="h2"><em>{{ module.location.heading }}</em></p>{% endif %}
+        {{ module.location.location_info }}
+      </div>
+      {% endif %}
+
+      {% if module.links.heading || module.links.menu %}
+      <div class="site-footer__col site-footer__col4">
+        {% if module.links.heading %}<p class="h2"><em>{{ module.links.heading }}</em></p>{% endif %}
+
+        <div class="hs-menu-wrapper">
+          <ul>
+            {% for item in module.links.menu %}
+            <li class="hs-menu-item hs-menu-depth-1"><a href="{{ item.url }}">{{ item.linkLabel }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if module.social.social_media|count > 0 || module.social.heading %}
+      <div class="site-footer__col site-footer__col5 social-media">
+        {% if module.social.heading %}<p class="h2"><em>{{ module.social.heading }}</em></p>{% endif %}
+        {% for social in module.social.social_media %}
+        {% set href = social.link.url.href %}
+        {% if social.link.url.type == "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="social-media__service social-media__service--{{ components.slug(social.service) }}"
+          {% if social.link.open_in_new_tab %}target="_blank" {% endif %} {% if social.link.no_follow %}rel="nofollow"
+          {% endif %}
+          title="{{ social.service }}">{{ components.inline_svg('social/' ~ components.slug(social.service)) }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="site-footer__col-mobile">
+      <p class="site-footer__copyright">&copy; {{ year }} {{ site_settings.company_name }}.</p>
+
+      {% if module.utility_menu|count > 0 %}
+      <div class="site-footer__menu site-footer__menu--utility site-footer__menu--utility-mobile">
+        <nav aria-label="Utility Menu" class="hs-menu-wrapper">
+          <ul>
+            {% for item in module.utility_menu %}
+            <li class="hs-menu-item hs-menu-depth-1"><a href="{{ item.url }}">{{ item.linkLabel }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</footer>

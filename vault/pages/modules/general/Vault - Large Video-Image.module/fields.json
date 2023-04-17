@@ -1,0 +1,93 @@
+[ {
+  "id" : "banner_type",
+  "name" : "banner_type",
+  "display_width" : null,
+  "label" : "Banner Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image", "Image" ], [ "video", "Video" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "video"
+}, {
+  "id" : "image",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "banner_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/video-placeholder.png",
+    "alt" : null
+  }
+}, {
+  "id" : "poster",
+  "name" : "poster",
+  "display_width" : null,
+  "label" : "Video Poster Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "banner_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/video-placeholder.png",
+    "alt" : null
+  }
+}, {
+  "id" : "video_link",
+  "name" : "video_link",
+  "display_width" : null,
+  "label" : "Video Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "banner_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.youtube.com/watch?v=ScMzIvxBSi4"
+}, {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><em>Lorem Ipsum</em> Full Image/Video Headline Goes Here Lorem</h2><p>The experts at Dean & Draper Insurance Agency have over 500 years of combined experience in providing exceptional commercial insurance services to businesses like yours at affordable rates.</p><ul><li>Commercial Insurance</li><li>Employee Benefits</li><li>Personal Insurance</li><li>Risk Management Solutions</li><li>Aliquam Elit</li><li>Quam Tortor Neque</li>"
+} ]

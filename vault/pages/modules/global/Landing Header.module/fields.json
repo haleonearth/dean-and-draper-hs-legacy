@@ -1,0 +1,378 @@
+[ {
+  "id" : "logo_link",
+  "name" : "logo_link",
+  "display_width" : null,
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "primary_menu",
+  "name" : "primary_menu",
+  "display_width" : null,
+  "label" : "Primary Menu",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "primary_menu.menu_item",
+    "name" : "menu_item",
+    "display_width" : null,
+    "label" : "Menu Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "primary_menu.menu_item.text",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Primary Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Resources"
+    }, {
+      "id" : "no_link",
+      "name" : "no_link",
+      "display_width" : null,
+      "label" : "Make primary an item with no link?",
+      "help_text" : "",
+      "inline_help_text" : "Check this if you want the item as only a hoverable label instead of a clickable link.",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "primary_menu.menu_item.link",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Primary Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "no_link",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "false",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "megamenu",
+      "name" : "megamenu",
+      "display_width" : null,
+      "label" : "Make dropdown a megamenu?",
+      "help_text" : "",
+      "inline_help_text" : "",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "primary_menu.menu_item.dropdown",
+      "name" : "dropdown",
+      "display_width" : null,
+      "label" : "Dropdown",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : "dropdown_text",
+        "default" : 3
+      },
+      "visibility" : {
+        "controlling_field" : "megamenu",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "false",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "children" : [ {
+        "id" : "dropdown_text",
+        "name" : "text",
+        "display_width" : null,
+        "label" : "Link Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Blog"
+      }, {
+        "id" : "primary_menu.menu_item.dropdown.link",
+        "name" : "link",
+        "display_width" : null,
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : "https://www.example.com"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group"
+    }, {
+      "id" : "primary_menu.menu_item.megamenu_dropdown",
+      "name" : "megamenu_dropdown",
+      "display_width" : null,
+      "label" : "Megamenu Dropdown",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : "megamenu_text",
+        "default" : 3
+      },
+      "visibility" : {
+        "controlling_field" : "megamenu",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "true",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "children" : [ {
+        "id" : "primary_menu.menu_item.megamenu_dropdown.icon",
+        "name" : "icon",
+        "display_width" : null,
+        "label" : "Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : false,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/icons/icon-building.svg",
+          "alt" : null
+        }
+      }, {
+        "id" : "megamenu_text",
+        "name" : "text",
+        "display_width" : null,
+        "label" : "Heading",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Commercial Insurance"
+      }, {
+        "id" : "primary_menu.menu_item.megamenu_dropdown.description",
+        "name" : "description",
+        "display_width" : null,
+        "label" : "Description",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      }, {
+        "id" : "primary_menu.menu_item.megamenu_dropdown.link",
+        "name" : "link",
+        "display_width" : null,
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : "no_link",
+          "controlling_field_path" : null,
+          "controlling_value_regex" : "false",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null,
+          "hidden_subfields" : null
+        },
+        "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : "https://www.example.com"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : true,
+  "type" : "cta"
+}, {
+  "id" : "icon_links",
+  "name" : "icon_links",
+  "display_width" : null,
+  "label" : "Icon Links",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "text_label",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "label",
+    "name" : "text_label",
+    "display_width" : null,
+    "label" : "Label",
+    "help_text" : "Text used for aria-label that can be read by screen readers.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Login"
+  }, {
+    "id" : "icon_links.icon",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/icons/icon-user.svg",
+      "alt" : null
+    }
+  }, {
+    "id" : "icon_links.link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "no_link",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : "https://www.example.com"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "label" : "Login",
+    "icon" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/icons/icon-user.svg"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.deandraper.com/auxiliary-links/manage-your-account"
+      }
+    }
+  } ]
+}, {
+  "id" : "search_prompt",
+  "name" : "search_prompt",
+  "display_width" : null,
+  "label" : "Search Prompt",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Enter a query in the search input above."
+}, {
+  "id" : "no_results_message",
+  "name" : "no_results_message",
+  "display_width" : null,
+  "label" : "No Results Message",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "No results found for your query."
+} ]

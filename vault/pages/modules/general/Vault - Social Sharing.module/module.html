@@ -1,0 +1,11 @@
+<!-- module html  -->
+<div class="social-media social-media--sharing">
+  <p class="social-media__label">Share:</p>
+  {% set url = content.absolute_url %}
+  {% set title = content.name|striptags %}
+  {% set summary = widget_data.listing_description.html|striptags or (content.post_list_content or content.post_body)|striptags|truncate(110) %}
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url|urlencode }}" title="Facebook" class="social-media__service social-media__service--facebook" target="_blank">{{ components.inline_svg('social/' ~ components.slug('Facebook')) }}</a>
+  <a href="https://twitter.com/intent/tweet/?text={{ title|urlencode }}&url={{ url|urlencode }}&via=lyntonweb" title="Twitter" class="social-media__service social-media__service--twitter" target="_blank">{{ components.inline_svg('social/' ~ components.slug('Twitter')) }}</a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url|urlencode }}&title={{ title|urlencode }}&source={{ company_domain|urlencode }}&summary={{ summary|urlencode }}" title="LinkedIn" class="social-media__service social-media__service--linkedin" target="_blank">{{ components.inline_svg('social/' ~ components.slug('LinkedIn')) }}</a>
+  <a href="mailto:?body=Check this article {{ url|urlencode }}&subject={{ title|urlencode }}" title="Share by Email" class="social-media__service social-media__service--email" target="_blank">{{ components.inline_svg('social/' ~ components.slug('Email')) }}</a>
+</div>

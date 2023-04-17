@@ -1,0 +1,73 @@
+[ {
+  "id" : "collapsible_text",
+  "name" : "collapsible_text",
+  "display_width" : null,
+  "label" : "Collapsible Text",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "collapsible_text.heading",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "collapsible_text.heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nunc interdum lacus sit"
+  }, {
+    "id" : "collapsible_text.expanded_text",
+    "name" : "expanded_text",
+    "display_width" : null,
+    "label" : "Expanded Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Fusce egestas elit eget lorem. Nunc nonummy metus. Curabitur ullamcorper ultricies nisi. Aliquam eu nunc. Sed cursus turpis vitae tortor. In consectetuer turpis ut velit. Cras varius. Nullam sagittis.</p>"
+  }, {
+    "id" : "collapsible_text.start_open",
+    "name" : "start_open",
+    "display_width" : null,
+    "label" : "Start open?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "heading" : "Nunc interdum lacus sit",
+    "expanded_text" : "<p>Fusce egestas elit eget lorem. Nunc nonummy metus. Curabitur ullamcorper ultricies nisi. Aliquam eu nunc. Sed cursus turpis vitae tortor. In consectetuer turpis ut velit. Cras varius. Nullam sagittis.</p>"
+  }, {
+    "heading" : "Morbi ut turpis eget",
+    "expanded_text" : "<p>Fusce egestas elit eget lorem. Nunc nonummy metus. Curabitur ullamcorper ultricies nisi. Aliquam eu nunc. Sed cursus turpis vitae tortor. In consectetuer turpis ut velit. Cras varius. Nullam sagittis.</p>"
+  }, {
+    "heading" : "Curabitur iaculis dolor sit amet mauris interdum",
+    "expanded_text" : "<p>Fusce egestas elit eget lorem. Nunc nonummy metus. Curabitur ullamcorper ultricies nisi. Aliquam eu nunc. Sed cursus turpis vitae tortor. In consectetuer turpis ut velit. Cras varius. Nullam sagittis.</p>"
+  }, {
+    "heading" : "Donec sed mauris vel mi facilisis",
+    "expanded_text" : "<p>Fusce egestas elit eget lorem. Nunc nonummy metus. Curabitur ullamcorper ultricies nisi. Aliquam eu nunc. Sed cursus turpis vitae tortor. In consectetuer turpis ut velit. Cras varius. Nullam sagittis.</p>"
+  } ]
+}, {
+  "id" : "use_as_faq",
+  "name" : "use_as_faq",
+  "display_width" : null,
+  "label" : "Use as FAQ?",
+  "help_text" : "Check this to add FAQ schema to the page",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

@@ -1,0 +1,265 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/Dean_Draper_Dec2014-theme/Dean Draper Dec2014-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "cms-migrated one-column-template",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Header",
+        "label" : "Dean_Draper_Dec2014 Theme/Header",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Header.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "deduplicated_cell_1418365711862368",
+        "label" : "Layout Container .content-wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "content-wrapper",
+          "overrideable" : false,
+          "wrapping_html" : "<div class=\"site-page one-column\">{{ html }}</div>"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "deduplicated_cell_1418365711862371",
+            "label" : "Layout Container 2",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_1418365711862370",
+                "label" : "Top Container .top-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "top-content page-center",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "toppane",
+                    "label" : "Top Widget Container",
+                    "type" : "widget_container",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_1418365711862373",
+                "label" : "Main Content Container .middle-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "middle-content page-center",
+                  "overrideable" : false,
+                  "module_title_tag" : "h1"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "contentpane",
+                    "label" : "Main Widget Container",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_class" : "main-content",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "migrated_unnamed_cell_1418365711862374",
+                "label" : "Content Bottom Container .bottom-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "bottom-content page-center",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "bottompane",
+                    "label" : "Bottom Widget Container",
+                    "type" : "widget_container",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Footer",
+        "label" : "Dean_Draper_Dec2014 Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Footer.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

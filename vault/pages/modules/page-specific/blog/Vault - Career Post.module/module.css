@@ -1,0 +1,245 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+@charset "UTF-8";
+.vault-blog__post--header .container {
+  position: relative;
+}
+.vault-blog__post--header__details {
+  padding: 40px 50px;
+  border-top: 4px solid #007367;
+  background: #fff 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 0 0 5px 5px;
+}
+.vault-blog__post--header__details .tag-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 24px;
+}
+.vault-blog__post--header__details h1 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-top: 0.5em;
+}
+.vault-blog__post--header__details p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 2em;
+}
+.vault-blog__post--header__thumbnail {
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: -15px 15px #eee9dd;
+}
+@media (max-width: 799px) {
+  .vault-blog__post--header__thumbnail {
+    margin-top: 3em;
+  }
+  .vault-blog__post--header__thumbnail img {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .vault-blog__post--header__details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .vault-blog__post--header__thumbnail {
+    width: 500px;
+    height: calc(500px / 1.75);
+    background-size: cover !important;
+  }
+  .vault-blog__post--header__thumbnail img {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .vault-blog__post--header__details {
+    width: 100%;
+  }
+  .vault-blog__post--header__thumbnail {
+    width: 700px;
+    height: calc(700px / 1.75);
+    background-size: cover !important;
+  }
+  .vault-blog__post--header__thumbnail img {
+    display: none;
+  }
+}
+.vault-blog__post--body {
+  font-size: 16px;
+  font-weight: 400;
+}
+.vault-blog__post--body .container--tiny {
+  position: relative;
+}
+.vault-blog__post--body h2 {
+  font-size: 28px;
+  line-height: 42px;
+  margin: 45px 0 0;
+  font-weight: 400;
+}
+.vault-blog__post--body h2 + p {
+  margin-top: 8px;
+}
+.vault-blog__post--body h3 {
+  font-size: 20px;
+  margin: 30px 0 0;
+  font-weight: 400;
+}
+.vault-blog__post--body h3 + p {
+  margin-top: 8px;
+}
+.vault-blog__post--body ul {
+  list-style: none;
+}
+.vault-blog__post--body ul li {
+  position: relative;
+}
+.vault-blog__post--body ul li::before {
+  content: "•";
+  position: absolute;
+  right: 100%;
+  margin-right: 10px;
+  color: #007367;
+  transform: scale(1.75);
+}
+.vault-blog__post--body blockquote {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  margin: 1.5em 0;
+  font-style: oblique;
+}
+.vault-blog__post--body blockquote:not(cite) {
+  color: #007367;
+  font-family: Heebo, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.vault-blog__post--body blockquote cite {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  display: block;
+}
+.vault-blog__post--body blockquote cite strong {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 800;
+  margin: 0;
+  display: block;
+}
+@media (max-width: 1023px) {
+  .vault-blog__post--sharing .social-media {
+    display: flex;
+    justify-content: center;
+  }
+}
+.vault-blog__post--sharing .social-media__label {
+  margin-top: 0;
+  font-size: 14px;
+}
+@media (max-width: 1023px) {
+  .vault-blog__post--sharing .social-media__label {
+    display: inline-block;
+    margin-right: 1.5em;
+  }
+}
+.vault-blog__post--sharing .social-media__service {
+  font-size: 22px;
+}
+@media (min-width: 1024px) {
+  .vault-blog__post--sharing .social-media__service {
+    display: block;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .vault-blog__post .sticky-row-placeholder {
+    position: relative !important;
+    left: unset !important;
+  }
+}
+@media (min-width: 1024px) {
+  .vault-blog__post .sticky-row-placeholder {
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .vault-blog__post .sticky-row--stuck {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+  }
+}
+@media (min-width: 1024px) {
+  .vault-blog__post .sticky-row--stuck {
+    position: fixed;
+    top: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .vault-blog__post .sticky-row--stopped {
+    position: absolute;
+  }
+}
+.vault-blog__post--footer .blog-author {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e4e4e4;
+  padding-top: 30px;
+}
+.vault-blog__post--footer .blog-author__thumbnail {
+  order: 0;
+  flex-basis: 70px;
+  margin-right: 20px;
+}
+.vault-blog__post--footer .blog-author__thumbnail--wrapper {
+  border-radius: 100px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vault-blog__post--footer .blog-author__thumbnail--wrapper img {
+  display: none;
+}
+.vault-blog__post--footer .blog-author__details {
+  order: 1;
+  flex-basis: calc(100% - 90px);
+}
+.vault-blog__post--footer .blog-author__details--title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+.vault-blog__post--footer .blog-author__details--subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.vault-blog__footer {
+  background-image: url(//f.hubspotusercontent30.net/hubfs/56434/vault/backgrounds/light-texture-background.png) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.vault-blog__footer .vault-richtext {
+  margin-bottom: 3em;
+}
+
+.vault-blog__post--header {
+  margin-bottom: 100px;
+}

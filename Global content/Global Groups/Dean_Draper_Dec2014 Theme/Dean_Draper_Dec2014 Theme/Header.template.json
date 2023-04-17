@@ -1,0 +1,286 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14182841649691660",
+        "label" : "Header Top Bg",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "header-top-bg",
+          "value" : "",
+          "css_id" : "",
+          "overrideable" : false,
+          "css_style" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14182854473362878",
+            "label" : "Top Links",
+            "type" : "rich_text",
+            "params" : {
+              "css_class" : "page-center",
+              "html" : "<ul>\n<li><a href=\"http://www.deandraper.com/auxiliary-links/manage-your-account/\" rel=\"nofollow\">Manage Your Account</a>\n<ul>\n<li><a href=\"http://www.deandraper.com/auxiliary-links/manage-your-account/\" rel=\"nofollow\">Enroll</a></li>\n<li><a href=\"https://intranet.artizan.com/default.asp?ak=1150083456\" target=\"_blank\" rel=\"nofollow\">Client Portal</a></li>\n<li><a href=\"http://www.deandraper.com/auxiliary-links/file-a-claim/\" rel=\"nofollow\">File a Claim</a></li>\n</ul>\n</li>\n<li><a href=\"#\" rel=\"nofollow\">Request a Quote</a>\n<ul>\n<li><a href=\"http://www.deandraper.com/personal-insurance/\" rel=\"nofollow\">Personal</a></li>\n<li><a href=\"https://www.deandraper.com/personal-insurance/homeowners-insurance\" rel=\"nofollow\">Homeowners &amp; Auto Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/personal-insurance/flood-insurance/\">Flood Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/commercial-insurance/\" rel=\"nofollow\">Commercial</a></li>\n<li><a href=\"http://www.deandraper.com/commercial-insurance/commercial-auto-insurance/\">Auto Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/commercial-insurance/commercial-property-insurance/\">Property Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/commercial-insurance/general-liability-insurance/\">General Liability</a></li>\n<li><a href=\"http://www.deandraper.com/employee-benefits/\" rel=\"nofollow\">Benefits</a></li>\n<li><a href=\"http://www.deandraper.com/employee-benefits/group-health-insurance/\">Group Health</a></li>\n<li><a href=\"http://www.deandraper.com/employee-benefits/life-insurance/\">Life</a></li>\n<li><a href=\"http://www.deandraper.com/employee-benefits/dental-vision-insurance/\">Dental &amp; Vision</a></li>\n<li><a href=\"http://www.deandraper.com/contact/\" rel=\"nofollow\">I need Help</a></li>\n</ul>\n</li>\n<li><a href=\"/contact/\" rel=\"nofollow\">Contact Us</a></li>\n</ul>",
+              "overrideable" : false,
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14182922100344918",
+        "label" : "Logo Bg",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "logo-bg",
+          "value" : "",
+          "css_id" : "",
+          "overrideable" : false,
+          "css_style" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_13884995577962947",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "value" : "",
+              "css_id" : "",
+              "overrideable" : false,
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 8,
+                "name" : "module_1418283190319439",
+                "label" : "Logo",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "custom-logo",
+                  "html" : "<a href=\"http://www.deandraper.com/\" target=\"_blank\" data-mce-target=\"_blank\"><img src=\"http://cdn2.hubspot.net/hub/56434/file-1022639959-png/images/dean-draper-new-logo-2.png\" alt=\"Dean&amp;Draper Insurance Agency\"></a>",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 2,
+                "name" : "module_14182928661976125",
+                "label" : "Contact No",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "contact-no",
+                  "html" : "<p>713.527.0444<br> 888.266.2680</p>",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "10" : {
+                "x" : 10,
+                "w" : 2,
+                "name" : "module_1418365101560482",
+                "label" : "Trusted Choice",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "trusted-choice",
+                  "html" : "<img src=\"http://cdn2.hubspot.net/hub/56434/file-2217344481-png/images/logo-hdr.png\" alt=\"logo-hdr\">",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_14182998513318910",
+                "label" : "Custom Menu Bg Outer",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "custom-menu-bg-outer",
+                  "value" : "",
+                  "css_id" : "",
+                  "overrideable" : false,
+                  "css_style" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_14182922469855423",
+                    "label" : "Menu Bg",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "custom-menu-bg",
+                      "value" : "",
+                      "css_id" : "",
+                      "overrideable" : false,
+                      "css_style" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 9,
+                        "name" : "module_13884994340213",
+                        "label" : "Horizontal Top Menu",
+                        "type" : "menu",
+                        "params" : {
+                          "root_type" : "site_root",
+                          "wrapping_html" : "",
+                          "flow" : "horizontal",
+                          "site_map_name" : "migrated-classic-cms-sitemap",
+                          "overrideable" : false,
+                          "css_style" : "",
+                          "flyouts" : true,
+                          "max_levels" : "3",
+                          "css_class" : "custom-menu-primary"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "9" : {
+                        "x" : 9,
+                        "w" : 3,
+                        "name" : "module_14189648387583824",
+                        "label" : "Custom HTML",
+                        "type" : "raw_html",
+                        "params" : {
+                          "css_class" : "custom-google-search",
+                          "overrideable" : false,
+                          "value" : "<div id=\"googlesearchbox\">\n<form action=\"http://www.deandraper.com/dean-draper-search-results/\" id=\"cse-search-box\">\n  <div>\n    <input type=\"hidden\" name=\"cx\" value=\"014539150408461287525:zavqnxwglqi\" />\n    <input type=\"hidden\" name=\"cof\" value=\"FORID:10\" />\n    <input type=\"hidden\" name=\"ie\" value=\"UTF-8\" />\n    <input type=\"text\" name=\"q\" id=\"googlesearchinput\" class=\"googlesearch\" />\n    <input type=\"submit\" class=\"googlesubmit\" name=\"sa\" value=\"\" />\n  </div>\n</form>\n</div>",
+                          "css_style" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

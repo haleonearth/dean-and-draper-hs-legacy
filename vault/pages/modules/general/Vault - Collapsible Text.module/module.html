@@ -1,0 +1,46 @@
+<div class="collapsible-text-wrapper">
+  {% for text in module.collapsible_text %}
+    <div class="collapsible-text {{ 'collapsible-text--active' if text.start_open }}">
+      <div class="collapsible-text__title" role="button" {% if text.start_open %}aria-expanded="true"{% else %}aria-expanded="false"{% endif %}>
+        <h3 tabindex="0">{{ text.heading }}</h3>
+      </div>
+      <div class="collapsible-text__body-wrapper">
+        <div class="collapsible-text__body">
+          {{ text.expanded_text }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+{# We need to gather all of the FAQ modules on the page and put them into a single schema object. #}
+{% set faqs = content.widgets|selectattr('module_id', 'equalto', module_id) %}
+{% if faqs[0].name == name %}
+	{% set questions = [] %}
+	{% for faq in faqs %}
+    {% set faq = faq.body %}
+		{% if faq.use_as_faq or faq.use_as_faq is undefined %}
+			{% for question in faq.collapsible_text %}
+				{% do questions.append({
+					"@type": "Question",
+					"name": question.heading,
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": question.expanded_text
+					}
+				}) %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+	{% if questions|count > 0 %}
+		{%- set schema = {
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
+			'mainEntity': questions
+		} %}
+		<script type='application/ld+json'>
+			{{ schema|tojson }}
+		</script>
+	{% endif %}
+{% endif %}

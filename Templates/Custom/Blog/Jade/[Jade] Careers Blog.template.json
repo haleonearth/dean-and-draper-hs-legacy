@@ -1,0 +1,213 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/system/jade/jade-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "{% import 'Coded files/Custom/system/jade/jade-components.html' as components %}\n{% import 'Coded files/Custom/system/jade/jade-blog-components.html' as blog_components %}\n{{ components.global_head() }}",
+  "customFooter" : "",
+  "bodyClass" : "{{ 'flush-header flush-footer' if !is_listing_view }}",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1520282335494383",
+        "label" : "hero-section hero-section--blog colored-section colored-section--alpha",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "hero-section hero-section--blog colored-section colored-section--alpha",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "{{ components.utility.section_background(hero_background) }}",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "{% unless is_lising_view %}\n    {% image_src \"hero_background_src\"\n        label = \"Hero Background\",\n        export_to_template_context = true\n    %}\n    {% choice \"hero_background_position\"\n        label = \"Hero Background Position\",\n        value = \"default\",\n        choices = \"{{ components.utility.background_options.position }}\",\n        export_to_template_context = true\n    %}\n    {% text \"hero_background_position_custom\"\n        label = \"Hero Background Position (Custom)\",\n        export_to_template_context = true\n    %}\n    {% choice \"hero_background_size\"\n        label = \"Hero Background Size\",\n        value = \"default\",\n        choices = \"{{ components.utility.background_options.size }}\",\n        export_to_template_context = true\n    %}\n    {% text \"hero_background_size_custom\"\n        label = \"Hero Background Size (Custom)\",\n        export_to_template_context = true\n    %}\n    {% choice \"hero_background_repeat\"\n        label = \"Hero Background Repeat\",\n        value = \"default\",\n        choices = \"{{ components.utility.background_options.repeat }}\",\n        export_to_template_context = true\n    %}\n    {% color \"hero_background_color_custom\"\n        label = \"Hero Background Color (Custom)\",\n        export_to_template_context = true\n    %}\n    {% if widget_data.hero_background_src.src %}\n        {% set hero_background = {\n            \"src\": widget_data.hero_background_src.src,\n            \"position\": widget_data.hero_background_position.value,\n            \"position_custom\": widget_data.hero_background_position_custom.value,\n            \"size\": widget_data.hero_background_size.value,\n            \"size_custom\": widget_data.hero_background_size_custom.value,\n            \"repeat\": widget_data.hero_background_repeat.value,\n            \"color\": widget_data.hero_background_color_custom.color\n        } %}\n    {% endif %}\n{% endunless %}\n{{ html }}"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520282292890381",
+            "label" : "Jade/Site Header",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "path" : "/Global content/Global Groups/Jade/Jade/Site Header.template.json",
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520282370204388",
+            "label" : "container hero-section__body",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container hero-section__body",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "header",
+                "label" : "Blog Header",
+                "type" : "raw_jinja",
+                "params" : {
+                  "css_class" : "",
+                  "overrideable" : false,
+                  "value" : "{% if is_listing_view %}\n    <h1>{{ group.public_title }}</h1>\n    {% if subtitle %}<p>{{ subtitle }}</p>{% endif %}\n{% else %}\n    <h1>{{ content.name }}</h1>\n{% endif %}"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container hero-section__body",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "hero-section hero-section--blog colored-section colored-section--alpha",
+        "cssStyle" : "{{ components.utility.section_background(hero_background) }}",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1520282706237390",
+        "label" : "Blog Posts",
+        "type" : "raw_jinja",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "value" : "{% if is_listing_view %}\n    <div class=\"careers-listing container\">\n        {% for post in contents %}\n            <article class=\"careers-listing__career\">\n                <h2><a href=\"{{ post.absolute_url }}\">{{ post.name }}</a></h2>\n                <div class=\"careers-listing__summary\">{{ content.post_list_content or content.post_summary }}</div>\n                <p><a href=\"{{ post.absolute_url }}\" class=\"more-link\">Learn More</a></p>\n            </article>\n        {% endfor %}\n        {% blog_subscribe \"blog_subscribe\"\n            title='Sign up for job posting updates!'\n        %}\n        {% if last_page_num or next_page_num %}\n            <nav class=\"careers-listing__navigation listing-nav\">\n                {% if last_page_num %}\n                    <a href=\"{{ blog_page_link(last_page_num) }}\" class=\"listing-nav__item listing-nav__item--prev\">Previous</a>\n                {% endif %}\n                <a href=\"{{ group.absolute_url }}{% unless simple_list_page %}/all{% endunless %}\" class=\"listing-nav__item listing-nav__item--all\">\n                    {% if simple_list_page %}View Paginated{% else %}View All{% endif %}\n                </a>\n                {% if next_page_num %}\n                    <a href=\"{{ blog_page_link(next_page_num) }}\" class=\"listing-nav__item listing-nav__item--next\">Next</a>\n                {% endif %}\n            </nav>\n        {% endif %}\n    </div>\n{% else %}\n    <article class=\"blog-post blog-post--career\">\n        <div class=\"container blog-post__body row-fluid-wrapper\">\n            <div class=\"widget-span span8\">\n                {{ content.post_body }}\n            </div>\n            <div class=\"widget-span span4\">\n                {% form \"careers_form\"\n                    form_to_use='d80893c1-f8f2-4427-9466-ffc7fffc68d0',\n                    response_message='Thank you for your application. It has been received by the Dean and Drapers Careers team.',\n                    response_response_type='inline',\n                    overrideable=false,\n                    response={message='Thank you for submitting the form.', redirect_url=''}\n                %}\n                {% blog_subscribe \"blog_subscribe\"\n                    title='Sign up for job posting updates!'\n                %}\n            </div>\n            \n        </div>\n        \n        <footer class=\"blog-post__footer\">\n            <div class=\"container container--small blog-post__meta\">\n                {% set social_link = {\n                    'title': content.name|striptags,\n                    'url': content.absolute_url,\n                    'summary': (content.post_list_content or content.post_summary)|striptags|truncate(100)\n                } %}\n                {{ components.social_sharing(social_link, 'Share this career', 'blog-post__sharing') }}\n            </div>\n        </footer>\n    </article>\n    \n    <nav class=\"blog-post-more\">\n        <div class=\"container\">\n            <ul class=\"blog-post-more__list\">\n                <li><a href=\"/careers\">Back to All Open Positions</a></li>\n            </ul>\n        </div>\n    </nav>\n{% endif %}",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1520282301015382",
+        "label" : "Jade/Site Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/Jade/Jade/Site Footer.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

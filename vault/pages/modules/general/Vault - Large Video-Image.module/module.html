@@ -1,0 +1,13 @@
+<div class="vault-media-banner {% if module.banner_type == 'video' %}vault-media-banner--video{% endif %}">
+  <div class="vault-media-banner__media" style="background-image: url({% if module.banner_type == 'video' %}{{ module.poster.src }}{% else %}{{ module.image.src }}{% endif %});">
+    {% if module.banner_type == 'video' %}
+      <a class="popup-video" href="{{ module.video_link }}">
+        {{ components.inline_svg('play-button') }}
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="vault-media-banner__block">
+    <div class="vault-media-banner__block-wrapper">{{ module.text }}</div>
+  </div>
+</div>

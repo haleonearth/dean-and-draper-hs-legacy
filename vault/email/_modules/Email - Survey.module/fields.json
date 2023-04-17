@@ -1,0 +1,153 @@
+[ {
+  "id" : "eb5a2288-6227-b456-d466-da6d8b83ccf3",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "a83bead6-f327-cd8f-9143-fd63fa3120f3",
+  "name" : "section_color",
+  "display_width" : null,
+  "label" : "Section Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "base", " base" ], [ "light", "light" ], [ "dark", "dark" ], [ "alpha", "alpha" ], [ "beta", "beta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "alpha"
+}, {
+  "id" : "a217698b-e3c8-ef83-6fe2-bc47e92be6d5",
+  "name" : "headline",
+  "display_width" : null,
+  "label" : "Headline",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>What's Your 2019 Growth Goal?</h3>"
+}, {
+  "id" : "b78dcf73-dfae-ed20-ebc8-3c5e8209333a",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.example.com",
+    "content_id" : null
+  }
+}, {
+  "id" : "5fbb3f61-0d1b-cd0c-129c-0ba7c0867912",
+  "name" : "form_field_name",
+  "display_width" : null,
+  "label" : "Form Field Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "firstname"
+}, {
+  "id" : "fe138bb8-3e1c-a7b5-d703-1d4524587c40",
+  "name" : "answer",
+  "display_width" : null,
+  "label" : "Answer",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c82b481a-8c94-99d5-715e-fec07e46b0cb",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "cfcd1f07-547d-d424-04c9-e949c88a7986",
+    "name" : "id_button_color",
+    "display_width" : null,
+    "label" : "ID Button Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "beta", "Beta" ], [ "alpha", "Alpha" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "beta"
+  }, {
+    "id" : "c82b481a-8c94-99d5-715e-fec07e46b0cb",
+    "name" : "item_id",
+    "display_width" : null,
+    "label" : "Item ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A"
+  }, {
+    "id" : "3cfbbb00-89d2-b337-1128-63db5a2c57c3",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "An answer goes here."
+  }, {
+    "id" : "d7930a44-6a37-e48c-eb81-c04db3105958",
+    "name" : "form_value",
+    "display_width" : null,
+    "label" : "Form Value",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "An answer goes here"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "id_button_color" : "beta"
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "id_button_color" : "beta"
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "id_button_color" : "beta"
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "id_button_color" : "beta"
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "id_button_color" : "beta"
+  } ]
+} ]

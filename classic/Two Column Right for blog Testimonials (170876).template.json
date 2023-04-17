@@ -1,0 +1,441 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/Dean_Draper_Dec2014-theme/Dean Draper Dec2014-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "blog blog-testimonial",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Header",
+        "label" : "Dean_Draper_Dec2014 Theme/Header",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Header.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "deduplicated_cell_14186225879931481",
+        "label" : "Layout Container .content-wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "content-wrapper",
+          "overrideable" : false,
+          "wrapping_html" : "<div class=\"site-page two-column-right\">{{ html }}</div>"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "deduplicated_cell_14186225879931483",
+            "label" : "Layout Container 2",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "toppane",
+                "label" : "Top Container .top-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "top-content page-center",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "deduplicated_cell_14186225879931487",
+                    "label" : "dnn_toppane",
+                    "type" : "cell",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_14186225879931485",
+                "label" : "Main Content Container .middle-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "middle-content page-center",
+                  "overrideable" : false,
+                  "module_title_tag" : "h1"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 9,
+                    "name" : "deduplicated_cell_14186225879941488",
+                    "label" : "Main Content .main-content",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "main-content",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "deduplicated_cell_14186225879941490",
+                        "label" : "#dnn_ContentPane blog wrapper",
+                        "type" : "cell",
+                        "params" : {
+                          "overrideable" : false,
+                          "module_title_tag" : "h1"
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "blog_title",
+                            "label" : "Blog Title",
+                            "type" : "raw_jinja",
+                            "params" : {
+                              "overrideable" : false,
+                              "value" : "<div class=\"cell-wrapper\"><span><h1>{{ content_group.public_title }}</h1></span></div>"
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "blog_content",
+                            "label" : "Blog Content",
+                            "type" : "blog_content",
+                            "params" : {
+                              "blog_listing_source" : "<div class=\"blog-section\">\r\n    <div class=\"blog-listing-wrapper cell-wrapper\">\r\n        {# simple_list_page indicates the \"blog/all\" page, which is a list of links to every blog post #}\r\n        <div class=\"post-listing{% if simple_list_page %}-simple{% endif %}\">\r\n            {% if blog_author %}\r\n                <div class=\"hs-author-profile\">\r\n                    <h2 class=\"hs-author-name\">{{ blog_author.display_name }}</h2>\r\n                    {# {% if blog_author.avatar %} <div class=\"hs-author-avatar\"> <img width=\"35 px\" src=\"{{ blog_author.avatar }}\"> </div> {% endif %} #}\r\n                    <div class=\"hs-author-bio\">{{ blog_author.bio }}</div>\r\n                    {% if blog_author.has_social_profiles %}\r\n                        <div class=\"hs-author-social-section\">\r\n                            <span class=\"hs-author-social-label\">Find me on:</span>\r\n                            <div class=\"hs-author-social-links\">\r\n                                {% if blog_author.facebook %}\r\n                                    <a href=\"{{ blog_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">&nbsp;</a>\r\n                                {% endif %}\r\n                                {% if blog_author.linkedin %}\r\n                                    <a href=\"{{ blog_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">&nbsp;</a>\r\n                                {% endif %}\r\n                                {% if blog_author.twitter %}\r\n                                    <a href=\"{{ blog_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">&nbsp;</a>\r\n                                {% endif %}\r\n                                {% if blog_author.google_plus %}\r\n                                    <a href=\"{{ blog_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">&nbsp;</a>\r\n                                {% endif %}\r\n                            </div>\r\n                        </div>\r\n                    {% endif %}\r\n                </div>\r\n                <h3 class=\"hs-author-listing-header\">Recent Posts</h3>\r\n            {% endif %}\r\n            {% for content in contents %}\r\n                <div class=\"post-item\">\r\n                    {% if not simple_list_page %}\r\n                   \r\n                        <div class=\"post-body clearfix\">\r\n                            <!--post summary-->\r\n             \r\n                            {{ content.post_list_content|safe }}\r\n              \r\n                        </div>\r\n    \t\t\t\t\t     <div class=\"post-header\">\r\n                            <h2><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h2>\r\n                        </div>\r\n                       \r\n                        {% if content.topic_list %}\r\n                             <p id=\"hubspot-topic_data\"> Services:\r\n                                {% for topic in content.topic_list %}\r\n                                    <a class=\"topic-link\" href=\"{{ group.absolute_url }}/topic/{{ topic.slug }}\">{{ topic.name }}</a>{% if not loop.last %},{% endif %}\r\n                                {% endfor %}\r\n                             </p>\r\n                        {% endif %}\r\n                    {% else %}\r\n                        <h2 class=\"post-listing-simple\"><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h2>\r\n                    {% endif %}\r\n                </div>\r\n            {% endfor %}\r\n        </div>\r\n\r\n        <div class=\"blog-pagination\">\r\n            {% if last_page_num %}\r\n                <a class=\"previous-posts-link\" href=\"{{ blog_page_link(last_page_num) }}\">Previous</a>\r\n            {% endif %}\r\n                <a class=\"all-posts-link\" href=\"{{ group.absolute_url }}/all\">All posts</a>\r\n            {% if next_page_num %}\r\n                <a class=\"next-posts-link\" href=\"{{ blog_page_link(next_page_num) }}\">Next</a>\r\n            {% endif %}\r\n        </div>\r\n    </div>\r\n</div>",
+                              "h" : "8",
+                              "blog_post_source" : "<div class=\"blog-section\">\r\n    <div class=\"blog-post-wrapper cell-wrapper\">\r\n\r\n    \t\t\t        <div class=\"section post-body\">\r\n            {{ content.post_body }}\r\n        </div>\r\n\t\t            <div class=\"section post-header\">\r\n            <h2>\r\n                <a href=\"{{ content.absolute_url }}\" id=\"hubspot-name\" class=\"link hubspot-editable\" data-hubspot-form-id=\"name\" data-hubspot-name=\"Blog Title\">{{ content.name }}</a>\r\n            </h2>\r\n        </div>\r\n\r\n        {% if content.topic_list %}\r\n             <p id=\"hubspot-topic_data\" > Services\r\n                {% for topic in content.topic_list %}\r\n                    <a class=\"topic-link\" href=\"{{ group.absolute_url }}/topic/{{ topic.slug }}\">{{ topic.name }}</a>{% if not loop.last %},{% endif %}\r\n                {% endfor %}\r\n             </p>\r\n        {% endif %}\r\n\r\n    </div>\r\n</div>",
+                              "overrideable" : false
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "blog_comments",
+                            "label" : "Blog Comments",
+                            "type" : "blog_comments",
+                            "params" : {
+                              "overrideable" : false
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "9" : {
+                    "x" : 9,
+                    "w" : 3,
+                    "name" : "deduplicated_cell_14186225879941491",
+                    "label" : "Right Content .sidebar .right",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "sidebar right",
+                      "value" : "",
+                      "css_id" : "",
+                      "overrideable" : false,
+                      "css_style" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_14188944521671780",
+                        "label" : "Advanced Menu",
+                        "type" : "menu",
+                        "params" : {
+                          "root_type" : "top_parent",
+                          "wrapping_html" : "",
+                          "flyouts" : "true",
+                          "flow" : "vertical",
+                          "site_map_name" : "migrated-classic-cms-sitemap",
+                          "overrideable" : false,
+                          "css_style" : "",
+                          "css_class" : "custom_right_nav",
+                          "max_levels" : "2"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "deduplicated_cell_14186225879941493",
+                        "label" : "dnn_col3pane",
+                        "type" : "cell",
+                        "params" : {
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "widget_279054",
+                            "label" : "Form",
+                            "type" : "form",
+                            "params" : {
+                              "notifications_override_email_addresses" : [ "kdean@deandraper.com" ],
+                              "form_to_use" : "da07a008-b53d-4dfe-902e-3526cc6a974d",
+                              "title" : "Submit a Testimonial",
+                              "notifications_are_overridden" : true,
+                              "response_message" : "<h3>Thank you for your testimonial!</h3><div>We appreciate you taking the time to fill out our form.</div>",
+                              "response_response_type" : "inline",
+                              "response_redirect_url" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "migrated_unnamed_cell_14186225879941492",
+                "label" : "Content Bottom Container .bottom-content .page-center",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "bottom-content page-center",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "<div class=\"block\">{{ module_html }}</div>"
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "",
+                    "label" : "dnn_bottompane",
+                    "type" : "cell",
+                    "params" : {
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Dean_Draper_Dec2014 Theme/Footer",
+        "label" : "Dean_Draper_Dec2014 Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "path" : "/Global content/Global Groups/Dean_Draper_Dec2014 Theme/Dean_Draper_Dec2014 Theme/Footer.template.json",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

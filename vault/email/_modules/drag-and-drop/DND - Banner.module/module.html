@@ -1,0 +1,32 @@
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="{{ email_body_width }}" bgcolor="{{ module.style.fallback_background_color.color }}">
+  <tr>
+    <td align="center" valign="middle" width="100%" height="{{ module.banner_height }}" background="{{ module.image.src }}" style="background-image:url({{ module.image.src }});background-position:center center;background-size:cover;">
+      <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:{{ email_body_width }}px;height:{{ module.banner_height }}px;">
+      <v:fill type="frame" src="{{ module.image.src }}" color="{{ module.style.fallback_background_color.color }}" />
+      <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <div style="font-size:1px;line-height:1px;">
+      <table width="{{ email_body_width }}" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle">
+			<tbody>
+			<tr>
+			<td height="{{ module.banner_height }}" align="center">
+      <![endif]-->
+			<table valign="middle" align="center" cellpadding="0" cellspacing="0" border="0" width="{{ email_body_width }}" role="presentation">
+				<tr>
+					<td align="center" height="{{ module.banner_height }}" style="color: {{ module.style.text_color.color }}">
+						{{ module.text }}
+					</td>
+				</tr>
+			</table>
+			<!--[if gte mso 9]>
+      </td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</v:textbox>
+			</v:rect>
+      <![endif]-->
+    </td>
+  </tr>
+</table>

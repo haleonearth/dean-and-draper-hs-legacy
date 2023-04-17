@@ -1,0 +1,8 @@
+<div class="
+      vault-icontext
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+      {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %}"
+>
+  <span style="background-image: url({{ module.icon.src }});" class="vault-icontext__image {% if module.design.add_line %}vault-icontext__image-connect{% endif %}"></span>
+  {{ module.text }}
+</div>

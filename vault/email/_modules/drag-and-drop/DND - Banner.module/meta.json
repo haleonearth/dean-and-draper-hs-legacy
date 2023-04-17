@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "inline_help_text" : "This can only be used in a single-column section.",
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 42329117764,
+  "is_available_for_new_content" : true
+}

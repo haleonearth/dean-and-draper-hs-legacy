@@ -1,0 +1,40 @@
+{% if not module.hide %}
+<table align="center" class="container banner" cellpadding="0" cellspacing="0" border="0" role="presentation">
+  <tr>
+		{% if module.show_just_image %}
+		  <td align="center" valign="middle">
+				<img src="{{ module.image.src }}" alt="{{ module.image.alt }}" />
+      </td>
+		{% else %}
+      <td align="center" valign="middle" height="{{ module.banner_height }}" class="dark banner-image" background="{{ module.image.src }}" style="background-image:url({{ module.image.src }});background-position:{{ module.background_x_position }} {{ module.background_y_position }};">
+      <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:{{ width }}">
+      <v:fill type="frame" src="{{ module.image.src }}" color="#ffffff" />
+      <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <div style="font-size:1px;line-height:1px">
+      <table width="{{ width }}" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle">
+			<tbody>
+			<tr>
+			<td height="{{ module.banner_height }}" align="center">
+      <![endif]-->
+			<table valign="middle" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+				<tr>
+					<td class="module module-lh text-wrap center" height="{{ module.banner_height }}">
+						{{ module.text }}
+					</td>
+				</tr>
+			</table>
+			<!--[if gte mso 9]>
+      </td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</v:textbox>
+			</v:rect>
+      <![endif]-->
+    </td>
+		{% endif %}
+  </tr>
+</table>
+{% endif %}

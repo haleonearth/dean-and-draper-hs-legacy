@@ -1,0 +1,64 @@
+[ {
+  "id" : "1f6d1c3f-6921-6dc1-3628-be3e6df55a69",
+  "name" : "topic_text",
+  "display_width" : null,
+  "label" : "Topic text",
+  "help_text" : "**NOTE:** This module will only render something if the page is associated with a pillar page in your SEO tool.",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5584eb1e-21eb-172c-2f14-35625016100a",
+    "name" : "outer_text",
+    "display_width" : null,
+    "label" : "Preceding text",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Topic:"
+  }, {
+    "id" : "821c7989-96d9-c0bf-7b89-6d08e10d4368",
+    "name" : "custom_topic_name",
+    "display_width" : null,
+    "label" : "Topic name override",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "dc851bfc-9a10-68ac-cc8a-91c65547aa02",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "{{ tc.coreTopic.phrase }}"
+  }, {
+    "id" : "dc851bfc-9a10-68ac-cc8a-91c65547aa02",
+    "name" : "override_core_topic",
+    "display_width" : null,
+    "label" : "Override topic name with custom link text (not recommended)",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "outer_text" : "Topic:",
+    "custom_topic_name" : "{{ tc.coreTopic.phrase }}",
+    "override_core_topic" : false
+  }
+} ]

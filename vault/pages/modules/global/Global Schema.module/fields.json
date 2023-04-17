@@ -1,0 +1,245 @@
+[ {
+  "id" : "organization_type",
+  "name" : "organization_type",
+  "display_width" : null,
+  "label" : "Organization Type",
+  "help_text" : "See the more specific types at https://schema.org/Organization",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Organization"
+}, {
+  "id" : "company_logo",
+  "name" : "company_logo",
+  "display_width" : null,
+  "label" : "Company Logo",
+  "required" : true,
+  "locked" : true,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.deandraper.com/hubfs/jade/dd-logo-square.png"
+  }
+}, {
+  "id" : "company_image",
+  "name" : "company_image",
+  "display_width" : null,
+  "label" : "Company Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "social_media_profile",
+  "name" : "social_media_profile",
+  "display_width" : null,
+  "label" : "Social Media Profile",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "supported_types" : [ "EXTERNAL" ],
+  "type" : "url",
+  "default" : [ {
+    "href" : "https://www.linkedin.com/company/dean-&-draper-insurance-agency/"
+  }, {
+    "href" : "https://twitter.com/deandraper"
+  }, {
+    "href" : "https://www.facebook.com/deandraperinsurance"
+  } ]
+}, {
+  "id" : "award",
+  "name" : "award",
+  "display_width" : null,
+  "label" : "Award",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "employees",
+  "name" : "employees",
+  "display_width" : null,
+  "label" : "Employees",
+  "required" : false,
+  "locked" : true,
+  "type" : "hubdbtable",
+  "default" : ""
+}, {
+  "id" : "employee_hubdb_columns",
+  "name" : "employee_hubdb_columns",
+  "display_width" : null,
+  "label" : "Employee HubDB Columns",
+  "required" : false,
+  "locked" : true,
+  "visibility" : {
+    "controlling_field" : "employees",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "employee_hubdb_columns.name_column",
+    "name" : "name_column",
+    "display_width" : null,
+    "label" : "Name Column",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "name"
+  }, {
+    "id" : "employee_hubdb_columns.title_column",
+    "name" : "title_column",
+    "display_width" : null,
+    "label" : "Title Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "job_title"
+  }, {
+    "id" : "employee_hubdb_columns.portrait_column",
+    "name" : "portrait_column",
+    "display_width" : null,
+    "label" : "Portrait Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "portrait"
+  }, {
+    "id" : "employee_hubdb_columns.bio_column",
+    "name" : "bio_column",
+    "display_width" : null,
+    "label" : "Bio Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bio"
+  }, {
+    "id" : "employee_hubdb_columns.email_address_column",
+    "name" : "email_address_column",
+    "display_width" : null,
+    "label" : "Email Address Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "email_address"
+  }, {
+    "id" : "employee_hubdb_columns.facebook_url_column",
+    "name" : "facebook_url_column",
+    "display_width" : null,
+    "label" : "Facebook URL Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "facebook_page"
+  }, {
+    "id" : "employee_hubdb_columns.twitter_url_column",
+    "name" : "twitter_url_column",
+    "display_width" : null,
+    "label" : "Twitter URL Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "twitter_profile"
+  }, {
+    "id" : "employee_hubdb_columns.linkedin_url_column",
+    "name" : "linkedin_url_column",
+    "display_width" : null,
+    "label" : "LinkedIn URL Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "linkedin_profile"
+  }, {
+    "id" : "employee_hubdb_columns.youtube_url_column",
+    "name" : "youtube_url_column",
+    "display_width" : null,
+    "label" : "YouTube URL Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "employee_hubdb_columns.website_url_column",
+    "name" : "website_url_column",
+    "display_width" : null,
+    "label" : "Website URL Column",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "name_column" : "name",
+    "title_column" : "job_title",
+    "portrait_column" : "portrait",
+    "bio_column" : "bio",
+    "email_address_column" : "email_address",
+    "facebook_url_column" : "facebook_page",
+    "twitter_url_column" : "twitter_profile",
+    "linkedin_url_column" : "linkedin_profile"
+  }
+} ]

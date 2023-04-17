@@ -1,0 +1,373 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/blog/web_page_basic/Overture-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<script src='{{ get_public_template_url('Coded files/Custom/page/Relentless/CompanyMain.js') }}'></script>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Basic Groups/Overture Header",
+        "label" : "Basic Groups/Overture Header",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/Basic Groups/Basic Groups/Overture Header.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_144000784318852262",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "blog-main-page",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1439841018555101408",
+            "label" : "Module Group",
+            "type" : "cell",
+            "params" : {
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_143983963575684354",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_144001223344864455",
+                    "label" : "Module Group",
+                    "type" : "cell",
+                    "params" : {
+                      "cell" : false,
+                      "cells" : [ ],
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "overrideable" : false,
+                      "root" : false,
+                      "row" : false,
+                      "starting_html" : "",
+                      "value" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_14423226662232857",
+                        "label" : "HubL Template",
+                        "type" : "raw_jinja",
+                        "params" : {
+                          "cell" : false,
+                          "cells" : [ ],
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "ending_html" : "",
+                          "overrideable" : false,
+                          "root" : false,
+                          "row" : false,
+                          "starting_html" : "",
+                          "value" : "{% image \"ftr_image\" label='Featured Image', alt='', src='' export_to_template_context=True %}\n\n<style>\n\n.ftr-img {\n    background-image:url(\"{{ widget_data.ftr_image.src }}\");\n    background-size:cover;\n    background-position:center top;\n    background-repeat: no-repeat;\n}\n\n\n</style>"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "blog_content",
+                        "label" : "Blog Content",
+                        "type" : "blog_content",
+                        "params" : {
+                          "blog_listing_source" : "<div class=\"blog-section\">\r\n    <div class=\"blog-listing-wrapper cell-wrapper\">\r\n        {# simple_list_page indicates the \"blog/all\" page, which is a list of links to every blog post #}\r\n                <div class=\"post-listing{% if simple_list_page %}-simple{% endif %}\">\r\n                    {% if blog_author %}\r\n                        <div class=\"hs-author-profile\">\r\n                            <h2 class=\"hs-author-name\">{{ blog_author.display_name }}</h2>\r\n                            {% if blog_author.avatar %} <div class=\"hs-author-avatar\"> <img src=\"{{ blog_author.avatar }}\" alt=\"{{ blog_author.display_name }}\"> </div> {% endif %}\r\n                            <div class=\"hs-author-bio\">{{ blog_author.bio }}</div>\r\n                            {% if blog_author.has_social_profiles %}\r\n                                <div class=\"hs-author-social-section\">\r\n                                    <span class=\"hs-author-social-label\">Find me on:</span>\r\n                                    <div class=\"hs-author-social-links\">\r\n                                        {% if blog_author.facebook %}\r\n                                            <a href=\"{{ blog_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">&nbsp;</a>\r\n                                        {% endif %}\r\n                                        {% if blog_author.linkedin %}\r\n                                            <a href=\"{{ blog_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">&nbsp;</a>\r\n                                        {% endif %}\r\n                                        {% if blog_author.twitter %}\r\n                                            <a href=\"{{ blog_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">&nbsp;</a>\r\n                                        {% endif %}\r\n                                        {% if blog_author.google_plus %}\r\n                                            <a href=\"{{ blog_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">&nbsp;</a>\r\n                                        {% endif %}\r\n                                    </div>\r\n                                </div>\r\n                            {% endif %}\r\n                        </div>\r\n                        <h3 class=\"hs-author-listing-header\">Recent Posts</h3>\r\n                    {% endif %}\r\n                    \r\n            {% if not simple_list_page %}\r\n                        \r\n                    {% for content in contents %}\r\n                    {% set big_image = loop.index + 2 %}\r\n                    {% set left_image = loop.index + 1 %}\r\n                    {% set right_image = loop.index %}\r\n                    {% if big_image is divisibleby 3%} <div class=\"blog-triad\"> {% endif %}\r\n                        <a href=\"{{content.absolute_url}}\" {% if big_image is divisibleby 3 %} class=\"big-image-link\" {% else %} class=\"blog-link\" {% endif %}>\r\n                            \r\n                            <div {% if big_image is divisibleby 3 %} class=\"big-image-item\" {% elif left_image is divisibleby 3 %} class=\"blog-post-item bpi-left\" {% else %} class=\"blog-post-item bpi-right\" {% endif %}>\r\n                            <div class=\"post-item\">\r\n                            \r\n                               {% if content.post_list_summary_featured_image %}\r\n                                        <div class=\"hs-featured-image-wrapper\">\r\n                                            <div class=\"hs-featured-image\" style=\"background-image: url({{ content.post_list_summary_featured_image }});\"></div>\r\n                                        </div>\r\n                                        \r\n                                    {% endif %}\r\n                                <div class=\"post-header\">\r\n                                \r\n                                    <h3>{{ content.name }}</h3>\r\n                                    <div class=\"post-header-author\">\r\n                                    <p class=\"author-date\">{{ content.publish_date|datetimeformat( '%B %e, %Y' ) }} | by {{ content.blog_post_author.display_name  }}</p>\r\n                                    </div>\r\n                                </div>\r\n                                \r\n                                \r\n                                \r\n                                    \r\n                                \r\n                                <div class=\"post-summary\" id=\"post-summary\">\r\n                                    {{ content.post_list_content|safe }}\r\n                                </div>\r\n                                \r\n                                {% if content.topic_list %}\r\n                                    <div id=\"hubspot-topic_data\" class=\"list-topics\">\r\n                                        In {% for topic in content.topic_list %}\r\n                                            <span class=\"topic-link\" href=\"{{ group.absolute_url }}/topic/{{ topic.slug }}\">{{ topic.name }}{% if not loop.last %},{% endif %} </span>\r\n                                        {% endfor %}\r\n                                    </div>\r\n                                {% endif %}\r\n                            </div>\r\n                        </div></a>\r\n                        {% if right_image is divisibleby 3 %}</div>{% endif %}\r\n                    {% endfor %}\r\n            {% else %}\r\n            <div class=\"blog-main-page top-spacer\">\r\n            {% for content in contents %}\r\n                <div class=\"page-center\"><h2 class=\"post-listing-simple\"><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h2></div>\r\n            {% endfor %}\r\n            </div>\r\n            {% endif %}\r\n                    \r\n                        \r\n                </div>\r\n\r\n                {% if not simple_list_page %}\r\n                <div class=\"blog-pagination\">\r\n                    {% if last_page_num %}\r\n                        <a class=\"previous-posts-link\" href=\"{{ blog_page_link(last_page_num) }}\">Previous</a>\r\n                    {% endif %}\r\n                        <a class=\"all-posts-link\" href=\"{{ group.absolute_url }}/all\">All posts</a>\r\n                    {% if next_page_num %}\r\n                        <a class=\"next-posts-link\" href=\"{{ blog_page_link(next_page_num) }}\">Next</a>\r\n                    {% endif %}\r\n                </div>\r\n                {% endif %}\r\n    </div>\r\n</div>",
+                          "blog_post_source" : "<div class=\"blog-section\">{% boolean \"isListing\" value=False, export_to_template_context=True %}\r\n    <div class=\"blog-post-wrapper cell-wrapper\">\r\n                <div class=\"blog-section\">\r\n            <div class=\"blog-post-wrapper cell-wrapper\">\r\n                <div class=\"ftr-img\">\r\n                <div class=\"ftr-img-hdr\">\r\n                <div class=\"section post-header\">\r\n                <div class=\"section-post-wrapper cell-wrapper\">\r\n                    <h1>{{ content.name }}</h1>\r\n                    <div id=\"hubspot-author_data\" class=\"hubspot-editable\" data-hubspot-form-id=\"author_data\" data-hubspot-name=\"Blog Author\" >\r\n                        <span class=\"hs-author-label\">Posted by</span>\r\n                        {% if content.blog_post_author %}\r\n                            <a class=\"author-link\" href=\"{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}\">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}\r\n                            <!--{% if content.blog_post_author.has_social_profiles %}\r\n                                <div class=\"hs-author-social-section\">\r\n                                    <span class=\"hs-author-social-label\">Find me on:</span>\r\n                                    <div class=\"hs-author-social-links\">\r\n                                        {% if content.blog_post_author.facebook %}\r\n                                            <a href=\"{{ content.blog_post_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">Facebook </a>\r\n                                        {% endif %}\r\n                                        {% if content.blog_post_author.linkedin %}\r\n                                            <a href=\"{{ content.blog_post_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">LinkedIn</a>\r\n                                        {% endif %}\r\n                                        {% if content.blog_post_author.twitter %}\r\n                                            <a href=\"{{ content.blog_post_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">Twitter </a>\r\n                                        {% endif %}\r\n                                        {% if content.blog_post_author.google_plus %}\r\n                                            <a href=\"{{ content.blog_post_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">Google+</a>\r\n                                        {% endif %}\r\n                                    </div>\r\n                                </div>\r\n                            {% endif %}-->\r\n                        {% endif %}\r\n                    </div>\r\n                    {% if content.topic_list %}\r\n                     <p id=\"hubspot-topic_data\" class\"list-topics\"> In \r\n                        {% for topic in content.topic_list %}\r\n                            <a class=\"topic-link\" href=\"{{ group.absolute_url }}/topic/{{ topic.slug }}\">{{ topic.name }}</a>{% if not loop.last %},{% endif %}\r\n                        {% endfor %}\r\n                     </p>\r\n                {% endif %}\r\n                </div>\r\n                </div>\r\n                </div>\r\n                </div>\r\n                <div class=\"page-center\">\r\n                <div super-page-center>\r\n                \r\n                <div class=\"section post-body\">\r\n                    {{ content.post_body }}\r\n                    <!--<div class=\"buttons\">\r\n                    {#{% blog_social_sharing \"blog_social_sharing\" overrideable=False, label='Blog Social Sharing' %}#}\r\n                    </div>-->\r\n                </div>\r\n                </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n\r\n        <!-- Optional: Blog Author Bio Box -->\r\n        {#<div class=\"about-author-sec row-fluid\">\r\n            <div class=\"span2\">\r\n                <img alt=\"{{ content.blog_post_author.display_name }}\" src=\"{{ content.blog_post_author.avatar }}\">\r\n            </div>\r\n            <div class=\"span10\">\r\n                <h3>Written by <a class=\"author-link\" href=\"{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}\">{{ content.blog_post_author.display_name }}</a></h3>\r\n                <p>{{ content.blog_post_author.bio }}</p>\r\n                {% if content.blog_post_author.has_social_profiles %}\r\n                    <div class=\"hs-author-social-section\">\r\n                        <div class=\"hs-author-social-links\">\r\n                            {% if content.blog_post_author.facebook %}\r\n                                <a href=\"{{ content.blog_post_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">Facebook</a>\r\n                            {% endif %}\r\n                            {% if content.blog_post_author.linkedin %}\r\n                                <a href=\"{{ content.blog_post_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">LinkedIn</a>\r\n                            {% endif %}\r\n                            {% if content.blog_post_author.twitter %}\r\n                                <a href=\"{{ content.blog_post_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">Twitter</a>\r\n                            {% endif %}\r\n                            {% if content.blog_post_author.google_plus %}\r\n                                <a href=\"{{ content.blog_post_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">Google+</a>\r\n                            {% endif %}\r\n                        </div>\r\n                    </div>\r\n                {% endif %}\r\n            </div>\r\n        </div>#}\r\n        <div class=\"page-nav page-center\">\r\n            <div class=\"previous-post\">\r\n                {% if content.previous_post_slug %} \r\n                    <a class=\"previous-post-link\" href=\"/{{ content.previous_post_slug }}\">&lt;&lt; Previous Post</a> \r\n                {% endif %} \r\n            </div>\r\n            <div class=\"next-post\">\r\n                {% if content.next_post_slug %} \r\n                <a class=\"next-post-link\" href=\"/{{ content.next_post_slug }}\">Next Post &gt;&gt;</a> \r\n                {% endif %}\r\n            </div>\r\n        </div>\r\n        <div class=\"page-nav-bottom\"></div>\r\n    </div>\r\n</div>",
+                          "cell" : false,
+                          "cells" : [ ],
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "ending_html" : "",
+                          "h" : "8",
+                          "overrideable" : false,
+                          "root" : false,
+                          "row" : false,
+                          "starting_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_144111877459315862",
+                        "label" : "Module Group",
+                        "type" : "cell",
+                        "params" : {
+                          "cell" : false,
+                          "cells" : [ ],
+                          "css_class" : "page-center",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "ending_html" : "",
+                          "overrideable" : false,
+                          "root" : false,
+                          "row" : false,
+                          "starting_html" : "",
+                          "value" : "",
+                          "wrapping_html" : "{% if widget_data.isListing.value == False %} <div> {{html}} </div> {% else %} <div></div> {% endif %}"
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "blog_comments",
+                            "label" : "Blog Comments",
+                            "type" : "blog_comments",
+                            "params" : {
+                              "cell" : false,
+                              "cells" : [ ],
+                              "css_class" : "blog-comments",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "ending_html" : "",
+                              "overrideable" : false,
+                              "root" : false,
+                              "row" : false,
+                              "starting_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "blog-comments",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "page-center",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "blog-main-page",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Basic Groups/Overture Footer",
+        "label" : "Basic Groups/Overture Footer",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/Basic Groups/Basic Groups/Overture Footer.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

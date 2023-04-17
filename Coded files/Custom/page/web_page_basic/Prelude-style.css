@@ -1,0 +1,600 @@
+/* @import url('http://example.com/example_style.css'); */
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+{% include "hubspot/styles/responsive/required_base.css" %}
+
+{% set baseFontFamily = "Arial, Helvetica, sans-serif" %} /* change the font family as you see fit. You may need to @import it above */
+{% set borderRadius = "5px" %} /* this will change the rounded corners of the form. Change to "0px" for sharp corners. */
+{% set fieldBorderRadius = "0px" %} /* all fields in the form will add or remove sharp corners as desired */
+{% set buttonBorderRadius = "0px" %} /* this affectes the rounded corners of the button on the form. */
+{% set bulletIcon = "f05d" %} /* Use this cheat sheet to add any icon as your bullet point: http://fortawesome.github.io/Font-Awesome/cheatsheet/ only use the last four characters */
+{% set darkColor = "#555" %} /* this affects the footer's background color */
+{% set textColor = "#767676" %} /* change what color your text is here */
+{% color "webColor" color="#ff8000", export_to_template_context=True %}  /* change your site's color here */
+{% color "secondColor" color="#ff8000", export_to_template_context=True %} /* change your site's secondary color here */
+{% color "headerColor" color="#ff8000", export_to_template_context=True %} /* change the color overlay on the image */
+
+/* these will automatically update when you change the colors above */
+{% set siteColor = "{{ widget_data.webColor.color }}" %}
+{% set siteHoverColor = "rgba({{ widget_data.webColor.color|convert_rgb }}, .7)" %}
+{% set secondaryColor = "{{ widget_data.secondColor.color }}" %}
+{% set secondaryHoverColor = "rgba({{ widget_data.secondColor.color|convert_rgb }}, .7)" %}
+{% set headerColor = "rgba({{widget_data.headerColor.color|convert_rgb }}, .4)" %}
+
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+body {
+    background: {{ darkColor }};
+    font-family: {{ baseFontFamily }};
+    border-top: none;
+    font-weight:100;
+    margin: 0!important;
+    color:{{ textColor }};
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 2em;
+}
+.header-container-wrapper {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.page-center {
+    max-width: 1100px;
+    margin: 0 auto !important;
+    float: none !important;
+    padding:0 20px;
+}
+.header-content {
+    padding:15px 0;
+    background-color:#fff;
+    /*box-shadow: 0px 0px 33px #222 !important;*/
+    z-index: 5;
+}
+.header-color-overlay {
+    background-color:{{ headerColor }};
+}
+.full-width-header-pattern-image {
+    background-image:url("http://cdn2.hubspot.net/hubfs/395201/overlay.png");
+    background-position: center center;
+    background-repeat: repeat;
+    padding: 45px 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+h1 {
+    font-size:50px;
+}
+h2 {
+    font-size:36px;
+}
+h3 {
+    font-size:28px;
+}
+h4 {
+    font-size:24px;
+}
+h5 {
+    font-size:18px;
+}
+h6 {
+    font-size:12px;
+}
+p {
+    font-size: 16px;
+    line-height: 2em;
+}
+.lp-section-header {
+    text-align: center;
+}
+.section-header {
+    margin-bottom:20px;
+}
+.header {
+    margin-bottom: 10px;
+    text-align: center;
+    color:#fff;
+}
+.header h1 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.header h2 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.header h3 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.header h4 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.sub-header {
+    margin-bottom: 10px;
+    text-align: center;
+    color:#fff;
+}
+.sub-header h1 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.sub-header h2 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.sub-header h3 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+.sub-header h4 {
+    -webkit-margin-before:.4em;
+    -webkit-margin-after:.4em;
+}
+a:link {
+    text-decoration: none;
+    color: {{ siteColor }};
+}
+a:visited {
+    text-decoration: none;
+    color: {{ siteColor }};
+}
+a:active {
+    text-decoration: none;
+    color: {{ siteColor }};
+}
+a:hover {
+    text-decoration: none;
+    color: {{ siteHoverColor }};
+}
+.phone-number {
+    font-size: 16px;
+    color: {{ textColor }};
+    text-align: right;
+    margin-top: 4%;
+}
+.hubl {
+    display: none;
+}
+.full-width-white-bg {
+    background:#ffffff;
+    padding:25px 0 50px;
+    z-index:-2;
+    /*box-shadow: 0px 0px 33px #222 !important;*/
+}
+.full-width-light-grey-bg {
+    background: #f2f3f4;
+    padding: 25px 0 50px;
+}
+.center-image {
+    margin:0 auto 20px!important;
+    float:none!important;
+    text-align:center;
+    max-width:600px;
+}
+.icon-wrapper {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto!important;
+    float: none!important;
+}
+.font-awesome-icon {
+    color {{ secondaryColor }};
+    height: 120px;
+    width: 120px;
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px auto!important;
+    float: none!important;
+}
+.full-width-light-grey-bg h1, .full-width-light-grey-bg h2,
+.full-width-light-grey-bg h3, .full-width-light-grey-bg h4,
+.full-width-light-grey-bg h5, .full-width-light-grey-bg h6 {
+    text-align: center;
+    color: {{ textColor }};
+}
+.top-banner {
+    padding: 25px 0;
+}
+.top-banner h3 {
+    font-size: 24px;
+}
+.main-content {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.left-form {
+    padding-left: 1%;
+}
+.right-form {
+    padding: 6px;
+}
+.right-offer {
+    padding: 20px;
+}
+.offer-cta {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.float-offer {
+    padding: 20px 10px 10px;
+    background-color: rgba(248,248,248,.8);
+    /*box-shadow: 0px 4px 3px #999 !important;*/
+}
+.float-form {
+    padding: 20px 50px;
+    background: #ffffff;
+    border: solid 1px #eeeeee;
+    box-shadow: 0px 4px 3px rgba(108,108,108,.4) !important;
+    border-radius: {{ borderRadius }};
+}
+.float-form h1, .float-form h2, .float-form h3, .float-form h4 {
+    text-align:center;
+    color:{{ textColor }};
+} 
+.tri-column {
+    padding: 20px;
+}
+.tri-column h2 {
+    font-size: 30px;
+}
+.social-sharing {
+    margin-top:30px;
+    text-align: center;
+}
+.super-shadow {
+  position: relative;
+}
+.super-shadow:before, .super-shadow:after {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.super-shadow:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.content-text ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.content-text ul li {
+    /*background-image: url(http://cdn2.hubspot.net/hubfs/395201/a-check-1.png);
+    background-repeat: no-repeat;
+    background-position: 0px center; */
+    padding-left: 40px;
+    margin-bottom: 25px;
+    min-height:30px;
+    position: relative;
+}
+.content-text ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  font-size: 28px;
+  content: "\{{ bulletIcon }}";
+  color: {{ siteColor }};
+}
+.hs-button.primary {
+    background-color: {{siteColor}};
+    text-align: center;
+}
+.flex-area {
+    padding: 100px 0;
+}
+.flex-area img {
+    width: 100%;
+    height: auto;
+}
+.footer-details {
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-container-wrapper {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+.footer-bg {
+    background:{{ darkColor }};
+    color:#fff;
+    padding:20px 0;
+}
+/**************** Button-related ******************/
+
+.button {
+    font-family: {{ baseFontFamily }};
+}
+.hs-button{
+    background-color: {{siteColor}};
+    font-family: {{ baseFontFamily }};
+    color: #FFFFFF;
+    border: medium none;
+    cursor: pointer;
+    border-radius: {{ buttonBorderRadius }};
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding: 15px 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 200;
+    white-space:normal;
+    text-align:center;
+    text-decoration:none;
+    -webkit-appearance: none;
+}
+
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {
+  cursor: pointer;
+}
+body input[type="text"],
+body input[type="password"], 
+body input[type="datetime"], 
+body input[type="datetime-local"], 
+body input[type="date"], 
+body input[type="month"], 
+body input[type="time"], 
+body input[type="week"], 
+body input[type="number"], 
+body input[type="email"], 
+body input[type="url"], 
+body input[type="search"], 
+body input[type="tel"], 
+body input[type="color"],
+body input[type="file"],
+body textarea,
+body select {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 10px;
+    font-family: {{ baseFontFamily }};
+    font-size: 15px;
+    font-weight: 200;
+    color:{{ textColor }};
+    margin:4px 0 20px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    border-radius: {{ fieldBorderRadius }};
+}
+.hs-form-radio {
+    list-style-type:none;
+}
+.hs-form-booleancheckbox {
+    list-style-type:none;
+}
+.hs-form fieldset {
+    max-width: none!important;
+}
+.hs-form fieldset.form-columns-1 .hs-input {
+    width: 100%!important;
+}
+.hs-form fieldset.form-columns-1 input[type=checkbox], .hs-form fieldset.form-columns-1 input[type=radio] {
+    width:auto!important;
+}
+body input[type="text"]:focus,
+body input[type="password"]:focus, 
+body input[type="datetime"]:focus, 
+body input[type="datetime-local"]:focus, 
+body input[type="date"]:focus, 
+body input[type="month"]:focus, 
+body input[type="time"]:focus, 
+body input[type="week"]:focus, 
+body input[type="number"]:focus, 
+body input[type="email"]:focus, 
+body input[type="url"]:focus, 
+body input[type="search"]:focus, 
+body input[type="tel"]:focus, 
+body input[type="color"]:focus,
+body input[type="file"]:focus,
+body textarea:focus,
+body select:focus {}
+body label {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 0px;
+    line-height: 20px;
+}
+
+.hs-button.primary {
+    min-width: 100%;
+}
+body .hs-button:hover{
+    background: none repeat scroll 0 0 {{siteHoverColor}};
+    color: #FFFFFF;
+}   
+.hs-error-msgs {
+    background:rgba(255,50,50,.4);
+    list-style-type:none;
+}
+    
+/* ------------------------------------------------------------------------------ */
+/* Tablet Portrait */
+/* ------------------------------------------------------------------------------ */
+@media only screen and (max-width: 1200px) {
+    #form-pad {
+        padding: 20px;
+        z-index: 1;
+    }
+    .float-form {
+        padding: 20px 10px 10px;
+    }
+    .addl-info {
+        padding-top: 30px;
+    }
+    .image-holder-left {
+        padding-left: 10%;
+    }
+    
+}
+/* ------------------------------------------------------------------------------ */
+/* Mobile Portrait*/
+/* ------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 767px) {
+    .header-content {
+        padding: 5px 0;
+    }
+    .page-center {
+        padding:0 10px;
+    }
+    .company-logo {
+        text-align:center;
+        margin:0 auto;
+        float:none;
+    }
+    .social-sharing {
+        text-align:center;
+    }
+    #form-pad {
+        padding: 20px;
+        z-index: 1;
+    }
+    .float-form {
+        margin-top: 0;
+        padding: 20px 10px 10px;
+    }
+    .addl-info {
+        padding-top: 30px;
+    }
+    .image-holder-left {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    .image-holder-right {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    .left-form {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    .phone-number {
+        display: none!important;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:520px) {
+    .sub-header {
+        margin-top:50px;
+    }
+    .page-center {
+        padding:0 5px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+}
+/* ------------------------------------------------------------------------------ */
+/* Mobile Portrait*/
+/* Width of 480px */
+/* ------------------------------------------------------------------------------ */
+@media only screen and (max-width: 480px) {
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .right-form {
+        padding: 0;
+        z-index: 1;
+    }
+    .float-offer {
+        margin-top: 0;
+        padding: 20px 10px 10px;
+        background-color: rgba(248,248,248,1);
+        /* box-shadow: 0px 4px 3px #999 !important;*/
+    }
+    .float-form {
+        margin-top: 0;
+        padding: 20px 10px 10px;
+    }
+    .addl-info {
+        padding-top: 20px;
+    }
+    .image-holder-left {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    .image-holder-right {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    .left-form {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+}    
+    

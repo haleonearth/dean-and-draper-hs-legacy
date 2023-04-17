@@ -1,0 +1,13 @@
+<div class="vault-slider">
+  {% for slide in module.slide %}
+    <div class="vault-slider__slide">
+      <div class="vault-slider__slide-wrapper">
+        <div class="vault-slider__slide-text">
+          {{ slide.text }}
+          {{ cta(slide.cta) }}
+        </div>
+        <div class="vault-slider__slide-image" style="background-image: url({{ slide.image.src }});"></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

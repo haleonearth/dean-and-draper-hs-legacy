@@ -1,0 +1,18 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Search Results
+-->
+
+{% set template_body_classes = "system-page system-page--search" %}
+
+{% extends '../../partials/base.html' %}
+
+{% block body %}
+  <div class="system-page-content">
+    <h1>Results for "{{ request.query_dict.term|escape }}"</h1>
+    {% module 'search_results'
+      path='@hubspot/search_results'
+    %}
+  </div>
+{% endblock body %}

@@ -1,0 +1,19 @@
+<!-- module html  -->
+{% set author = module.author %}
+{% if author.person or author.bio %}
+  <div class="author">
+    {% if author.headshot.src %}
+      <div class="author__thumbnail">
+        <img src="{{ author.headshot.src }}" alt="author.name">
+      </div>
+    {% endif %}
+    <div class="author__bio">
+      {% if author.person %}
+        <h5>Written By: {{ author.person }}{% if author.title %} | {{ author.title }}{% endif %}</h5>
+      {% endif %}
+      {% if author.bio %}
+        <p>{{ author.bio }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

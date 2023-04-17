@@ -1,0 +1,84 @@
+<!-- module html  -->
+
+<section class="vault-blog__listing">
+  <div class="container">
+    <div class="vault-blog__listing--wrapper">
+      <div class="titling" style="display: flex; justify-content: center; margin-bottom: 90px;">
+        <h1 style="text-align: center;">Careers</h1>
+      </div>
+      <header class="vault-blog__listing--header">
+        <h1>{{ content.page_title }}</h1>
+        <p>{{ content.meta_description }}</p>
+      </header>
+      <section class="filters filters--blog">
+        {% set tags = blog_tags('default', 250) %}
+        <div class="filters__item filters__item--filter select-nav">
+          <button class="select-nav__label">Filter By
+            {% if topic %}{{ topic|title }}{% else %}Category{% endif %}:</button>
+          <ul class="select-nav__options">
+            {% if topic %}
+            <li><a href="{{ group.absolute_url }}">Show All Posts</a></li>
+            {% endif %}
+            {% for tag in tags %}
+            <li><a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag|title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <form class="filters__search search-form search-form--blog search-form--filter search-form--active"
+          data-always-active="true">
+          <div class="search-form__inner">
+            <label for="blog-search" class="search-form__label">Search</label>
+            <input type="search" class="search-form__input" id="blog-search" placeholder="Search" name="term">
+            <button class="search-form__submit" aria-label="Search">
+              {{ components.inline_svg(components.slug('search')) }}
+            </button>
+            <input type="hidden" name="type" value="BLOG_POST">
+          </div>
+        </form>
+      </section>
+      <section class="vault-blog-posts" id="posts">
+        <div class="row-fluid">
+          {% for post in contents %}
+          <a href="{{ post.absolute_url }}" class="vault-blog-posts__post">
+            <div class="vault-blog-posts__post-image__wrapper">
+              <div class="vault-blog-posts__post-image" style="background-image: url('{{ post.featured_image }}');">
+              </div>
+            </div>
+            <div href="{{ post.absolute_url }}" class="vault-blog-posts__post-details">
+              <h2 class="h3"><em>{{ post.tag_list[0] }}</em>{{ post.name }}</h2>
+              <p class="colored-section colored-section--dark vault-blog-posts__post-more"><span class="link-cta">Read
+                  More</span></p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <div class="row-fluid">
+          <div class="vault-blog-posts__posts-wrapper__navigation sticky-row-stop">
+            {% if contents.total_count > 6 %}
+            <button class="vault-blog-posts__posts-wrapper__navigation--load button button--alpha">View More</button>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="vault-blog__listing--featured">
+      <div class="sticky-row">
+        {% set posts = blog_recent_topic_posts('default', module.featured_tag, 1) %}
+        {% for post in posts %}
+        <a href="{{ post.absolute_url }}" class="vault-blog__listing--featured-post">
+          <div class="vault-blog__listing--featured-post__wrapper">
+            <div class="vault-blog__listing--featured-post__thumbnail"
+              style="background-image: url('{{ post.featured_image }}')" ;></div>
+          </div>
+          <div class="vault-blog__listing--featured-post__details">
+            <h2 class="h3"><em>Featured Article</em>{{ post.tag_list[0] }}: {{ post.name }}</h2>
+            <p>{{ post.meta_description }}</p>
+            <p><span class="link-cta">Read More</span></p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

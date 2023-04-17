@@ -1,0 +1,7 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+.vault-page-nav{margin:0 auto;display:flex;justify-content:center;align-items:center;padding-left:0}@media (max-width:799px){.vault-page-nav{display:none}}.vault-page-nav li{margin:0 1em}.vault-page-nav li a{display:block;border:1px solid #e4e4e4;border-radius:4px;padding:.5em 1em;text-decoration:none;font-weight:500;transition:all .3s}.vault-page-nav li a:hover{background-color:#007367;border-color:#007367;color:#fff}.vault-page-nav li::marker{content:""}

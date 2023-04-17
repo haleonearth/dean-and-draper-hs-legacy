@@ -1,0 +1,72 @@
+[ {
+  "id" : "slide",
+  "name" : "slide",
+  "display_width" : null,
+  "label" : "Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "slide.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Headline Goes Here Lorem Ipsum</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>"
+  }, {
+    "id" : "slide.cta",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "96e18057-eef0-476f-bd09-c226f73faeb9"
+  }, {
+    "id" : "image",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/slider-img1.png",
+      "alt" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text" : "<h3>Headline Goes Here Lorem Ipsum</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>",
+    "image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/slider-img1.png"
+    },
+    "cta" : "96e18057-eef0-476f-bd09-c226f73faeb9"
+  }, {
+    "text" : "<h3>Slide Two Headline</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>",
+    "image" : {
+      "src" : "https://via.placeholder.com/500x400.png"
+    },
+    "cta" : "96e18057-eef0-476f-bd09-c226f73faeb9"
+  }, {
+    "text" : "<h3>Slide Three Headline</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>",
+    "image" : {
+      "src" : "https://via.placeholder.com/500x400.png"
+    },
+    "cta" : "96e18057-eef0-476f-bd09-c226f73faeb9"
+  } ]
+} ]

@@ -1,0 +1,15 @@
+{% if request.postDict.inpageEditorUI %}
+  <h3>Start of Section: {{ module.section_label }}</h3>
+  <p>Link to this section with the URL <a href="{{ content.absolute_url }}#{{ module.anchor }}">{{ content.absolute_url }}#{{ module.anchor }}</a></p>
+  <p><small>(This notice only appears in the editor.)</small></p>
+{% endif %}
+
+<div id="{{ module.anchor }}"></div>
+
+<script>
+  window.pageNavItems = window.pageNavItems || [];
+  window.pageNavItems.push({
+    anchor: {{ module.anchor|tojson }},
+    label: {{ module.section_label|tojson }}
+  });
+</script>

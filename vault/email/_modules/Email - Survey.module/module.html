@@ -1,0 +1,59 @@
+{% if not module.hide %}
+	<table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+		<tr>
+			<td class="survey module module-hl {{ module.section_color }}">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+					<tr>
+						<td colspan="{% for item in module.answer %}{% if loop.first %}{{ (loop.length * 2) - 1}}{% endif %}{% endfor %}" class="center text-wrap">
+							{{ module.headline }}
+						</td>
+					</tr>
+					<tr><td class="space-hs"></td></tr>
+					<tr>
+							{% set href = module.url.href %}
+							{% if module.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+							{% endif %}
+
+								{% for item in module.answer %}
+									{% if href && item.item_id %}
+									<td class="center">
+										<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+											<tr>
+												<td class="text-wrap center answer">
+													<div>
+														<!--[if mso]>
+														<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ href }}" style="height:70px;v-text-anchor:middle;width:100%;" stroke="f" 
+                    fillcolor="{% if item.id_button_color == "beta" %}#2ba8d0{% else %}#222b64{% endif %}">
+														<w:anchorlock/>
+														<center>
+														<![endif]-->
+														<a href="{{ href }}?{{ module.form_field_name }}={{ item.form_value }}" class="button button-{{ item.id_button_color }}" style="width:100%;">{{ item.item_id }}</a>
+														<!--[if mso]>
+														</center>
+														</v:rect>
+														<![endif]-->
+													</div>
+												</td>
+											</tr>
+											<tr><td class="space-hs"></td></tr>
+											<tr>
+												<td class="text-wrap center">
+													<p>
+														<a href="{{ href }}?{{ module.form_field_name }}={{ item.form_value }}">
+															{{ item.title }}
+														</a>
+													</p>
+												</td>
+											</tr>
+										</table>
+								 </td>
+								{% if not loop.last %}<td class="space-v"></td>{% endif %}
+							{% endif %}
+						{% endfor %}
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+{% endif %}

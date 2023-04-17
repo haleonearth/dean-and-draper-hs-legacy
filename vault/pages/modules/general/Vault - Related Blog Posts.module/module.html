@@ -1,0 +1,48 @@
+{% macro formatter(post) %}
+  <a href="{{ post.absolute_url }}" class="vault-blog-posts__post span4">
+    <div class="vault-blog-posts__post-image__wrapper">
+      <div class="vault-blog-posts__post-image" 
+           style="background-image: url({% if post.featured_image %}{{ post.featured_image }}{% else %}https://www.deandraper.com/hubfs/jade/laptop-consult-hero-img.jpg{% endif %})";>
+      </div>
+    </div>
+  
+    <div href="{{ post.absolute_url }}" class="vault-blog-posts__post-details">
+      <h3><em>{{ post.tag_list[0] }}</em>{{ post.name }}</h3>
+
+      <p class="colored-section colored-section--dark vault-blog-posts__post-more"><span class="link-cta">Read More</span></p>
+    </div>
+  </a>
+{% endmacro %}
+
+{% if module.specific_posts %}
+  {% set blog_ids = [] %}
+  {% for post in module.spec_post_id %}
+    {% do blog_ids.append(post) %}
+  {% endfor %}
+{% endif %}
+
+<div class="vault-blog-posts">
+  <div class="row-fluid">
+    {% if module.specific_posts %}
+      {% set blog_ids = [] %}
+      {% for post in module.spec_post_id %}
+        {% do blog_ids.append(post) %}
+      {% endfor %}
+
+      {% related_blog_posts 
+        blog_ids="module.blog",
+        blog_post_override="blog_ids" 
+        limit=3, 
+        no_wrapper=true,
+        post_formatter="formatter" 
+      %}
+    {% else %}
+      {% related_blog_posts 
+        blog_ids="module.blog", 
+        limit=3,
+        no_wrapper=true, 
+        post_formatter="formatter" 
+      %}
+    {% endif %}
+  </div>
+</div>

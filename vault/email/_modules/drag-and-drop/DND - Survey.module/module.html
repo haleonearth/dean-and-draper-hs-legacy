@@ -1,0 +1,41 @@
+<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" style="table-layout: fixed">
+	<tr>
+		{% for item in module.answer %}
+		  {% set url = item.url.href or module.url.href %}
+			{% if item.form_value and module.form_field_name %}
+		    {% set url = url is string_containing '?' ? url ~ '&' : url ~ '?' %}
+		    {% set url = url ~ module.form_field_name ~ '=' ~ item.form_value|urlencode %}
+			{% endif %}
+			<td valign="top">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+					<tr>
+						<td align="center">
+							<div>
+								<!--[if mso]>
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ href }}" style="height:70px;v-text-anchor:middle;width:100%;" stroke="f" 
+				fillcolor="{{ item.color.color }}">
+								<w:anchorlock/>
+								<center>
+								<![endif]-->
+								<a href="{{ url }}" style="color:{{ item.button_text_color.color }}; background-color: {{ item.color.color }}; font-size: 36px; line-height: 63px; width: 100%; display: block; text-align: center; text-decoration: none;">{{ item.item_id }}</a>
+								<!--[if mso]>
+								</center>
+								</v:rect>
+								<![endif]-->
+							</div>
+						</td>
+					</tr>
+					{% if module.style.space_under_button > 0 %}<tr><td height="{{ module.style.space_under_button }}"></td></tr>{% endif %}
+					<tr>
+						<td align="center">
+							<a href="{{ url }}" style="text-decoration: none; {% if module.style.primary_text_color.color %}color:{{ module.style.primary_text_color.color }};{% endif %}">
+								{{ item.title }}
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			{% if not loop.last %}<td width="{{ module.style.space_between_items }}"></td>{% endif %}
+		{% endfor %}
+	</tr>
+</table>

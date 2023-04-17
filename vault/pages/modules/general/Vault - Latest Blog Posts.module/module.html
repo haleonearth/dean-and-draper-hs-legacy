@@ -1,0 +1,37 @@
+{% macro formatter(post) %}
+  <a href="{{ post.absolute_url }}" class="vault-blog-posts__post span4">
+    <div class="vault-blog-posts__post-image__wrapper">
+      <div class="vault-blog-posts__post-image" 
+           style="background-image: url({% if post.featured_image %}{{ post.featured_image }}{% else %}https://www.deandraper.com/hubfs/jade/laptop-consult-hero-img.jpg{% endif %})";>
+      </div>
+    </div>
+  
+    <div href="{{ post.absolute_url }}" class="vault-blog-posts__post-details">
+      <h3><em>{{ post.tag_list[0] }}</em>{{ post.name }}</h3>
+
+      <p class="colored-section colored-section--dark vault-blog-posts__post-more"><span class="link-cta">Read More</span></p>
+    </div>
+  </a>
+{% endmacro %}
+
+<div class="vault-blog-posts">
+  <div class="row-fluid">
+    {% if module.tags %}
+      {% set tags = [] %}
+
+      {% for tag in module.tags %}
+        {% do tags.append(tag) %}
+      {% endfor %}
+
+      {% set tag_posts = blog_recent_tag_posts(module.blog, tags, 3) %}
+      {% for tag_post in tag_posts %}
+        {% call formatter(tag_post) %}{% endcall %}
+      {% endfor %}
+    {% else %} 
+      {% set posts = blog_recent_posts(module.blog, 3) %}
+      {% for post in posts %}
+        {% call formatter(post) %}{% endcall %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

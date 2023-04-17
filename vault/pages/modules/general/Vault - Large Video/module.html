@@ -1,0 +1,22 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<div class="
+      vault-cta-banner
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+      {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %}"
+    style="background-color: rgba({{ module.design.background_color.color|convert_rgb }}, {{ module.design.background_color.opacity/100 }});"
+>
+    <div class="vault-cta-banner__text">
+      {{ module.text }}
+    </div>
+
+    {% if module.cta %}
+      <div class="vault-cta-banner__cta">
+        {% for guid in module.cta %}
+          {% cta guid="{{ guid }}" %}
+        {% endfor %}
+      </div>
+    {% endif %}
+</div>

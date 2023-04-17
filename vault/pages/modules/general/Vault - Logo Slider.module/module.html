@@ -1,0 +1,46 @@
+<div class="
+      vault-logo-slider
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %}"
+>
+  <div class="vault-logo-slider__wrapper" data-slick='{"slidesToShow": 7, "slidesToScroll": 1}'>
+    {% for logo in module.logo_item %}
+      {% set sizeAttrs = 'width="{{ logo.image.width }}" height="{{ logo.image.height }}"' %}
+      
+      {% if logo.image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif logo.image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ logo.image.max_width }}px; max-height: {{ logo.image.max_height }}px"' %}
+      {% endif %}
+      
+      {% set loadingAttr = logo.image.loading != 'disabled' ? 'loading="{{ logo.image.loading }}"' : '' %}
+      
+      {% if logo.link.url.href %}
+        {% set href = logo.link.url.href %}
+
+        {% if logo.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+
+        {% set rel = [] %}
+
+        {% if logo.link.no_follow %}
+          {% do rel.append("nofollow") %}
+        {% endif %}
+
+        {% if logo.link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+        {% endif %}
+
+        <a href="{{ href }}"
+          {% if logo.link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+          >
+          <img src="{{ logo.image.src }}" alt="{{ logo.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        </a>
+      {% else %}
+        <img src="{{ logo.image.src }}" alt="{{ logo.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      
+    {% endfor %}
+  </div>
+</div>

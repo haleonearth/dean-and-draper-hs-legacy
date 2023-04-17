@@ -1,0 +1,59 @@
+
+p, h1, h2, h3, h4, h5{
+    color: {{ primary_font_color }};
+}
+#footer p{
+    color: {{ secondary_font_color }};
+}
+a:visited{
+    color: blue;
+}
+.max-width-540,
+.max-width-540 *{
+    max-width: 540px;
+    max-width: 540px !important;
+}
+.max-width-600,
+.max-width-600 *{
+    max-width: 600px;
+    max-width: 600px !important;
+}
+
+{% set breakpoints = [480, 650] %}
+
+
+{% for b in breakpoints %}
+    @media (max-width: {{ b }}px){
+        .k-{{ b }}-col{
+            display: block;
+            width: 100% !important;        
+        }
+        .k-{{ b }}-padding{
+            padding: 0 !important;
+        }
+        .k-{{ b }}-text-align{
+            text-align: left !important;
+        }
+        .k-{{ b }}-margin{
+            margin: 0 !important;
+        }
+        .k-{{ b }}-margin-lr{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+{% endfor %}
+ @media (max-width: 650px){
+    .main-report{
+        margin-bottom: 60px;
+    }
+ }
+
+@media (max-width: 480px){
+    .two-col-centered *{
+        text-align: left !important;
+    }
+    .two-col-centered .gutter{
+        margin-left: 0 !important;
+    }
+}

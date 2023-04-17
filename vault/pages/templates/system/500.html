@@ -1,0 +1,16 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: 500 Error
+-->
+
+{% set template_body_classes = "system-page system-page--error" %}
+
+{% extends '../../partials/base.html' %}
+
+{% block body %}
+  <div class="system-page-content">
+    <h1>Something isn't quite right</h1>
+    <p>Sorry, an internal server error occurred. But have no fear, we're on the case!</p>
+  </div>
+{% endblock body %}

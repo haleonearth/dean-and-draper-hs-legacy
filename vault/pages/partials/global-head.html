@@ -1,0 +1,182 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+
+
+{# Start global html head --------------------------------------------------------------------------------------------- #}
+
+{# This variable toggles whether or not to use async CSS. We don't really want it during development, but we do want it in production. #}
+{% set is_preview = request.query_dict.hsDebug or request.query_dict.template_file_path %}
+
+{# Pass this the URL of a CSS file. #}
+{% macro async_css(url) %}
+  {% if is_preview %}
+    {% do require_css(url) %}
+  {% else %}
+    <link rel="preload" href="{{ url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url }}"></noscript>
+  {% endif %}
+{% endmacro %}
+
+{% unless is_preview %}
+  {# Add critical styles to the below html file, once development is done. The easiest way is using the critical-css-tool. #}
+  {% include './critical-styles.css.html' %}
+{% endunless %}
+
+{# Useful polyfills for IE. #}
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="{{ get_asset_url("../../assets/ie11CustomProperties.js") }}"><\x2fscript>');</script>
+
+{# Main theme assets. Make sure to rename these with your theme name! You can also work on a branch by setting the branch in package.json, then adding
+  {% set branch = 'branch-name' %}
+to your template.
+#}
+{% set theme = 'vault' %}
+{{ async_css('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap') }}
+{{ async_css(get_asset_url(branch ? "../../assets/vault-style-" ~ branch ~ ".css" : "../../assets/vault-style.css")) }}
+{{ async_css(get_asset_url(branch ? "../../assets/vault-style-" ~ branch ~ ".css" : "../../assets/titan.css")) }}
+{{ require_js(get_asset_url(branch ? "../../assets/vault-script-" ~ branch ~ ".js" : "../../assets/vault-script.js"), 'footer') }}
+
+{# This allows us to detect if JS is enabled. Lots of stuff will break if it isn't, but at least we can add a few fallbacks! #}
+<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+
+{% unless is_preview %}
+  {% include './cssrelpreload.js.html' %}
+{% endunless %}
+
+{# End global html head ----------------------------------------------------------------------------------------------- #}
+
+{# Start global variables --------------------------------------------------------------------------------------------- #}
+{# Start macros ------------------------------------------------------------------------------------------------------- #}
+{# These macros can be referenced in any template or module using the `components` variable. #}
+
+{# Converts any string into a standardized "slug". Useful for element IDs! #}
+{% macro slug(str) %}{{ str|lower|trim|regex_replace('[^A-z0-9]', '-')|regex_replace('-+', '-') }}{% endmacro %}
+
+{# This just prints out the above function as the equivalent chain of javascript funtions. #}
+{% macro js_slug() %}.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').replace(' ', '-'){% endmacro %}
+
+{# Include a .svg.html file from the assets/icons folder, inline. #}
+{% macro inline_svg(filename) %}
+  {% set svg = "../../assets/icons/" ~ filename ~ ".svg.html" %}
+  {% include svg %}
+{% endmacro %}
+
+{# Generates some CSS to add a responsive background to an element. #}
+{% macro responsive_background(html_id, desktop = '', mobile = '', position = '') %}
+	{% if html_id and (desktop or mobile) %}
+    <style>
+      {% if position and (desktop or mobile) %}
+        #{{ html_id }} {
+          background-position: {{ position }};
+        }
+      {% endif %}
+      {% if desktop %}
+        #{{ html_id }} {
+          background-image: url('{{ desktop|escape }}');
+        }
+      {% endif %}
+      {% if mobile %}
+        @media (max-width: 767px) {
+          #{{ html_id }} {
+            background-image: url('{{ mobile|escape }}');
+          }
+        }
+      {% endif %}
+    </style>
+	{% endif %}
+{% endmacro %}
+
+{# This macro adds the standard section wrapper. If used in a module with design settings, you can just pass the module variable as the first argument! #}
+{% macro section(settings, additional_classes) %}
+  {% set id = settings.section_id or name %}
+  <section  id="{{ id }}"
+            class="
+              page-section
+              colored-section
+              colored-section--{{ settings.design.color_theme }}
+              {% if settings.design.background.overlay %}colored-section--overlay colored-section--overlay--{{ settings.design.background.overlay }}{% endif %}
+              padded-section
+              padded-section--{{ settings.design.padding }}
+              {{ additional_classes }}
+            ">
+    <div class="container container--{{ settings.design.container_width }}">
+      {% if settings.header %}
+        <header class="page-section__header">
+          {{ settings.header }}
+        </header>
+      {% endif %}
+      <div class="page-section__body">
+        {{ caller() }}
+      </div>
+      {% if settings.footer %}
+        <footer class="page-section__footer">
+          {{ settings.footer }}
+        </footer>
+      {% endif %}
+    </div>
+    {% if settings.design.background.video %}
+      <video class="page-section__video-background lazy"
+             data-src="{{ settings.design.background.video|escape }}"
+             muted
+             autoplay
+             loop>
+        <source type="video/{{ settings.design.background.video|split('/')|last|split('.')|last }}">
+      </video>
+    {% endif %}
+  </section>
+  {{ responsive_background(id, settings.design.background.image.src, settings.design.background.mobile_image.src, settings.design.background.position) }}
+{% endmacro %}
+
+{# Generates a standardized/generic link-with-an-image-and-title. #}
+{% macro thumbnail_link(link) %}
+  <a href="{{ link.url.href }}" class="thumbnail-link">
+    <div class="thumbnail-link__image">
+      {{ lazy_image({
+        alt: link.image.alt,
+        src: link.image.src,
+        width: 350
+      }) }}
+      {% if link.image.src %}<img src="{{ resize_image_url(link.image.src, 350) }}" alt="{{ link.image.alt }}">{% endif %}
+    </div>
+    {% if link.title %}
+      <h4 class="thumbnail-link__title">{{ link.title }}</h4>
+    {% endif %}
+    <p class="thumbnail-link__read-more" aria-hidden="true">Read More</p>
+  </a>
+{% endmacro %}
+
+{# This is a shortcut to display blog posts as a thumbnail_link. #}
+{% macro thumbnail_link_blog_post(post) %}
+  {{ thumbnail_link({
+    url: {
+      href: post.absolute_url
+    },
+    image: {
+      src: post.featured_image
+    },
+    title: post.name|striptags
+  })}}
+{% endmacro %}
+
+{# Convert an image field into a lazy image using vanilla-lazyload. #}
+{% macro lazy_image(image, class = "", attrs = {}) %}
+  {% if image.src %}
+    <img data-src="{{ resize_image_url(image.src, image.width) }}"
+         alt="{{ image.alt }}"
+         width="{{ image.width }}"
+         height="{{ image.height }}"
+         class="{{ class }} lazy"
+         {% for attr, value in attrs.items() %}
+          {{ attr }}="{{ value|escape }}"
+         {% endfor %}>
+  {% endif %}
+{% endmacro %}
+
+{# Convert a link field to an HTML link. #}
+{% macro link_field(link, text, fallback = "", class = "") %}
+  <a href="{% if link.url.href %}{{ 'mailto:' if link.url.type == 'EMAIL_ADDRESS' }}{{ link.url.href }}{% else %}{{ fallback or 'javascript:void(0)' }}{% endif %}"
+    {% if class %}class="{{ class }}"{% endif %}
+    {% if link.open_in_new_tab %}target="_blank"{% endif %}
+    {% if link.no_follow %}rel="nofollow"{% endif %}>{{ text }}</a>
+{% endmacro %}

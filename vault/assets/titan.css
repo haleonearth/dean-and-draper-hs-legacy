@@ -1,0 +1,9 @@
+
+/* hack fix width of non-menamenu dropdown menus */
+nav .hs-menu-children-wrapper:not(.megamenu) {
+    min-width: 200px!important;
+}
+
+.site-footer .hs-menu-wrapper ul {
+    width: max-content !important;
+}

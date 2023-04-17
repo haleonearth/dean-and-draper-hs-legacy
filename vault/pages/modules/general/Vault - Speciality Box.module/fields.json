@@ -1,0 +1,61 @@
+[ {
+  "id" : "bg_image",
+  "name" : "bg_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/AdobeStock_265244367.png",
+    "alt" : null
+  }
+}, {
+  "id" : "heading",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Commercial Insurance"
+}, {
+  "id" : "link_text",
+  "name" : "link_text",
+  "display_width" : null,
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn More"
+}, {
+  "id" : "link",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : "https://www.example.com"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

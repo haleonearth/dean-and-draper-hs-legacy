@@ -1,0 +1,72 @@
+[ {
+  "id" : "12dace0c-000b-aa29-c0f1-cc175a549078",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "0ac46c3d-86b2-ad72-af65-c2b64ee09e82",
+  "name" : "section_color",
+  "display_width" : null,
+  "label" : "Section Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "base", "Base" ], [ "light", "Light" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "beta", "Beta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "base"
+}, {
+  "id" : "d8eb2658-6f07-58d9-6608-73d780b452d9",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/logo.png",
+    "alt" : "Dean & Draper",
+    "width" : 218,
+    "height" : 38
+  }
+}, {
+  "id" : "89515591-0ac8-db50-abb0-910015ab7a13",
+  "name" : "logo_link",
+  "display_width" : null,
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 30979222776
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "d770d9d3-4611-1fc0-bd5f-002d567344c7",
+  "name" : "date",
+  "display_width" : null,
+  "label" : "Date",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "December 4, 2020"
+} ]

@@ -1,0 +1,1595 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/system/jade/jade-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "{% import 'Coded files/Custom/system/jade/jade-components.html' as components %}\n{{ components.global_head() }}",
+  "customFooter" : "",
+  "bodyClass" : "flush-header flush-footer",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517867587479184",
+        "label" : "hero-section hero-section--home colored-section colored-section--alpha",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "hero-section colored-section colored-section--alpha",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "{{ components.utility.section_background(hero_background) }}",
+          "wrapping_html" : "{% image_src \"hero_background_src\"\n    label = \"Hero Background\",\n    src = \"https://cdn2.hubspot.net/hubfs/56434/jade/home-hero-banner-img.jpg\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_position\"\n    label = \"Hero Background Position\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.position }}\",\n    export_to_template_context = true\n%}\n{% text \"hero_background_position_custom\"\n    label = \"Hero Background Position (Custom)\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_size\"\n    label = \"Hero Background Size\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.size }}\",\n    export_to_template_context = true\n%}\n{% text \"hero_background_size_custom\"\n    label = \"Hero Background Size (Custom)\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_repeat\"\n    label = \"Hero Background Repeat\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.repeat }}\",\n    export_to_template_context = true\n%}\n{% color \"hero_background_color_custom\"\n    label = \"Hero Background Color (Custom)\",\n    export_to_template_context = true\n%}\n{% set hero_background = {\n    \"src\": widget_data.hero_background_src.src,\n    \"position\": widget_data.hero_background_position.value,\n    \"position_custom\": widget_data.hero_background_position_custom.value,\n    \"size\": widget_data.hero_background_size.value,\n    \"size_custom\": widget_data.hero_background_size_custom.value,\n    \"repeat\": widget_data.hero_background_repeat.value,\n    \"color\": widget_data.hero_background_color_custom.color\n} %}\n{{ html }}",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1517865637827181",
+            "label" : "Jade/Site Header",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "path" : "/Global content/Global Groups/Jade/Jade/Site Header.template.json"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1517867589721189",
+            "label" : "container hero-section__body",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container hero-section__body",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1517867584605182",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h1>About Us</h1>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container hero-section__body",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "hero-section colored-section colored-section--alpha",
+        "cssStyle" : "{{ components.utility.section_background(hero_background) }}",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1520026286754131",
+        "label" : "flush-rows",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "flush-rows",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026079811119",
+            "label" : "sticky-row",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "sticky-row",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1520026071633116",
+                "label" : "Page Nav",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "page-nav",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false,
+                  "html" : "<ul>\n<li><a href=\"#intro\">Introduction</a></li>\n<li><a href=\"#client-success\">Client Success</a></li>\n<li><a href=\"#history\">History</a></li>\n<li><a href=\"#leadership\">Leadership</a></li>\n<li><a href=\"#mission-vision\">Mission/Vision</a></li>\n<li><a href=\"#locations\">Locations</a></li>\n<li><a href=\"#partners\">Partners</a></li>\n<li><a href=\"#testimonials\">Testimonials</a></li>\n</ul>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "page-nav",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "sticky-row",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026302824139",
+            "label" : "#intro - padded-section padded-section--full",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full",
+              "css_id" : "intro",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1520026294534135",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "padded-section padded-section--small text-center",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>About Dean &amp; Draper Insurance Agency</h2>\n<br>\n<p style=\"text-align: left;\">Dean &amp; Draper's team of experts has more than 500 years of combined insurance experience. Ranked one of the largest agencies in Texas, we are a full-service independent insurance agency offering commercial and personal insurance lines, top industry-specific solutions, employee benefits, and Risk Management Solutions.</p>\n<p style=\"text-align: left;\">We are committed to providing you the best insurance coverage available to match your needs, whether corporate or personal, at a reasonable cost. Challenge us. We're ready to prove to you that we are your complete, committed source in insurance excellence.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "padded-section padded-section--small text-center",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "intro",
+            "cssClass" : "padded-section padded-section--full",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242627698971547",
+            "label" : "vertical-center-row colored-section colored-section--beta-darker padded-section padded-section--flush",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "vertical-center-row colored-section colored-section--beta-darker padded-section padded-section--flush",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15242627840741549",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "padded-section padded-section--full",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Dean &amp; Draper is Dedicated</h2>\n<hr>\n<p>to providing you with the best insurance programs to serve your needs for personal insurance, commercial insurance, risk management, and employee benefits. We have developed strong relationships with large and diverse group of insurance companies, enabling us to negotiate the best terms and insurance coverage for our clients. With more than 200 insurance companies represented, we are able to offer you an unparalleled level of choice and customization as our experienced team works to provide you with insurance solutions that meet your unique needs.</p>\n<p>Throughout Dean &amp; Draper's history, we have managed to retain the best characteristics of a locally owned independent insurance agency in Houston, Texas by continuing personal relationships and accountability. We have embraced technology and creativity to develop into one of the fastest growing state and national insurance agencies in more than 35 years. Dean &amp; Draper's professional expertise, advance computer systems, and around the clock customer service capabilities have given us the opportunity to serve thousands of customers each year.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "padded-section padded-section--full",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1520026298915137",
+                "label" : "Image",
+                "type" : "linked_image",
+                "params" : {
+                  "css_class" : "fill-image",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg",
+                  "original_width" : 950,
+                  "original_height" : 690,
+                  "img_alt" : "split-consult-b-img.jpg",
+                  "img_load_error" : false,
+                  "width" : 950,
+                  "height" : 690,
+                  "alt" : "split-consult-b-img.jpg",
+                  "link" : "",
+                  "open_in_new_tab" : false,
+                  "img" : {
+                    "alt" : "split-consult-b-img.jpg",
+                    "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg"
+                  }
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "fill-image",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "vertical-center-row colored-section colored-section--beta-darker padded-section padded-section--flush",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026499134176",
+            "label" : "#client-success - padded-section padded-section--full",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full",
+              "css_id" : "client-success",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15242629060701552",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "equal-widgets flush-widgets",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Building Client Success From Years of Insurance Broker Expertise</h2>\n<p style=\"text-align: left;\">Since his days as a small-town high school quarterback in LaPorte, Bob Dean believed a plan of action, preparation, the will to succeed and follow through were crucial to success.</p>\n<p style=\"text-align: left;\">These ingredients helped him rise from modest beginnings to create an insurance agency that is now one of Texas' largest leaders of the state’s insurance industry. When Bob started his business in 1980, after more than a decade as a loss control manager working for others, he focused on acquisitions and marketing programs, consistently bringing new insurance companies to the Dean and Draper fold.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "equal-widgets flush-widgets",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15242644395751753",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "equal-widgets flush-widgets",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<p>Bob Dean continually expanded his business by bringing independent agents to work with him in partnership arrangements. Under his leadership, Dean &amp; Draper was able to offer a diversity and flexibility that many other insurance agencies do not. One of the benefits of an agency like Dean &amp; Draper is that they aren't limited to just one insurance company and offer more choices, one size doesn't fit all. An independent agent represents many insurance companies. Clients benefit from choices with valued counsel to choose what is right for them.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "equal-widgets flush-widgets",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15242644406841755",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "equal-widgets flush-widgets",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<blockquote>\n<h4><span style=\"color: #036b5f;\">\"Success isn't just about making money. It is about having ethics, building relationships, and feeling, at the end of the day, that you have done something worthwhile\"</span></h4>\n<p><span style=\"color: #036b5f;\">- Bob Dean</span></p>\n</blockquote>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "equal-widgets flush-widgets",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "client-success",
+            "cssClass" : "padded-section padded-section--full",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242636890091665",
+            "label" : "#history - vertical-center-row padded-section padded-section--flush equal-widgets flush-widgets colored-section colored-section--light",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "vertical-center-row padded-section padded-section--flush equal-widgets flush-widgets colored-section colored-section--light",
+              "css_id" : "history",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15242644555961759",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "padded-section padded-section--full widget-span--last",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<p>After Bob’s passing in 2013, his son Kyle Dean was named President &amp; CEO of Dean &amp; Draper. Kyle has continued to embody the values that his father built. He has spent time leading Dean &amp; Draper into the future by adding additional comprehensive coverage options for individuals and businesses, and through building a strong leadership team looking to the future to keep clients’ interests protected.</p>\n<p>If an individual seeks to insure their home, their jewelry, their auto, business or airplane, Dean &amp; Draper will work with a company that can meet these specialized needs. If a client company seeks a benefit plan for hundreds of employees, Dean &amp; Draper can search through the offerings of many firms for the best offer. Whether a customer wants flood insurance or protection on a skyscraper, Dean &amp; Draper knows where to lead the client.</p>\n<p>Dean &amp; Draper offer commercial and personal property and casualty Insurance and also life and group health. Dean &amp; Draper's accomplishments include insuring more than $1 billion in commercial buildings and providing health insurance to a number of companies with several thousand employees based throughout the world.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "padded-section padded-section--full widget-span--last",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15242644600211761",
+                "label" : "Image",
+                "type" : "linked_image",
+                "params" : {
+                  "css_class" : "widget-span--first fill-image",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg",
+                  "original_width" : 950,
+                  "original_height" : 690,
+                  "img_alt" : "split-consult-b-img.jpg",
+                  "img_load_error" : false,
+                  "width" : 950,
+                  "height" : 690,
+                  "alt" : "split-consult-b-img.jpg",
+                  "link" : "",
+                  "open_in_new_tab" : false,
+                  "img" : {
+                    "alt" : "split-consult-b-img.jpg",
+                    "height" : 690,
+                    "width" : 950,
+                    "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg"
+                  }
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "widget-span--first fill-image",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "history",
+            "cssClass" : "vertical-center-row padded-section padded-section--flush equal-widgets flush-widgets colored-section colored-section--light",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242636681691663",
+            "label" : "vertical-center-row padded-section padded-section--flush colored-section colored-section-light equal-widgets flush-widgets",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "vertical-center-row padded-section padded-section--flush colored-section colored-section-light equal-widgets flush-widgets",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15242644466751756",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "padded-section padded-section--full widget-span--first",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<p>They have developed a number of distinctive plans for particular industries. Dean &amp; Draper designs specialized insurance plans for oil and gas companies, financial institutions, restaurants, electronics firms, contractors, manufacturers, wholesale-retail distributors, law firms and many others.</p>\n<p>Dean &amp; Draper also offer a variety of personal insurance policies, ranging from home, auto,. About 40 percent of Dean &amp; Draper's business is made up of personal policies.</p>\n<p>Relationships are important on every level, with both clients and employees. A combination of careful hiring and employee education make for a high-level team of associates. Dean &amp; Draper tests each associate to determine their best fit within in the firm. Sales and service can then operate where they have the best aptitude. The clients want agents to understand their industry, translate that understanding to a tailored policy for their needs and respond immediately to their problems. Dean &amp; Draper hires and retains individuals with strong technical backgrounds.</p>\n<p>Dean &amp; Draper has gone high-tech, bringing it ahead of the curve and superior to most insurance agencies in technical sophistication. Clients can view their policies online with a special password, 24 hours a day 7 days a week.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "padded-section padded-section--full widget-span--first",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15242644506481758",
+                "label" : "Image",
+                "type" : "linked_image",
+                "params" : {
+                  "css_class" : "widget-span--last fill-image",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg",
+                  "original_width" : 950,
+                  "original_height" : 690,
+                  "img_alt" : "split-consult-b-img.jpg",
+                  "img_load_error" : false,
+                  "width" : 950,
+                  "height" : 690,
+                  "alt" : "split-consult-b-img.jpg",
+                  "link" : "",
+                  "open_in_new_tab" : false,
+                  "img" : {
+                    "alt" : "split-consult-b-img.jpg",
+                    "height" : 690,
+                    "width" : 950,
+                    "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg"
+                  }
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "widget-span--last fill-image",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "vertical-center-row padded-section padded-section--flush colored-section colored-section-light equal-widgets flush-widgets",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1525988382401222",
+            "label" : "#leadership padded-section padded-section--full colored-section colored-section--light",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full colored-section colored-section--light",
+              "css_id" : "leadership ",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1525988742512289",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Our Leadership</h2>\n<hr>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_1526063985188150",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1525988467346224",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<h2>Kyle Dean, MBA, CLCS, President &amp; CEO of D&amp;D Companies</h2>\n<p>Kyle Dean is the President &amp; CEO of the Dean &amp; Draper Companies. After receiving a BA degree from Texas Christian University and a MBA from Texas Wesleyan University, Kyle joined his father’s insurance agency in 2005. He worked as a Sales Executive for the agency for 8 years and was promoted to Vice President of D&amp;D in 2010. During his role as a Sales Executive he was given the “Top Gun” award in 2011, which is the top new business sales for all D&amp;D Companies. In 2013, Kyle assumed the role of President &amp; CEO after the sudden passing of his father, Bob Dean, who founded the agency in 1980.</p>\n<p>Kyle served as President of Independent Insurance Agents of Houston (IIAH) in from September of 2015 to August 2016. Following his father’s passing (Founder of Dean &amp; Draper, Bob Dean), Kyle was asked to serve out his dad’s last year on the board for the Independent Insurance Agents of Texas (IIAT) in 2013. He was honored and graciously accepted the role.</p>\n<p>Kyle is politically active for IIAT. He currently serves as Vice Chair of the Legislative Committee for IIAH. He held the position of Regional VP for IMPACT for four years, which is a state fundraising arm for the independent agents to have their voice heard at the Capital in Austin. Kyle serves on many industry advisory councils including The Hartford, Travelers, and Texas Mutual. He was appointed to serve on the Insurance &amp; Risk Management advisory board at the University Houston – Downtown in 2013. He was recently appointed to serve as a board member for the Texas Insurance Education Foundation, which is a 501(c)(3) supporting the undergraduate university degree programs in Insurance and Risk Management.</p>\n<h2>&nbsp;</h2>\n<h2>Stephen Smith, CPCU, Executive Vice President, and Chief Operating Officer of D&amp;D Companies</h2>\n<p>Stephen is Executive Vice President &amp; Chief Operating Officer of the Dean &amp; Draper Companies. Stephen's experience within the insurance industry in Texas covers 33 years in roles such as President of Summit Global Partners and also President of HUB International. His background in commercial and personal insurance is expansive and he serviced on agency counciles for CNA, Liberty Mutual, AIG, Hartford, and Texas Mutual.</p>\n<p>Stephen is a graduate of Texas A&amp;M University with a degree in Economics/Finance. Before his insurance career, Stephen was commissioned as a 2nd Lieutenant in the United States Army serving in Germany and Fort Hood.</p>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1527003847736229",
+                    "label" : "[Jade] Collapsible Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "widget_name" : "[Jade] Collapsible Text",
+                      "schema_version" : 1,
+                      "path" : "/Custom modules/[Jade] Collapsible Text"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1526063990687153",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<h2>Something Powerful</h2>\n<h3>Tell The Reader More</h3>\n<p>The headline and subheader tells us what you're <a href=\"#\">offering</a>, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>\n<p>Remember:</p>\n<ul>\n    <li>Bullets are great</li>\n    <li>For spelling out <a href=\"#\">benefits</a> and</li>\n    <li>Turning visitors into leads.</li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1527003889738231",
+                    "label" : "[Jade] Collapsible Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "widget_name" : "[Jade] Collapsible Text",
+                      "schema_version" : 1,
+                      "path" : "/Custom modules/[Jade] Collapsible Text"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1526064003050158",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1525988469181226",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<h2>Gene Darnell, Vice President and Partner of D&amp;D, Chief Operating Officer of Benefit Solutions L.P.</h2>\n<p>Robert E. \"Gene\" Darnell Partner joined Dean and Draper in 1992. Life time resident of Houston Texas started his Insurance career in 1988 receiving prestigious awards including Rookie of the Year and Agent of the Month. He currently serves on the Agent Advisory Committee for several Insurance Companies and a member of the National Association of Health underwriters and Houston Association of Health Underwriters. He contributes his success to his wife Carla and his 3 wonderful children.</p>\n<h2>&nbsp;</h2>\n<h2>Gary Jensen, MBA, CPA, Vice President and Chief Financial Officer of D&amp;D Companies.</h2>\n<p>A native Texan, Gary came to Houston in 1981 and spent the next 20 plus years as an entrepreneur running his own businesses and, coincidentally, as a Dean &amp; Draper customer. After selling his last business Gary jumped at the chance to participate in Dean &amp; Draper's transformation into a premier player in the Insurance Industry.Since 2003 he has managed the financial growth of the agency, coordinated a number of acquisitions helping Dean &amp; Draper earn the coveted recognition as a \"Best Practices Agency\" as recognized by the Independent Insurance Agents &amp; Brokers of America. Gary and his lovely wife Charlotte have four children and, at last count, nine grandchildren.</p>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1527003894971233",
+                    "label" : "[Jade] Collapsible Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "widget_name" : "[Jade] Collapsible Text",
+                      "schema_version" : 1,
+                      "path" : "/Custom modules/[Jade] Collapsible Text"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1526064006918161",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<h2>Something Powerful</h2>\n<h3>Tell The Reader More</h3>\n<p>The headline and subheader tells us what you're <a href=\"#\">offering</a>, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>\n<p>Remember:</p>\n<ul>\n    <li>Bullets are great</li>\n    <li>For spelling out <a href=\"#\">benefits</a> and</li>\n    <li>Turning visitors into leads.</li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1527003898828235",
+                    "label" : "[Jade] Collapsible Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "widget_name" : "[Jade] Collapsible Text",
+                      "schema_version" : 1,
+                      "path" : "/Custom modules/[Jade] Collapsible Text"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "leadership ",
+            "cssClass" : "padded-section padded-section--full colored-section colored-section--light",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242636594441661",
+            "label" : "#mission-vision - padded-section padded-section--full",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full",
+              "css_id" : "mission-vision",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15242651389991818",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Mission</h2>\n<hr>\n<p>Dean &amp; Draper is based on a commitment to excellence. We will recognize our client's insurance needs and provide them with various solutions, complete and total service at a competitive price, while serving as our client's advocate.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15242651401551820",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Our Vision</h2>\n<hr>\n<p>\"Insuring The Growth of Texas\", tells our vision for the future. The diverse Texas economic climate gives us the opportunity to expand our distribution network. Dean &amp; Draper represents over 200 insurance carriers that gives our clients a choice to protect family, property, and business.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15244949358411983",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h2>Dean &amp; Draper's client service pledge:</h2>\n<hr>\n<ul>\n<li>Earn and retain our customer's trust</li>\n<li>Develop personal relationships with our clients</li>\n<li>Provide personal service teams for each client</li>\n<li>Give client risk evaluations tailored to thier needs and offer solitions; and</li>\n<li>Utilize the latest effective technology to enhance our client services and mkeld our e-business needs with those of our customers.</li>\n</ul>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15244949372211985",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>In keeping a strong commitment to excellence, Dean &amp; Draper provides continuous training to our team of agents and account managers. We inspire and assist them with incorporating the values necessary to serve our clients needs.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "mission-vision",
+            "cssClass" : "padded-section padded-section--full",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242637258881667",
+            "label" : "#locations - padded-section padded-section--full vertical-center-row colored-section colored-section--beta-darker equal-widgets flush-widgets",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full vertical-center-row colored-section colored-section--beta-darker equal-widgets flush-widgets",
+              "css_id" : "locations",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "module_1520026456185163",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h4>Houston</h4>\n<hr>\n<p><strong>Dean &amp; Draper Insurance Agency, LP </strong><br><span>3131 West Alabama, 4th Floor</span><br><span>Houston, Texas 77098</span><br><span>Toll Free: 1.888.266.2680</span><br><span>Phone: 713.527.0444</span></p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 3,
+                "name" : "module_15242637640931670",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h4>College Station</h4>\n<hr>\n<p><strong>W.E. Gibson, Inc.</strong><br><span>3505 Longmire</span><br><span>Suite E</span><br><span>College Station, TX 77845</span><br><span>Phone: (979)694-1555</span><br><span>Fax: (979)485-8586</span></p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 3,
+                "name" : "module_1520026630171179",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h4>Navasota</h4>\n<hr>\n<p><strong>W.E. Gibson, Inc.</strong><br><span>329 E. Washington Ave</span><br><span>Navasota, TX 77868</span><br><span>Toll Free: (800)259-6665</span><br><span>Phone: (936)825-6565</span><br><span>Fax: (409)825-8135</span><br><a href=\"http://www.wegibson.com/\" target=\"_new\">Visit Website</a></p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "9" : {
+                "x" : 9,
+                "w" : 3,
+                "name" : "module_15242637656661671",
+                "label" : "Rich text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "html" : "<h4>Conroe</h4>\n<hr>\n<p><strong>Soules Insurance Agency, LP</strong><br><span>701 N. San Jacinto</span><br><span>Conroe, Texas 77301</span><br><span>Phone: (936) 756-0671</span><br><span>Fax: (936) 756-6877</span></p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "locations",
+            "cssClass" : "padded-section padded-section--full vertical-center-row colored-section colored-section--beta-darker equal-widgets flush-widgets",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15242638641101708",
+            "label" : "#partners - padded-section padded-section--full colored-section colored-section--alpha flush-widgets",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "padded-section padded-section--full colored-section colored-section--alpha flush-widgets",
+              "css_id" : "partners",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 7,
+                "name" : "module_15245009855912636",
+                "label" : "Flexible column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15244997324572481",
+                    "label" : "Header",
+                    "type" : "header",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "value" : "Our Partners Key Companies We Represent</br><hr>",
+                      "header_tag" : "h3"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 4,
+                    "name" : "module_15242638876241710",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "padded-section padded-section--flush",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<ul>\n<li><a href=\"http://www.aceusa.com/Pages/Default.aspx\" target=\"_blank\" title=\"Ace\">Ace</a></li>\n<li><a href=\"https://www.deandraper.com/about/www.aig.com\" target=\"_blank\" title=\"AIG\">AIG</a></li>\n<li><a href=\"http://www.alliedinsurance.com/\" rel=\"nofollow\" target=\"_new\">Allied</a></li>\n<li><a href=\"http://www.amcomppro.com/\" target=\"_blank\" title=\"AmComp\">AmComp</a></li>\n<li><a href=\"http://www.amerisafe.com/\" target=\"_blank\" title=\"Amerisafe\">Amerisafe</a></li>\n<li><a href=\"http://www.amtrustgroup.com/\" target=\"_blank\" title=\"Amtrust\">Amtrust</a></li>\n<li><a href=\"http://www.americafirst-ins.com/\" rel=\"nofollow\" target=\"_new\">American First</a></li>\n<li><a href=\"http://www.chubb.com/indexPC.html\" rel=\"nofollow\" target=\"_new\">Chubb</a></li>\n<li><a href=\"http://www.cna.com/\" rel=\"nofollow\" target=\"_new\">CNA</a></li>\n<li><a href=\"http://www.fidelityanddeposit.com/\" rel=\"nofollow\" target=\"_new\">Fidelity &amp; Deposit</a></li>\n<li><a href=\"http://www.firemansfund.com/Pages/welcome.htm\" target=\"_blank\" title=\"Fireman's Fund\">Fireman's Fund</a></li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "padded-section padded-section--flush",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "4" : {
+                    "x" : 4,
+                    "w" : 4,
+                    "name" : "module_15244997203352480",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "padded-section padded-section--flush",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<ul>\n<li><a href=\"http://www.foremost.com/\" rel=\"nofollow\" target=\"_new\">Foremost</a></li>\n<li><a href=\"http://www.hanover.com/\" target=\"_self\" title=\"Hanover\">Hanover</a></li>\n<li><a href=\"http://www.thehartford.com/\" rel=\"nofollow\" target=\"_new\">Hartford</a></li>\n<li><a href=\"http://www.libertymutualgroup.com/omapps/ContentServer?pagename=LMGroup/Views/LMG\" target=\"_blank\" title=\"Liberty Mutual\">Liberty Mutual</a></li>\n<li><a href=\"https://www.ekemper.com/\" target=\"_blank\" title=\"Kemper\">Kemper</a></li>\n<li><a href=\"http://www.metlife.com/\" rel=\"nofollow\" target=\"_new\">Met Life</a></li>\n<li><a href=\"http://www.phly.com/index.aspx\" target=\"_blank\" title=\"Philadelphia\">Philadelphia</a></li>\n<li><a href=\"http://www.progressive.com/\" target=\"_blank\" title=\"Progressive\">Progressive</a></li>\n<li><a href=\"http://www.republicgroup.com/\" rel=\"nofollow\" target=\"_new\">Republic</a></li>\n<li><a href=\"http://www.safeco.com/\" rel=\"nofollow\" target=\"_new\">Safeco</a></li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "padded-section padded-section--flush",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "8" : {
+                    "x" : 8,
+                    "w" : 4,
+                    "name" : "module_15244997186452479",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "padded-section padded-section--flush",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<ul>\n<li><a href=\"http://www.sbic.com/\" rel=\"nofollow\" target=\"_new\">SeaBright</a></li>\n<li><a href=\"https://www.servicelloyds.com/\" target=\"_blank\" title=\"Service Lloyds\">Service Lloyds</a></li>\n<li><a href=\"http://www.texasmutual.com/\" rel=\"nofollow\" target=\"_new\">Texas Mutual</a></li>\n<li><a href=\"http://www.twia.org/\" rel=\"nofollow\" target=\"_new\">Texas Windstorm</a></li>\n<li><a href=\"http://www.travelers.com/\" rel=\"nofollow\" target=\"_new\">Travelers</a></li>\n<li><a href=\"https://www.unitedfiregroup.com/\" rel=\"nofollow\" target=\"_new\">United Fire</a></li>\n<li><a href=\"http://www.unitrin.com/\" rel=\"nofollow\" target=\"_new\">Unitrin</a></li>\n<li><a href=\"http://www.uticanational.com/\" rel=\"nofollow\" target=\"_new\">Utica</a></li>\n<li><a href=\"http://www.thezenith.com/\" rel=\"nofollow\" target=\"_new\">Zenith</a></li>\n<li><a href=\"http://www.zurichna.com/\" rel=\"nofollow\" target=\"_new\">Zurich</a></li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "padded-section padded-section--flush",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "7" : {
+                "x" : 7,
+                "w" : 5,
+                "name" : "module_15245010066492639",
+                "label" : "Flexible column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15244999901782549",
+                    "label" : "Header",
+                    "type" : "header",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "value" : "Group Health Partners We Represent<br><hr>",
+                      "header_tag" : "h3"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 6,
+                    "name" : "module_15242638903031713",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<ul>\n<li><a href=\"http://www.aetna.com/\" rel=\"nofollow\" target=\"_new\">Aetna</a></li>\n<li><a href=\"http://www.eams.com/\" rel=\"nofollow\" target=\"_new\">American Medical Security (AMS)</a></li>\n<li><a href=\"http://www.ameritas.com/\" rel=\"nofollow\" target=\"_new\">Ameritas</a></li>\n<li><a href=\"http://www.bcbstx.com/\" rel=\"nofollow\" target=\"_new\">Blue Cross Blue Shield of Texas</a></li>\n<li><a href=\"http://www.cigna.com/\" rel=\"nofollow\" target=\"_new\">Cigna</a></li>\n<li><a href=\"http://www.fortishealth.com/\" rel=\"nofollow\" target=\"_new\">Fortis</a></li>\n<li><a href=\"http://www.gwl.ca/\" rel=\"nofollow\" target=\"_new\">Great West</a></li>\n<li><a href=\"http://www.glic.com/\" rel=\"nofollow\" target=\"_new\">Guardian</a></li>\n<li><a href=\"http://www.humana.com/\" rel=\"nofollow\" target=\"_new\">Humana</a></li>\n<li><a href=\"http://www.lifere.net/\" rel=\"nofollow\" target=\"_new\">LifeRE</a></li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "6" : {
+                    "x" : 6,
+                    "w" : 6,
+                    "name" : "module_15245001011132551",
+                    "label" : "Rich text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "html" : "<ul>\n<li><a href=\"http://www.metlife.com/\" rel=\"nofollow\" target=\"_new\">MetLife</a></li>\n<li><a href=\"http://www.mutualofomaha.com/\" rel=\"nofollow\" target=\"_new\">Mutual of Omaha</a></li>\n<li><a href=\"http://www.pacificare.com/\" rel=\"nofollow\" target=\"_new\">Pacificare</a></li>\n<li><a href=\"http://www.principal.com/\" rel=\"nofollow\" target=\"_new\">Principal</a></li>\n<li><a href=\"http://www.qcdofamerica.com/\" rel=\"nofollow\" target=\"_new\">QCD of America</a></li>\n<li><a href=\"http://www.rsli.com/\" rel=\"nofollow\" target=\"_new\">Reliance Standard</a></li>\n<li><a href=\"http://www.standard.com/\" rel=\"nofollow\" target=\"_new\">The Standard</a></li>\n<li><a href=\"http://www.unicare.com/\" rel=\"nofollow\" target=\"_new\">Unicare</a></li>\n<li><a href=\"http://www.uhc.com/\" rel=\"nofollow\" target=\"_new\">United Healthcare</a></li>\n<li><a href=\"http://www.unum.com/\" rel=\"nofollow\" target=\"_new\">Unum</a></li>\n</ul>"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "partners",
+            "cssClass" : "padded-section padded-section--full colored-section colored-section--alpha flush-widgets",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520273614622112",
+            "label" : "#testimonials",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "testimonials",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1520027741150545",
+                "label" : "[Jade] Testimonial Slider",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "widget_name" : "[Jade] Testimonial Slider",
+                  "schema_version" : 1,
+                  "path" : "/Custom modules/[Jade] Testimonial Slider"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "testimonials",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_152002503782184",
+            "label" : "Jade/Blog Feed",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "path" : "/Global content/Global Groups/Jade/Jade/Blog Feed.template.json"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "flush-rows",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517870104937229",
+        "label" : "Jade/Site Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/Jade/Jade/Site Footer.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

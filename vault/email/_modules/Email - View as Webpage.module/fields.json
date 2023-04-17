@@ -1,0 +1,10 @@
+[ {
+  "id" : "1cd0262c-512f-0bb6-d821-2b167c603bdc",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<a href=\"{{ view_as_page_url }}\" rel=\" noopener\">View in Browser</a>"
+} ]

@@ -1,0 +1,286 @@
+[ {
+  "id" : "818666cf-92a0-7520-c160-05d452f2b558",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "802ab23a-c192-d795-5fd7-f8b3ffe58329",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Lorem heading here</h3>"
+}, {
+  "id" : "82889e61-816e-8df1-fb25-f3ebce81a05c",
+  "name" : "section",
+  "display_width" : null,
+  "label" : "Section",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "195bc8bd-514d-5f0c-126c-32c481c0a40a",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "1b56df13-e3a9-5257-d3b5-705f20eb287a",
+    "name" : "section_color",
+    "display_width" : null,
+    "label" : "Section Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "light", "Light" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "beta", "Beta" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+    "name" : "layout",
+    "display_width" : null,
+    "label" : "Layout",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left_50", "Image Left / 50%" ], [ "right_50", "Image Right / 50%" ], [ "left_25", "Image Left / 25%" ], [ "right_25", "Image Right / 25%" ], [ "left_75", "Image Left / 75%" ], [ "right_75", "Image Right / 75%" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left_50"
+  }, {
+    "id" : "bf191f43-213a-18ef-ce6a-f18ececae3c8",
+    "name" : "image_75",
+    "display_width" : null,
+    "label" : "Image (350px wide)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "75",
+      "property" : null,
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 350,
+      "height" : 267
+    }
+  }, {
+    "id" : "9fb5bfc0-571a-e826-c58e-9214a62f85ec",
+    "name" : "image_50",
+    "display_width" : null,
+    "label" : "Image (250px wide)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "50",
+      "property" : null,
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 270,
+      "height" : 206
+    }
+  }, {
+    "id" : "4fb4b3ed-2f4f-5744-9430-8224121ff548",
+    "name" : "image_25",
+    "display_width" : null,
+    "label" : "Image (135px wide)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "25",
+      "property" : null,
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 135,
+      "height" : 103
+    }
+  }, {
+    "id" : "195bc8bd-514d-5f0c-126c-32c481c0a40a",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Featured Story</h4>\n<p>A bit more about this success story, if there's a featured story you want to describe.</p>"
+  }, {
+    "id" : "aae5aa83-10de-9154-727a-7e7eb053eba3",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b5319ee4-fecc-12f9-c8d0-733cfca94f2e",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "left"
+    }, {
+      "id" : "4125d6f6-076a-eed2-33a6-25f78b1d11c6",
+      "name" : "width",
+      "display_width" : null,
+      "label" : "Width",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 150
+    }, {
+      "id" : "74b31356-fad1-bbde-75c4-c2fb3e31f2d2",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "beta", "Beta" ], [ "alpha", "Alpha" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "beta"
+    }, {
+      "id" : "f785e462-1b9b-f865-6012-485ceb304917",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Read More"
+    }, {
+      "id" : "cc71130c-5d38-a9d8-f615-7635fecc2792",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "alignment" : "left",
+      "width" : 150,
+      "color" : "beta",
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "section_color" : "base",
+    "layout" : "left_50",
+    "image_75" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 350,
+      "height" : 267
+    },
+    "image_50" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 270,
+      "height" : 206
+    },
+    "image_25" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 135,
+      "height" : 103
+    },
+    "text" : "<h4>Featured Story</h4>\n<p>A bit more about this success story, if there's a featured story you want to describe.</p>",
+    "button" : {
+      "alignment" : "left",
+      "width" : 150,
+      "color" : "beta",
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

@@ -1,0 +1,17 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set background_options = {
+    "position": "default,top left,top center,top right,center left,center center,center right,bottom left,bottom center,bottom right,custom",
+    "size": "default,cover,contain,auto 100%,100% auto,100% 100%,custom",
+    "repeat": "default,no-repeat,repeat-x,repeat-y"
+} %}
+{% macro section_background(background) %}{#
+    #}{% if background.src %}{#
+        #}background-image: url('{{ background.src }}');{#
+        #}{% if background.position and background.position != "default" %}background-position: {{ background.position_custom if background.position == "custom" else background.position }};{% endif %}{#
+        #}{% if background.size and background.size != "default" %}background-size: {{ background.size_custom if background.size == "custom" else background.size }};{% endif %}{#
+        #}{% if background.repeat and background.repeat != "default" %}background-repeat: {{ background.repeat }};{% endif %}{#
+    #}{% endif %}{#
+#}{% endmacro %}

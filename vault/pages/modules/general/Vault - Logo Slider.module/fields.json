@@ -1,0 +1,149 @@
+[ {
+  "id" : "logo_item",
+  "name" : "logo_item",
+  "display_width" : null,
+  "label" : "Logo Item",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 10
+  },
+  "children" : [ {
+    "id" : "logo_item.image",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/aig-logo.png",
+      "alt" : null
+    }
+  }, {
+    "id" : "logo_item.link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : "https://www.aig.com/"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/aig-logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.aig.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Amerisafe%20logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.amerisafe.com/site.php"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Amtrust-Logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://amtrustfinancial.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Berkshire%20Hathaway%20logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.bhhc.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/CHUBB%20logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www2.chubb.com/us-en/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/CNA-logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.cna.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/HIG_wordmrk_k-logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.hanover.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Amerisafe%20logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.amerisafe.com/site.php"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Amtrust-Logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://amtrustfinancial.com/"
+      }
+    }
+  }, {
+    "image" : {
+      "src" : "//f.hubspotusercontent30.net/hubfs/56434/vault/images/logos/Berkshire%20Hathaway%20logo.png"
+    },
+    "link" : {
+      "url" : {
+        "href" : "https://www.bhhc.com/"
+      }
+    }
+  } ]
+} ]

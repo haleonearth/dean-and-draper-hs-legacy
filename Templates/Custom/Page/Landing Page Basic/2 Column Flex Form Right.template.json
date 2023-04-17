@@ -1,0 +1,229 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "logo",
+        "label" : "Logo",
+        "type" : "logo",
+        "params" : {
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "wizard_module_188914472081026428000599935039763978824",
+        "label" : "Offer Headline",
+        "type" : "header",
+        "params" : {
+          "header_tag" : "h1",
+          "overrideable" : true,
+          "value" : "Welcome to your first landing page"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 6,
+        "name" : "wizard_module_60475281287663635357233103434148156263",
+        "label" : "Right Column",
+        "type" : "widget_container",
+        "params" : {
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_282563451946183774298543249225648954087",
+          "label" : "Left Column Text",
+          "type" : "rich_text",
+          "params" : {
+            "html" : "\n<p>A great landing page conveys the value that a visitor will receive in exchange for filling out your form. <span>What's in it for them?</span></p>\n<p>Your landing page should be:</p>\n<ul>\n<li>Short</li>\n<li>Concise</li>\n<li>Clean</li>\n</ul>\nBullets work great. So does header text.<br>\n<p>In HubSpot, the Landing Pages tool is closely linked with the Forms and Call-to-Action tools. <a href=\"https://app.hubspot.com/content/56434/cta\" target=\"_blank\">Create a call-to-action</a> to get visitors from your website and emails to your landing page. <a href=\"https://app.hubspot.com/forms/56434/\" target=\"_blank\">Use a form</a> that generates leads and asks the right questions at the right time.</p>\n<p>Need help? <a href=\"http://knowledge.hubspot.com/landing-page-user-guide\" target=\"_blank\">The landing pages user guide</a> is a great place to start.</p>\n",
+            "overrideable" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      },
+      "6" : {
+        "x" : 6,
+        "w" : 6,
+        "name" : "wizard_module_139503532061498508430614340005918822579",
+        "label" : "Left Column",
+        "type" : "widget_container",
+        "params" : {
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_303764221432418260726391882988573975247",
+          "label" : "Form",
+          "type" : "form",
+          "params" : {
+            "overrideable" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "wizard_module_245568774305066705266673938227996300192",
+        "label" : "Bottom Module Container",
+        "type" : "widget_container",
+        "params" : {
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "wizard_module_202591309975767020863935356725610568866",
+          "label" : "Social Sharing",
+          "type" : "social_sharing",
+          "params" : {
+            "overrideable" : true,
+            "use_page_url" : true
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "wizard_module_111159220339787324848829493964473225352",
+        "label" : "Page Footer",
+        "type" : "page_footer",
+        "params" : {
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

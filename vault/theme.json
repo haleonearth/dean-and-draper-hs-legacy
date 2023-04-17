@@ -1,0 +1,13 @@
+{
+  "label": "Vault",
+  "enable_domain_stylesheets": false,
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 800px)",
+      "previewWidth": {
+        "value": 520
+      }
+    }
+  ]
+}

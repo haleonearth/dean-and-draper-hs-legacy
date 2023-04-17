@@ -1,0 +1,64 @@
+.tabber-wrap .tabber-tabs {
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 -2px;
+}
+.tabber-wrap .tabber-tabs > li {
+    float: left;
+}
+.tabber-wrap .tabber-tabs > li > a {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+    line-height: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: block;
+}
+.tabber-wrap .tabber-tabs > .active > a, 
+.tabber-wrap .tabber-tabs > .active > a:hover, 
+.tabber-wrap .tabber-tabs > .active > a:focus {
+    color: #555555;
+    cursor: default;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tabber-wrap .tabber-content .tab-pane.active:nth-child(1) {
+    border-top-left-radius: 0;
+}
+.tabber-wrap .tabber-content ul {
+  padding: 0;
+  margin: 0;
+}
+.tabber-wrap .tabber-content .block h3 {
+  display: none;
+}
+.tabber-wrap .tabber-content .tab-pane:nth-child(1) {
+  border-top-left-radius: 0;
+}
+.tabber-wrap .tabber-content .tab-pane {
+  background: #fff;
+  border: 0; 
+  border-radius: 4px; 
+  display: block; 
+  height: 0; 
+  opacity: 0;
+  overflow: hidden; 
+  -webkit-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.tabber-wrap .tabber-content .tab-pane.active {
+  border: 1px solid #ddd;
+  height: auto; 
+  opacity: 1;
+  overflow: visible; 
+  padding: 8px;
+}

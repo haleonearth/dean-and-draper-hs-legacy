@@ -1,0 +1,121 @@
+{% set link_button = '
+  {% set href = section.button.link.url.href %}
+  {% if section.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+  {% endif %}
+  {% if href && section.button.text %}
+    <a href="{{ href }}" class="link">{{ section.button.text }}</a>
+  {% endif %}'%}
+
+{% if not module.hide %}
+  {% if module.heading %}
+		<table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+			<tr>
+				<td class="module module-bf {{ module.section_color }}">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+						<tr>
+						  <td class="text-wrap center">
+								{{ module.heading }}
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+  {% endif %}
+
+  {% if module.layout == "rows" %}
+    {% for section in module.section %}
+      <table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td class="articles module{% if loop.length > 1 && not loop.last %} module-bs{% endif %} {{ module.section_color }}">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+              <tr>
+								{% if section.image_25.src %}
+									<td class="image-wrap{% if module.center %} center{% endif %}" width="25%" valign="top">
+										<img src="{{ section.image_25.src }}" alt="{{ section.image_25.alt }}" width="{{ section.image_25.width }}">
+									</td>
+
+									<td class="space-v"></td>
+								{% endif %}
+
+                <td valign="middle" class="text-wrap{% if module.center %} center{% endif %}">
+                  {{ section.text }}
+                  {{ link_button }}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+  {% elif module.layout == "two_columns" %}
+    {% for sections in module.section|batch(2) %}
+      <table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td class="article module {% if not loop.last %}module-bf{% endif %} {{ module.section_color }}">  
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+              <tr>
+                {% for section in sections %}
+                  <td width="48%">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+											{% if section.image_50.src %}
+												<tr>
+													<td class="image-wrap{% if module.center %} center{% endif %}">
+														<img src="{{ section.image_50.src }}" alt="{{ section.image_50.alt }}" width="{{ section.image_50.width }}">
+													</td>
+												</tr>
+												<tr><td class="space-hs"></td></tr>
+											{% endif %}
+                      <tr>
+                        <td class="text-wrap{% if module.center %} center{% endif %}">
+                          {{ section.text }}
+                          {{ link_button }}
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% if not loop.last %}<td class="space-v"></td>{% endif %}
+                {% endfor %}
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+  {% elif module.layout == "three_columns" %}
+    {% for sections in module.section|batch(3) %}
+      <table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td class="article module{% if loop.length > 1 && not loop.last %} module-bf{% endif %} {{ module.section_color }}">  
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+              <tr>
+                {% for section in sections %}
+                  <td width="30%">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+											{% if section.image_25.src %}
+                      <tr>
+                        <td class="image-wrap{% if module.center %} center{% endif %}">
+                          <img src="{{ section.image_25.src }}" alt="{{ section.image_25.alt }}" width="{{ section.image_25.width }}">
+                        </td>
+                      </tr>
+                      <tr><td class="space-hs"></td></tr>
+											{% endif %}
+                      <tr>
+                        <td class="text-wrap{% if module.center %} center{% endif %}">
+                          {{ section.text }}
+													{{ link_button }}
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  {% if not loop.last %}<td class="space-v"></td>{% endif %}
+                {% endfor %}
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+  {% endif %}
+{% endif %}

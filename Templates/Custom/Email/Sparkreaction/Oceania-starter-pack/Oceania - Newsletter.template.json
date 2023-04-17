@@ -1,0 +1,339 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148281373140671",
+        "label" : "Custom HTML",
+        "type" : "raw_html",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "<style>\n    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');\n    * { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;  }\n    a { text-decoration:none; }\n    img { border:none; }\n    body { font-family: 'Raleway', sans-serif; }\n    \n    p { margin:0 0 10px; }\n\n    \n    @media (max-width:550px){\n        \n         body p { margin:0 0 15px; }\n             .container,\n             #main_body,\n             table { width:100% !important; }\n             \n             body .main-header td { padding-bottom:30px !important; }\n             body h1 { padding:0 0 5px !important; font-size:30px !important;  }\n             \n             body .rss-box { padding:10px 0 !important;   }\n             body .rss-content { padding:25px 15px !important; } \n            \n        }\n        \n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_view_as_web_page",
+        "label" : "View As Web Page",
+        "type" : "email_view_as_web_page",
+        "params" : {
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}\">\n    Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.\n</div>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1482814059520138",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "text-align:center; box-sizing:border-box;",
+          "ending_html" : "",
+          "starting_html" : "",
+          "css_background_color" : "#174859",
+          "css_padding_left" : "10",
+          "css_padding_right" : "10",
+          "css_padding_top" : "0",
+          "css_padding_bottom" : "0"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1482814625176596",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : "",
+              "css_background_color" : "#174859",
+              "css_padding_top" : "60",
+              "css_padding_bottom" : "80",
+              "css_padding_left" : "0",
+              "css_padding_right" : "0"
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1482814040961135",
+                "label" : "Company Name",
+                "type" : "text",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "main-header",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "text-align:center; font-family: 'Raleway', sans-serif; font-weight:500; color:#ffffff; font-size:18px; text-transform:uppercase;letter-spacing:4px; ",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "value" : "OCEANIA",
+                  "css_padding_bottom" : "90",
+                  "css_padding_left" : "00",
+                  "css_padding_right" : "0",
+                  "css_padding_top" : "0",
+                  "css_background_color" : "#174859"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1482814059521139",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "overrideable" : true,
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "text-align:center;",
+                  "ending_html" : "",
+                  "starting_html" : "",
+                  "html" : "<h1 style=\"color: #fff; text-transform: uppercase; font-weight: 800; font-family: 'Raleway', sans-serif; font-size: 36px; line-height: 40px; margin: 0; padding: 0 0 5px;\">NEWSLETTER</h1>\n<span style=\"display: inline-block; vertical-align: top;\"><img src=\"http://www.sparkreaction.com/hubfs/images/email/divider.png\"></span><br><br>\n<p style=\"color: #fff; font-weight: 300; font-family: 'Raleway', sans-serif; font-size: 18px; line-height: 24px;\">Sit amet, consectetur adipiscing elit. Sed iaculis leo <br>ac dolor placerat tincidunt.</p>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1482818704704698",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "css_background_color" : "#F1F1F1",
+          "css_margin_left" : "",
+          "css_padding_top" : "25",
+          "css_padding_bottom" : "25",
+          "css_padding_left" : "0",
+          "css_padding_right" : "0"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1482818704705699",
+            "label" : "Custom HubL",
+            "type" : "raw_jinja",
+            "params" : {
+              "overrideable" : false,
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "starting_html" : "",
+              "value" : "<div class=\"container\" style=\"width:600px; max-width:100%; margin:0 auto; float:none;\">\n<table width=\"600\" align=\"center\"  style=\"padding:25px 0 0;\" class=\"rss-box\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  >\n    <tr>\n        <td style=\"line-height:0;\" >\n            {% image \"banner_image\" label='banner image',  src='http://www.sparkreaction.com/hubfs/images/email/notification-banner.jpg', width='600' style=\"border:none; height:auto; width:600px; max-width:100%;\" %}\n    \t</td>\n\t</tr>\n\t\n\t<tr>\n\t\t<td style=\"padding:0; line-height:inherit;\" >\n\t\t\t<table class=\"rss-content\" bgcolor=\"#fff\" width=\"600\" style=\"padding:30px;  box-sizing:border-box; background:#fff; \" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"  >\n\t\t\t\t<tr>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<div class=\"post-content\" style=\"color:#666666; font-size:16px; line-height:24px; font-weight:400; font-family:'Raleway',sans-serif;  \" >\n    \t\t\t\t\t  {% rich_text \"email_content\" label=\"Enter your email content here\" html='<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis tincidunt leo. Morbi mollis convallis odio vitae blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis semper, sem nec dictum placerat, nisi nisi faucibus dui, sit amet sagittis orci nunc vitae magna. Curabitur quis viverra erat, ac accumsan massa. Pellentesque lacinia nibh a laoreet dapibus. Vestibulum molestie laoreet pretium.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis tincidunt leo. Morbi mollis convallis odio vitae blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis semper, sem nec dictum placerat, nisi nisi faucibus dui, sit amet sagittis orci nunc vitae magna. Curabitur quis viverra erat, ac accumsan massa. Pellentesque lacinia nibh a laoreet dapibus. Vestibulum molestie laoreet pretium.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis tincidunt leo. Morbi mollis convallis odio vitae blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis semper, sem nec dictum placerat, nisi nisi faucibus dui, sit amet sagittis orci nunc vitae magna. Curabitur quis viverra erat, ac accumsan massa. Pellentesque lacinia nibh a laoreet dapibus. Vestibulum molestie laoreet pretium.</p>' %}\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n                </tr>     \n   <tr>\n       <td  style=\"text-align:center; background:#fff; padding:20px 0;  \" class=\"social-icon\"  >\n       {% raw_html \"social_media_icons\" label=\"Link your social media icons\" value='        <a href=\"#\"><img style=\"border:none; width:16px;\" src=\"http://www.sparkreaction.com/hubfs/images/email/social-icon-1.png\"/></a>&nbsp;&nbsp;\n        <a href=\"#\"><img style=\"border:none; width:16px;\" src=\"http://www.sparkreaction.com/hubfs/images/email/social-icon-2.png\"/></a>&nbsp;&nbsp;\n        <a href=\"#\"><img style=\"border:none; width:16px;\" src=\"http://www.sparkreaction.com/hubfs/images/email/social-icon-3.png\"/></a>&nbsp;&nbsp;\n        <a href=\"#\"><img style=\"border:none; width:16px;\" src=\"http://www.sparkreaction.com/hubfs/images/email/social-icon-4.png\"/></a>&nbsp;&nbsp;\n        <a href=\"#\"><img style=\"border:none; width:16px;\" src=\"http://www.sparkreaction.com/hubfs/images/email/social-icon-5.png\"/></a>' %}\n       </td>\n   </tr>\n\t\t\t</table>\n\t\t</td>\n\t</tr>\n</table>\n</div>\n\n\n\n",
+              "css_background_color" : "#F1F1F1",
+              "css_margin_top" : "0",
+              "css_margin_bottom" : "0",
+              "css_margin_left" : "",
+              "css_margin_right" : "",
+              "css_padding_bottom" : "20",
+              "css_padding_left" : "0",
+              "css_padding_top" : "0",
+              "css_padding_right" : "0"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1482823311043752",
+        "label" : "Company Name",
+        "type" : "text",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "text-align:center; font-family: 'Raleway', sans-serif; font-weight:500; color:#666666; font-size:18px; text-transform:uppercase;letter-spacing:4px; ",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "OCEANIA",
+          "css_background_color" : "#f1f1f1",
+          "css_padding_left" : "0",
+          "css_padding_top" : "0",
+          "css_padding_right" : "0",
+          "css_padding_bottom" : "20"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_can_spam",
+        "label" : "Office Location Information",
+        "type" : "email_can_spam",
+        "params" : {
+          "html" : "<p id=\"footer\" style=\"text-align: center; font-family: 'Raleway', sans-serif; font-size: 12px; line-height: 24px; font-weight: 400; color: #666666; display: block;\">{{site_settings.company_name}} &nbsp;&nbsp;{{site_settings.company_street_address_1}} &nbsp;{{site_settings.company_street_address_2}} &nbsp;{{site_settings.company_city}} &nbsp;{{site_settings.company_state}} &nbsp;&nbsp;{{site_settings.company_zip}} &nbsp;&nbsp;{{site_settings.company_country}}<br> You received this email because you are subscribed to {{ subscription_name }} from {{site_settings.company_name}} .<br> Update your <a data-unsubscribe=\"true\" style=\"text-decoration: underline; whitespace: nowrap; color:#666666;\" href=\"{{ unsubscribe_link }}\" target=\"_blank\">email preferences</a> to choose the types of emails you receive.<br> &nbsp;<a data-unsubscribe=\"true\" style=\"text-decoration: underline; whitespace: nowrap; color:#666666;\" href=\"{{ unsubscribe_link_all }}\" target=\"_blank\">Unsubscribe from all future emails</a> &nbsp;</p>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,121 @@
+[ {
+  "id" : "f8e86c2b-6ef7-eb8a-95c3-692f70c25414",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "420c1ee3-fdc5-1a40-c3e5-3eb52eba474e",
+  "name" : "show_just_image",
+  "display_width" : null,
+  "label" : "Show Just Image",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "be72edc4-c1d5-a84e-46ac-3019d88f529c",
+  "name" : "banner_height",
+  "display_width" : null,
+  "label" : "Banner Height",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "420c1ee3-fdc5-1a40-c3e5-3eb52eba474e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 234
+}, {
+  "id" : "40484adf-41f0-4034-e562-08964a7921c6",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4236008/bengal/images/banners/email-banner.jpg",
+    "alt" : "email-banner",
+    "width" : 600,
+    "height" : 361
+  }
+}, {
+  "id" : "c011f3f6-acc7-deed-471c-18e52a84bd46",
+  "name" : "background_x_position",
+  "display_width" : null,
+  "label" : "Background Horizontal Position",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "420c1ee3-fdc5-1a40-c3e5-3eb52eba474e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "5b822403-de34-981c-ed0a-63616b21002b",
+  "name" : "background_y_position",
+  "display_width" : null,
+  "label" : "Background Vertical Position",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "420c1ee3-fdc5-1a40-c3e5-3eb52eba474e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "top", "Top" ], [ "center", "Center" ], [ "bottom", "Bottom" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "492dbfdd-c952-2385-6136-f22f620b8f90",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "420c1ee3-fdc5-1a40-c3e5-3eb52eba474e",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "richtext",
+  "default" : "<h1>Optional Email Headline</h1>\n<p>Optional email sub-headline text lorem ipsum</p>"
+} ]

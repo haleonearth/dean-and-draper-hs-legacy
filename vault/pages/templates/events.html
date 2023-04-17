@@ -1,0 +1,61 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Events"
+-->
+
+{% extends '../partials/base.html' %}
+
+{% block body %}
+  {% dnd_area "main" %}
+    {# Intro #}
+    {% dnd_section 
+       max_width=1142,
+       padding={
+        'top': 75,
+        'bottom': 75
+       }  
+    %}
+        {% dnd_column width=12 %}
+          {% dnd_row %}
+            {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2>Upcoming Events &amp; Webinars</h2><p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>", cta=[], design={'text_size': 'medium', 'max_width': 525} %}{% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section 
+      max_width=1075,
+      padding={'bottom':75} %}
+       {% dnd_column width=12 %}
+        {% dnd_row %}
+          {% dnd_module path="/vault/pages/modules/general/Vault - Events", label="Vault - Events" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+       {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# Subscribe #}
+    {% dnd_section 
+       max_width=1142,
+       background_image = {
+        'backgroundPosition': 'MIDDLE_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': '//f.hubspotusercontent30.net/hubfs/56434/vault/backgrounds/light-texture-background.png'
+      },
+       padding={
+        'top': 100,
+        'bottom': 100
+       }  
+    %}
+        {% dnd_column width=12 %}
+          {% dnd_row %}
+            {% dnd_module path="/vault/pages/modules/general/Vault - Rich Text", label="Vault - Rich Text", text="<h2 style='font-size: 34px;'>Stay Up to Date With the Latest Events</h2><p style='margin-top: 10px;'>Subscribe for more!</p>", cta=[], design={'text_size': 'medium', 'text_alignment': 'center', 'module_alignment': 'center', 'max_width': 675} %}{% end_dnd_module %}
+          {% end_dnd_row %}
+
+          {% dnd_row padding={'top':35} %}
+            {% dnd_module "module_16106380656661" path="/vault/pages/modules/general/Vault - Subscription Form", label="Vault - Subscription Form" %}{% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+    {% end_dnd_section %}
+      
+  {% end_dnd_area %}
+{% endblock %}

@@ -1,0 +1,15 @@
+<div class="
+      vault-column 
+      {% if module.design.color_theme %}colored-section colored-section--{{ module.design.color_theme }}{% endif %} 
+      {% if module.design.text_size %}text--{{ module.design.text_size }}{% endif %} 
+      {% if module.design.text_alignment %}text--{{ module.design.text_alignment }}{% endif %} 
+      {% if module.design.module_alignment %}module--{{ module.design.module_alignment }}{% endif %}"
+>
+  <div class="vault-column__wrapper" style="{% if module.design.max_width %}max-width: {{ module.design.max_width }}px;{% endif %}">
+    {% for column in module.columns %}
+      <div class="vault-column__columns">
+        {{ column.text }}
+      </div>
+    {% endfor %}
+  </div>  
+</div>

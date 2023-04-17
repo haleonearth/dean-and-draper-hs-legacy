@@ -1,0 +1,282 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_324941337",
+        "label" : "site-header",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "site-header",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_12935908",
+            "label" : "container container--full",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container container--full",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "module_282798827",
+                "label" : "Logo",
+                "type" : "linked_image",
+                "params" : {
+                  "css_class" : "site-header__logo",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false,
+                  "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/dd-logo.png",
+                  "original_width" : 370,
+                  "original_height" : 64,
+                  "img_alt" : "dd-logo.png",
+                  "img_load_error" : false,
+                  "width" : 370,
+                  "height" : 64,
+                  "alt" : "Dean & Draper",
+                  "link" : "https://www.deandraper.com/",
+                  "open_in_new_tab" : false,
+                  "img" : {
+                    "alt" : "Dean & Draper",
+                    "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/dd-logo.png",
+                    "width" : 370,
+                    "height" : 64
+                  }
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 9,
+                "name" : "module_907826442",
+                "label" : "site-header__menu main-menu",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "site-header__menu main-menu",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_30297084",
+                    "label" : "Utility",
+                    "type" : "raw_html",
+                    "params" : {
+                      "css_class" : "main-menu__utility",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : false,
+                      "value" : "<ul class=\"utility-links\">\n    <li class=\"utility-links__link utility-links__link--tel\"><a href=\"tel:7135270444\">713.527.0444</a></li>\n    <li class=\"utility-links__link utility-links__link--tel\"><a href=\"tel:8882662680\">888.266.2680</a></li>\n    <li class=\"utility-links__link utility-links__link--account\"><a href=\"/auxiliary-links/manage-your-account/\">Manage Account</a></li>\n    <li class=\"utility-links__link\"><a href=\"/auxiliary-links/file-a-claim\">Claims</a></li>\n    <li class=\"utility-links__link\"><a href=\"/blog\">Blog</a></li>\n    <li class=\"utility-links__link\"><a href=\"/about\">About</a></li>\n    <li class=\"utility-links__link\"><a href=\"/contact\">Contact</a></li>\n    <li class=\"utility-links__link utility-links__link--search\"><a href=\"#search\" title=\"Search\"></a></li>\n</ul>\n"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 10,
+                    "name" : "module_348559725",
+                    "label" : "Menu",
+                    "type" : "menu",
+                    "params" : {
+                      "css_class" : "main-menu__navigation",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : false,
+                      "flow" : "horizontal",
+                      "max_levels" : "2",
+                      "root_type" : "site_root",
+                      "flyouts" : "true",
+                      "site_map_name" : "New Menu - 2018 -",
+                      "redirectUrl" : "https://app.hubspot.com/design-manager/56434/templates/5616651447"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "10" : {
+                    "x" : 10,
+                    "w" : 2,
+                    "name" : "module_74787578",
+                    "label" : "Call-to-Action",
+                    "type" : "cta",
+                    "params" : {
+                      "css_class" : "main-menu__cta",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : false,
+                      "embed_code" : "<!--HubSpot Call-to-Action Code --><span class=\"hs-cta-wrapper\" id=\"hs-cta-wrapper-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\"><span class=\"hs-cta-node hs-cta-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" id=\"hs-cta-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\"><!--[if lte IE 8]><div id=\"hs-cta-ie-element\"></div><![endif]--><a href=\"https://cta-redirect.hubspot.com/cta/redirect/56434/70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" ><img class=\"hs-cta-img\" id=\"hs-cta-img-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" style=\"border-width:0px;\" src=\"https://no-cache.hubspot.com/cta/default/56434/70ab9eb3-8d2a-483a-83b6-e251164f3bc1.png\"  alt=\"Request a Quote\"/></a></span><script charset=\"utf-8\" src=\"https://js.hscta.net/cta/current.js\"></script><script type=\"text/javascript\"> hbspt.cta.load(56434, '70ab9eb3-8d2a-483a-83b6-e251164f3bc1', {}); </script></span><!-- end HubSpot Call-to-Action Code -->",
+                      "guid" : "70ab9eb3-8d2a-483a-83b6-e251164f3bc1",
+                      "image_html" : "<!--HubSpot Call-to-Action Code --><span class=\"hs-cta-wrapper\" data-hs-img-pg=\"70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" id=\"hs-cta-wrapper-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\"><span class=\"hs-cta-node hs-cta-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" id=\"hs-cta-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\"><a href=\"https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=70ab9eb3-8d2a-483a-83b6-e251164f3bc1&pid=56434&ecid={{encrypted_contact_id}}&hseid={{email_campaign_id}}&hsic={{impersonated_contact}}\" ><img class=\"hs-cta-img\" id=\"hs-cta-img-70ab9eb3-8d2a-483a-83b6-e251164f3bc1\" style=\"border-width:0px;\" mce_noresize=\"1\" src=\"https://cta-image-cms2.hubspot.com/ctas/v2/public/cs/il/?pg=70ab9eb3-8d2a-483a-83b6-e251164f3bc1&pid=56434&ecid={{encrypted_contact_id}}&hseid={{email_campaign_id}}&hsic={{impersonated_contact}}\"  alt=\"Request a Quote\"/></a></span></span><!-- end HubSpot Call-to-Action Code -->",
+                      "image_src" : "https://no-cache.hubspot.com/cta/default/56434/70ab9eb3-8d2a-483a-83b6-e251164f3bc1.png"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_224171730",
+        "label" : "container container--large primary-breadcrumbs",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container container--large primary-breadcrumbs",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_984875941",
+            "label" : "Menu",
+            "type" : "menu",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "flow" : "horizontal",
+              "max_levels" : "2",
+              "root_type" : "breadcrumb",
+              "flyouts" : "true",
+              "site_map_name" : "default"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

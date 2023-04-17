@@ -1,0 +1,364 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,');
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic');
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,800italic,700italic);
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+{% include "hubspot/styles/responsive/required_base.css" %}
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+{% set baseFontFamily    = "Open Sans" %}            /* {# Used on 'body' in 'Base'  |  Ex. "font-family: {{ baseFontFamily }};" #} */
+{% set baseFontSize      = "15px" %}                         /* {# Used on 'body' in 'Base'  |  Ex. "font-size: {{ baseFontSize }};" #} */
+{% set baseLineHeight    = "25px" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "line-height: {{ baseLineHeight }};" #} */
+{% set siteColor         = "#00bbbb" %}
+{% set siteHoverColor    = "rgba(0,255,255,.7)" %}
+
+body {
+    background-color:#f5f5f5;
+    border-top: none;
+    font-family: {{ baseFontFamily }};
+    margin:0 !important;
+}
+.body-container-wrapper {
+    height: 0;
+}
+.footer-container-wrapper {
+    height: 0;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.6em;
+    font-weight: 100;
+}
+h1 {
+    font-size: 40px;
+    line-height: 1.4em;
+}
+h2 {
+    font-size: 32px;
+    line-height: 1.4em;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 10px;
+}
+body, p {
+    font-size: 16px;
+}
+.header-container-wrapper {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    box-shadow: none !important;
+    border: none;
+    color: #fff;
+}
+.hubl-code {
+    display: none!important;
+}
+.copyright-section {
+    text-align: center;
+}
+a:link {
+    color: {{siteColor}};
+    text-decoration: none;
+}
+a:visited {
+    color: {{siteColor}};
+    text-decoration: none;
+}
+a:active {
+    color: {{siteColor}};
+    text-decoration: none;
+}
+a:hover {
+    color: {{siteHoverColor}};
+    text-decoration: none;
+}
+.header-container-wrapper a:link {
+    color: {{siteColor}};
+}
+.header-container-wrapper a:visited {
+    color: {{siteColor}};
+}
+.header-container-wrapper a:hover {
+    color: {{siteHoverColor}};
+}
+.header-container-wrapper a:active {
+    color: {{siteColor}};
+}
+.page-center {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto!important;
+    float: none!important;
+}
+.center-text {
+    text-align: center;
+    max-width: 80%;
+    float: none!important;
+    margin: 0 auto!important;
+}
+.dotted-overlay {
+    padding-bottom: 10px;
+    min-height: 100vh!important;
+}
+.dark-overlay {
+    background-color: rgba(0,0,0,0.6);
+    min-height: 100vh!important;
+}
+.company-logo {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.page-title, .header {
+    text-align: center;
+}
+.form-holder {
+    padding: 5px;
+    border-radius:5px;
+    max-width: 500px;
+    margin:0 auto!important;
+    float:none!important;
+}
+.center-form {
+    margin:0 auto!important;
+    float:none!important;
+    width:100%;
+}
+.social-sharing {
+    display:none;
+    text-align: center;
+    margin: 0 auto!important;
+    float: none!important;
+}
+.hs-input {
+    margin-bottom: 10px;
+}
+input {
+    border:none;
+    border-radius:3pt;
+}
+.button {
+    font-family: Verdana, Geneva, sans-serif;
+}
+.hs-button{
+    background-color: {{ siteColor }};
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 15px auto!important;
+    float: none;
+    white-space:normal;
+}
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {
+  cursor: pointer;
+}
+body input[type="text"],
+body input[type="password"], 
+body input[type="datetime"], 
+body input[type="datetime-local"], 
+body input[type="date"], 
+body input[type="month"], 
+body input[type="time"], 
+body input[type="week"], 
+body input[type="number"], 
+body input[type="email"], 
+body input[type="url"], 
+body input[type="search"], 
+body input[type="tel"], 
+body input[type="color"],
+body input[type="file"],
+body textarea,
+body select {
+    width: 100%;
+    height:40px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #ffffff;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 16px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    margin:14px 0;
+    letter-spacing: 0.5px;
+    border-radius:3px;
+}
+body textarea {
+    height: 80px;
+    padding: 10px;
+}
+body select {
+    padding: 0 10px;
+}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+.hs-form-radio {
+    list-style-type:none;
+}
+.hs-form-booleancheckbox {
+    list-style-type:none;
+}
+.hs-form fieldset.form-columns-1 {
+    width: 100%;
+}
+.hs-form fieldset.form-columns-1 .hs-input {
+    width: 100%!important;
+}
+.hs-form fieldset.form-columns-2 .hs-input {
+    width: 100%!important;
+}
+.hs-form fieldset.form-columns-3 .hs-input {
+    width: 100%!important;
+}
+.hs-form fieldset.form-columns-3 .input {
+    margin-right: 4px!important;
+}
+.hs-form fieldset.form-columns-1 input[type=checkbox], .hs-form fieldset.form-columns-1 input[type=radio] {
+    width:auto!important;
+}
+option {
+    color:#565656;
+}
+body input[type="text"]:focus,
+body input[type="password"]:focus, 
+body input[type="datetime"]:focus, 
+body input[type="datetime-local"]:focus, 
+body input[type="date"]:focus, 
+body input[type="month"]:focus, 
+body input[type="time"]:focus, 
+body input[type="week"]:focus, 
+body input[type="number"]:focus, 
+body input[type="email"]:focus, 
+body input[type="url"]:focus, 
+body input[type="search"]:focus, 
+body input[type="tel"]:focus, 
+body input[type="color"]:focus,
+body input[type="file"]:focus,
+body textarea:focus,
+body select:focus {
+    border-color: #3a4;
+}
+body label {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color:#fff;
+}
+.hs-form-required {
+    display: none;
+}
+.hs_submit {
+    margin-right: 8px;
+}
+
+body .hs-button:hover{
+    background: none repeat scroll 0 0 {{siteHoverColor}};
+    color: #FFFFFF;
+}
+.hs-button.primary {
+    background-color: rgba(0,0,0,0);
+    min-width: 100%;
+    display: inline-block;
+    padding: 14px 28px 13px;
+    margin-right: 8px;
+    float: none;
+    display: block;
+    border: 1px solid {{siteColor}};
+}
+.offer-header {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.icon-section h1 {
+    font-size: 20pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.icon-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.call-to-action {
+    text-align:center;
+}
+.addl-text {
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .intro-text {
+        max-width:767px;
+        margin: 0;
+        float: none;
+    }
+    .form-holder {
+        margin-left: 180px;
+        padding: 15px 50px 30px;
+        float:none;
+    }  
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

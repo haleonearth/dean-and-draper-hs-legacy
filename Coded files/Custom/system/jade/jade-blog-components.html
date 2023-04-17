@@ -1,0 +1,55 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro blog_header() %}
+    {% if is_listing_view %}
+        <h1>{{ group.public_title }}</h1>
+        {% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
+    {% else %}
+        <h1>{{ content.name }}</h1>
+        <p class="byline">
+            Posted
+            {% if content.blog_post_author %}
+                by: <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a> /
+            {% endif %}
+            <time>{{ content.publish_date_localized }}</time>
+        </p>
+    {% endif %}
+{% endmacro %}
+
+{% macro blog_subscribe() %}
+    <div class="subscribe-form colored-section colored-section--beta colored-section--watermark padded-section padded-section--full">
+        {% if subscribe_form.heading %}
+            <h2 class="subscribe-form__heading">{{ subscribe_form.heading }}</h2>
+        {% endif %}
+        {% if subscribe_form.subheading %}
+            <p class="subscribe-form__subheading">{{ subscribe_form.subheading }}</p>
+        {% endif %}
+        <div class="subscribe-form__form">
+            {% blog_subscribe "blog_subscribe"
+                no_title = True
+            %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro post_thumb(post, subscribe = false) %}
+    {% if post.absolute_url %}
+        <article class="post-thumbnail">
+            {% set thumb = post.widgets.listing_thumbnail.body.src or post.featured_image %}
+            {% set thumb = resize_image_url(thumb, 0, 460) %}
+            {% set primary_topic = post.widgets.primary_topic_slug.body.value or post.topic_list[0].slug %}
+            <a class="post-thumbnail__thumb" href="{{ post.absolute_url }}" {% if thumb %}style="background-image: url(&quot;{{ thumb }}&quot;);"{% endif %}>
+                {% if thumb %}<img src="{{ thumb }}" alt="{{ post.name|striptags }}">{% endif %}
+            </a>
+            {% if primary_topic %}
+                {% for topic in post.topic_list %}
+                    {% if topic.slug == primary_topic %}<a href="{{ blog_tag_url(group.id, primary_topic) }}" class="post-thumbnail__topic">{{ topic }}</a>{% endif %}
+                {% endfor %}
+            {% endif %}
+            <h3 class="post-thumbnail__name"><a href="{{ post.absolute_url }}">{{ post.name }}</a></h3>
+            <p class="post-thumbnail__summary">{{ (post.post_list_summary or post.post_summary or post.post_body)|striptags|truncate(130) }} <a href="{{ post.absolute_url }}">Learn more</a></p>
+        </article>
+    {% endif %}
+{% endmacro %}

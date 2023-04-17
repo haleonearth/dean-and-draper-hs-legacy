@@ -1,0 +1,473 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/system/jade/jade-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "{% import 'Coded files/Custom/system/jade/jade-components.html' as components %}\n{{ components.global_head() }}",
+  "customFooter" : "",
+  "bodyClass" : "flush-header flush-footer",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517867587479184",
+        "label" : "hero-section hero-section--home colored-section colored-section--alpha",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "hero-section colored-section colored-section--alpha",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "{{ components.utility.section_background(hero_background) }}",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "{% image_src \"hero_background_src\"\n    label = \"Hero Background\",\n    src = \"https://cdn2.hubspot.net/hubfs/56434/jade/meeting-banner-img.jpg\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_position\"\n    label = \"Hero Background Position\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.position }}\",\n    export_to_template_context = true\n%}\n{% text \"hero_background_position_custom\"\n    label = \"Hero Background Position (Custom)\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_size\"\n    label = \"Hero Background Size\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.size }}\",\n    export_to_template_context = true\n%}\n{% text \"hero_background_size_custom\"\n    label = \"Hero Background Size (Custom)\",\n    export_to_template_context = true\n%}\n{% choice \"hero_background_repeat\"\n    label = \"Hero Background Repeat\",\n    value = \"default\",\n    choices = \"{{ components.utility.background_options.repeat }}\",\n    export_to_template_context = true\n%}\n{% color \"hero_background_color_custom\"\n    label = \"Hero Background Color (Custom)\",\n    export_to_template_context = true\n%}\n{% set hero_background = {\n    \"src\": widget_data.hero_background_src.src,\n    \"position\": widget_data.hero_background_position.value,\n    \"position_custom\": widget_data.hero_background_position_custom.value,\n    \"size\": widget_data.hero_background_size.value,\n    \"size_custom\": widget_data.hero_background_size_custom.value,\n    \"repeat\": widget_data.hero_background_repeat.value,\n    \"color\": widget_data.hero_background_color_custom.color\n} %}\n{{ html }}"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1517865637827181",
+            "label" : "Jade/Site Header",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "path" : "/Global content/Global Groups/Jade/Jade/Site Header.template.json",
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1517867589721189",
+            "label" : "container hero-section__body",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container hero-section__body",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1517867584605182",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h1>Headline Goes Here</h1>\n<p>Subheadline here if you like lorem ipsum dolor sit amet dolor sit.</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container hero-section__body",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "hero-section colored-section colored-section--alpha",
+        "cssStyle" : "{{ components.utility.section_background(hero_background) }}",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1520026286754131",
+        "label" : "flush-rows",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "flush-rows",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026079811119",
+            "label" : "sticky-row",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "sticky-row",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "sticky-row",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026302824139",
+            "label" : "#intro - vertical-center-row",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "vertical-center-row",
+              "css_id" : "intro",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_1520026294534135",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "padded-section padded-section--full",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2>Lorem Title Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>\n<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero:</p>\n<ul>\n<li>Bullets are great</li>\n<li>For spelling out <a href=\"#\">benefits</a> and</li>\n<li>Turning visitors into leads.</li>\n</ul>\n<p>End with a general call to action if there’s <a href=\"#\">a suggested next step</a>.</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "padded-section padded-section--full",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1520026298915137",
+                "label" : "Image",
+                "type" : "linked_image",
+                "params" : {
+                  "alt" : "split-consult-b-img.jpg",
+                  "css_class" : "fill-image",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "height" : 690,
+                  "img" : {
+                    "alt" : "split-consult-b-img.jpg",
+                    "height" : 690,
+                    "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg",
+                    "width" : 950
+                  },
+                  "img_alt" : "split-consult-b-img.jpg",
+                  "img_load_error" : false,
+                  "link" : "",
+                  "open_in_new_tab" : false,
+                  "original_height" : 690,
+                  "original_width" : 950,
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "src" : "https://cdn2.hubspot.net/hubfs/56434/jade/split-consult-b-img.jpg",
+                  "width" : 950,
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "fill-image",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "intro",
+            "cssClass" : "vertical-center-row",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1520026796448226",
+            "label" : "#form - colored-section colored-section--dark",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "colored-section colored-section--dark",
+              "css_id" : "form",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1520026793973224",
+                "label" : "container container--small",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "container container--small",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1520026866364227",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "text-center",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "html" : "<h2>Form Headline</h2>\n<hr>\n<p>Optional subheadline describing the next step.</p>",
+                      "overrideable" : true,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "text-center",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1520026791196221",
+                    "label" : "Form",
+                    "type" : "form",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "form" : {
+                        "form_id" : "e52ebd5e-e51e-4b5f-9e06-06520cbe55fe",
+                        "response_type" : "inline",
+                        "message" : "<p>Thanks for submitting the form.</p>",
+                        "form_type" : "HUBSPOT"
+                      },
+                      "form_to_use" : "e52ebd5e-e51e-4b5f-9e06-06520cbe55fe",
+                      "notifications_are_overridden" : false,
+                      "notifications_override_email_addresses" : "",
+                      "overrideable" : true,
+                      "per_widget_wrapper_html" : "",
+                      "response_message" : "<p>Thanks for submitting the form.</p>",
+                      "response_response_type" : "inline",
+                      "sfdc_campaign" : "",
+                      "title" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "container container--small",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "form",
+            "cssClass" : "colored-section colored-section--dark",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_152002503782184",
+            "label" : "Jade/Blog Feed",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "path" : "/Global content/Global Groups/Jade/Jade/Blog Feed.template.json",
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "flush-rows",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1517870104937229",
+        "label" : "Jade/Site Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/Jade/Jade/Site Footer.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,63 @@
+{% if not module.hide %}
+{% if module.heading %}
+<table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+	<tr>
+		<td class="module module-bf base" style="background-color: #fff;">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+				<tr>
+					<td class="text-wrap center">
+						{{ module.heading }}
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+{% endif %}
+	{% for section in module.section %}
+		{% if section.layout is string_containing "50" %}
+			{% set img = '
+				<td valign="top" class="image-wrap" width="50%" style="padding-top: 5px;">
+						<img src="{{ section.image_50.src }}" alt="{{ section.image_50.alt }}" width="{{ section.image_50.width }}">
+				</td>'
+			%}
+		{% elif section.layout is string_containing "25" %}
+			{% set img = '
+				<td valign="top" class="image-wrap" width="30%" style="padding-top: 5px;">
+						<img src="{{ section.image_25.src }}" alt="{{ section.image_25.alt }}" width="{{ section.image_25.width }}">
+				</td>'
+			%}
+		{% elif section.layout is string_containing "75" %}
+			{% set img = '
+				<td valign="top" class="image-wrap" width="65%" style="padding-top: 5px;">
+						<img src="{{ section.image_75.src }}" alt="{{ section.image_75.alt }}" width="{{ section.image_75.width }}">
+				</td>'
+			%}
+		{% endif %}
+		<table align="center" class="container" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+			<tr>
+				<td class="two-col module {{ section.section_color }}">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+						<tr>
+							{% if section.layout is string_containing "left" %}
+								{{ img }}
+								<td valign="top" class="space-v"></td>
+							{% endif %}
+
+							<td valign="top" class="text-wrap">
+								{{ section.text }}
+
+								{{ button }}
+							</td>
+
+							{% if section.layout is string_containing "right" %}
+								<td valign="top" class="space-v"></td>
+								{{ img }}
+							{% endif %}
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	{% endfor %}
+{% endif %}

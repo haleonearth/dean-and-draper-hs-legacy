@@ -1,0 +1,243 @@
+[ {
+  "id" : "8683032e-5d4c-a9d7-efc5-28521391efb3",
+  "name" : "hide",
+  "display_width" : null,
+  "label" : "Hide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "fc403e02-6b58-c1a3-36ca-914f43871a16",
+  "name" : "section_color",
+  "display_width" : null,
+  "label" : "Section Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "base", "Base" ], [ "light", "Light" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "beta", "Beta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "base"
+}, {
+  "id" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+  "name" : "layout",
+  "display_width" : null,
+  "label" : "Layout",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "rows", "Rows" ], [ "two_columns", "2 Columns" ], [ "three_columns", "3 Columns" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "two_columns"
+}, {
+  "id" : "6e45594c-db4a-acd0-264b-45911266bf1b",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Updates</h2>\n<p>Looking for more? Read everything going on here.</p>"
+}, {
+  "id" : "66d1a009-19ac-7cdc-7c67-9b2bf9a3d610",
+  "name" : "center",
+  "display_width" : null,
+  "label" : "Center Sections",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "82889e61-816e-8df1-fb25-f3ebce81a05c",
+  "name" : "section",
+  "display_width" : null,
+  "label" : "Section",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "195bc8bd-514d-5f0c-126c-32c481c0a40a",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "9fb5bfc0-571a-e826-c58e-9214a62f85ec",
+    "name" : "image_50",
+    "display_width" : null,
+    "label" : "Image (270px wide)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "two_columns",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 250,
+      "height" : 191
+    }
+  }, {
+    "id" : "4fb4b3ed-2f4f-5744-9430-8224121ff548",
+    "name" : "image_25",
+    "display_width" : null,
+    "label" : "Image (135px wide)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bd718ed7-2b2b-bfed-fbd2-2632b57b9362",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "rows|three_column",
+      "property" : null,
+      "operator" : "MATCHES_REGEX",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 135,
+      "height" : 103
+    }
+  }, {
+    "id" : "195bc8bd-514d-5f0c-126c-32c481c0a40a",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Featured Story</h4>\n<p>A bit more about this success story, if there's a featured story you want to describe.</p>"
+  }, {
+    "id" : "aae5aa83-10de-9154-727a-7e7eb053eba3",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "f785e462-1b9b-f865-6012-485ceb304917",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Read More"
+    }, {
+      "id" : "cc71130c-5d38-a9d8-f615-7635fecc2792",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_50" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 250,
+      "height" : 191
+    },
+    "image_25" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 135,
+      "height" : 103
+    },
+    "text" : "<h4>Featured Story</h4>\n<p>A bit more about this success story, if there's a featured story you want to describe.</p>",
+    "button" : {
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "image_50" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 250,
+      "height" : 191
+    },
+    "image_25" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/74005/nonprofit%20email.jpg",
+      "alt" : "nonprofit email",
+      "width" : 135,
+      "height" : 103
+    },
+    "text" : "<h4>Featured Story</h4>\n<p>A bit more about this success story, if there's a featured story you want to describe.</p>",
+    "button" : {
+      "text" : "Read More",
+      "link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.example.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

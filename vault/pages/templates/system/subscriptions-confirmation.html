@@ -1,0 +1,17 @@
+<!--
+  templateType: email_subscriptions_confirmation_page
+  isAvailableForNewContent: true
+  label: Subscription Preferences
+-->
+
+{% set template_body_classes = "system-page system-page--subscription" %}
+
+{% extends '../../partials/base.html' %}
+
+{% block body %}
+  <div class="system-page-content">
+    {% module 'subscriptions_confirmation'
+      path='@hubspot/email_subscriptions_confirmation'
+    %}
+  </div>
+{% endblock body %}

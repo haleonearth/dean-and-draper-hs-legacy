@@ -1,0 +1,12 @@
+[ {
+  "id" : "featured_tag",
+  "name" : "featured_tag",
+  "display_width" : null,
+  "label" : "Featured Tag",
+  "help_text" : "Add a tag to be featured in the corresponding section, the most recent post will be the one highlighted there.",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "SLUG",
+  "type" : "tag",
+  "default" : "employee-benefits"
+} ]

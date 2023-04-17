@@ -1,0 +1,272 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_view_as_web_page",
+        "label" : "View As Web Page",
+        "type" : "email_view_as_web_page",
+        "params" : {
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}\">\n    Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.\n</div>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14921805498611306",
+        "label" : "Resonant CSS Include",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "{% set primary_accent_color = \"#ee4a30\" %}\n\n<style>\n{% include 'Coded files/Custom/page/css/resonant.css' %}\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1490814631149459",
+        "label" : "Branding",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "<table style=\"width: 700px;{# set this to 700 to force email width on outlook #}\" class=\"setFullWidth\"><tr>\n<td style=\" padding-bottom: 50px; padding-top: 50px; padding-left: 50px; margin-bottom: 30px; background-color: {{ primary_accent_color }}\">\n    {% logo \"logo_image\" overrideable=true, suppress_company_name=true, src=\"https://cdn2.hubspot.net/hubfs/2574624/Resonant/resonant-logo.png\", original_width=163, original_height=21, img_alt=\"resonant logo\", width=163, height=21, label=\"Logo\" %}\n</td></tr></table>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496254420153210",
+        "label" : "Resonant One Col Left Aligned Text CTA (tips copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant One Col Left Aligned Text CTA (tips copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant One Col Left Aligned Text CTA (tips copy)"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496330598304185",
+        "label" : "Resonant Two Col Image Text Switchable (tips copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Two Col Image Text Switchable (tips copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Two Col Image Text Switchable (tips copy)"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496330625151187",
+        "label" : "Resonant Two Col Image Text Switchable (tips copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Two Col Image Text Switchable (tips copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Two Col Image Text Switchable (tips copy)"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496330610762186",
+        "label" : "Resonant Two Col Image Text Switchable (tips copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Two Col Image Text Switchable (tips copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Two Col Image Text Switchable (tips copy)"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496779844034111",
+        "label" : "Resonant Footer White",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Footer White",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Footer White"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

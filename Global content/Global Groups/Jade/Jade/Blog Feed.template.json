@@ -1,0 +1,53 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1519430317799318",
+        "label" : "Feed",
+        "type" : "raw_jinja",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false,
+          "value" : "{% set posts = blog_recent_posts(components.blogs.default, 2) %}\n<div class=\"blog-feed\" id=\"feed\">\n    <div class=\"blog-feed__posts\">\n        <h3>Latest From The Blog</h3>\n        {% for post in posts %}\n            <div class=\"blog-feed__post feed-post\">\n                <h4 class=\"feed-post__title\">{{ post.name }}</h4>\n                <p class=\"feed-post__summary\">{{ post.post_list_content|striptags|truncate(140) }} <a href=\"{{ post.absolute_url }}\">Read more</a></p>\n            </div>\n        {% endfor %}\n    </div>\n    <div class=\"blog-feed__categories\">\n        <h3>Featured Blog Categories</h3>\n        {% set tags = [\n            (\"safety\", \"Safety & Preparedness\"),\n            (\"dean-draper-news\", \"News\"),\n            (\"health-tips\", \"Health Tips\")\n        ] %}\n        <ul class=\"categories-list\">\n            {% for tag in tags %}\n                <li><a href=\"{{ blog_tag_url(components.blogs.default, tag[0]) }}\" class=\"categories-list__category categories-list__category--{{ tag[0] }}\">{{ tag[1] }}</a></li>\n            {% endfor %}\n        </ul>\n    </div>\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,75 @@
+[ {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>CTA Headline Goes Here Lorem</h2><p>Optional subheadline goes here lorem ipsum dolor</p>"
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "c1996b3a-a858-48ca-a9cb-f74c7d401c0e"
+}, {
+  "id" : "design",
+  "name" : "design",
+  "display_width" : null,
+  "label" : "Design",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "design.background_color",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#A0BCBF",
+      "opacity" : 15
+    }
+  }, {
+    "id" : "color_theme",
+    "name" : "color_theme",
+    "display_width" : null,
+    "label" : "Color Theme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "alpha-dark", "Alpha Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "text_size",
+    "name" : "text_size",
+    "display_width" : null,
+    "label" : "Text Size",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "base", "Base" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "medium"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

@@ -1,0 +1,37 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Global Base"
+-->
+<!doctype html>
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    {% module "schema" path="../modules/global/Global Schema", label="Global Schema", no_wrapper=true %}
+    {% include './global-head.html' %}
+    {% import './global-head.html' as components %}
+
+    {# You can include anything you'd like to be available in JS from HubL here. #}
+    <script>
+      window.themeVars = {
+        portalId: {{ portal_id|tojson }}
+      };
+    </script>
+    {{ standard_header_includes }}
+  </head>
+  <body class="{{ builtin_body_classes }} {{ template_body_classes }}">
+    {% block header %}
+      {% module "header" path="../modules/global/Landing Header", label="Landing Header", no_wrapper=true %}
+    {% endblock header %}
+
+    <main id="body" class="body-wrapper" tabindex="0">
+      {% block body %}{% endblock body %}
+    </main>
+
+    {% module "footer" path="../modules/global/Site Footer", label="Site Footer", no_wrapper=true %}
+    {{ standard_footer_includes }}
+  </body>
+</html>

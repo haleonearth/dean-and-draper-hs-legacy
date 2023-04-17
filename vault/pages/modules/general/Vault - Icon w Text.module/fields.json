@@ -1,0 +1,75 @@
+[ {
+  "id" : "icon",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/icons/icon-people.svg",
+    "alt" : null
+  }
+}, {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore agna aliquyam erat, sed diam voluptua.</p>"
+}, {
+  "id" : "design",
+  "name" : "design",
+  "display_width" : null,
+  "label" : "Design",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "design.add_line",
+    "name" : "add_line",
+    "display_width" : null,
+    "label" : "Add Connector Line",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "color_theme",
+    "name" : "color_theme",
+    "display_width" : null,
+    "label" : "Color Theme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "alpha-dark", "Alpha Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "design.text_alignment",
+    "name" : "text_alignment",
+    "display_width" : null,
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

@@ -1,0 +1,28 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% if main_topics|count > 0 %}
+    {% set topics_data = blog_topics('default', 250) %}
+    <div class="topics-nav sticky-row">
+        <div class="container">
+            <ul>
+                {% if topic %}
+                    <li><a href="{{ group.absolute_url }}" class="topics-nav__item topics-nav__item--all">All Topics</a></li>
+                {% endif %}
+                {%- for main_topic in main_topics -%}
+                    <li>
+                        <a href="{{ blog_tag_url(group.id, main_topic) }}" class="topics-nav__item {{ 'topics-nav__item--current' if topic and topic === main_topic }}">
+                            {%- for data in topics_data -%}
+                                {% if data.slug == main_topic %}{{ data }}{% endif %}
+                            {%- endfor -%}
+                        </a>
+                    </li>
+                {%- endfor -%}
+            </ul>
+            {{ components.search_form(group.absolute_url, 'search', request.query_dict.search, 'Search', 'topics-nav__search') }}
+        </div>
+    </div>
+{% endif %}
+
+{% include 'Coded files/Custom/system/jade/jade-blog-loop.html' %}

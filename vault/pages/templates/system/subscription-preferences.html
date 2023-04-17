@@ -1,0 +1,17 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Subscription Preferences
+-->
+
+{% set template_body_classes = "system-page system-page--subscription" %}
+
+{% extends '../../partials/base.html' %}
+
+{% block body %}
+  <div class="system-page-content">
+    {% module 'subscription_preferences'
+      path='@hubspot/email_subscriptions'
+    %}
+  </div>
+{% endblock body %}

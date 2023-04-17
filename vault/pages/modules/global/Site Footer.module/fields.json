@@ -1,0 +1,328 @@
+[ {
+  "id" : "utility_menu",
+  "name" : "utility_menu",
+  "display_width" : null,
+  "label" : "Utility Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "simplemenu",
+  "default" : [ {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "Legal Notice",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ ]
+  }, {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "Privacy Policy",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ ]
+  }, {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "Site Map",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ ]
+  } ]
+}, {
+  "id" : "contact",
+  "name" : "contact",
+  "display_width" : null,
+  "label" : "Contact Column",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "contact.heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get In Touch"
+  }, {
+    "id" : "contact.contact_info",
+    "name" : "contact_info",
+    "display_width" : null,
+    "label" : "Contact Information",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><a href='tel:7135270444'>713-527-0444</a><br><a href='tel:8882662680'>888-266-2680</a><br>Fax: 713-527-0457<br><a href='mailto:info@deandraper.com'>info@deandraper.com</a></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "location",
+  "name" : "location",
+  "display_width" : null,
+  "label" : "Location Column",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "location.heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Location"
+  }, {
+    "id" : "location.location_info",
+    "name" : "location_info",
+    "display_width" : null,
+    "label" : "Location Information",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>3131 West Alabama<br>Suite 150<br>Houston, Texas 77098</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "links",
+  "name" : "links",
+  "display_width" : null,
+  "label" : "Links Column",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "links.heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Links"
+  }, {
+    "id" : "links.menu",
+    "name" : "menu",
+    "display_width" : null,
+    "label" : "Menu",
+    "required" : false,
+    "locked" : true,
+    "type" : "simplemenu",
+    "default" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Claims",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "About",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Contact",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Blog",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "social",
+  "name" : "social",
+  "display_width" : null,
+  "label" : "Social Column",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "social.heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Follow Us"
+  }, {
+    "id" : "social.social_media",
+    "name" : "social_media",
+    "display_width" : null,
+    "label" : "Social Media",
+    "required" : false,
+    "locked" : true,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "social.social_media.service",
+      "name" : "service",
+      "display_width" : null,
+      "label" : "Service",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "Facebook", "Facebook" ], [ "Twitter", "Twitter" ], [ "LinkedIn", "LinkedIn" ], [ "Pinterest", "Pinterest" ], [ "YouTube", "YouTube" ], [ "Instagram", "Instagram" ], [ "Blog", "Blog" ], [ "Website", "Website" ], [ "Email Address", "Email Address" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice"
+    }, {
+      "id" : "social.social_media.link",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : true,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "service" : "Facebook",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : "http://www.facebook.com/deandraperinsurance"
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "service" : "Twitter",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : "http://www.twitter.com/deandraper"
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "service" : "LinkedIn",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : "http://www.linkedin.com/companies/dean-%26-draper-insurance-agency"
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "service" : "Instagram",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : "https://www.instagram.com/deandraperteam/"
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

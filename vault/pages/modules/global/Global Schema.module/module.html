@@ -1,0 +1,187 @@
+{%- set date_format = '%Y-%m-%dT%H:%M%S%z' -%}
+{%- macro slug(str) -%}{{ str|lower|trim|regex_replace('[^A-z0-9]', '-')|regex_replace('-+', '-') }}{%- endmacro -%}
+{# Set up main schema object with Organization, Website, and WebPage #}
+{%- set schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': module.organization_type,
+      '@id': site_settings.company_domain ~ '#organization',
+      'name': site_settings.company_name,
+      'url': site_settings.company_domain,
+      'logo': {
+        '@type': 'ImageObject',
+        '@id': site_settings.company_domain ~ '#logo',
+        'url': module.company_logo.src,
+        'width': module.company_logo.width,
+        'height': module.company_logo.height
+      },
+      'image': {
+        '@type': 'ImageObject',
+        'url': module.company_image.src or module.company_logo.src,
+        'width': module.company_image.width if module.company_image.src else module.company_logo.width,
+        'height': module.company_image.height if module.company_image.src else module.company_logo.height
+      },
+      'telephone': site_settings.company_phone,
+      'address': {
+        '@type': 'PostalAddress',
+        '@id': site_settings.company_domain ~ '#address',
+        'streetAddress': (site_settings.company_street_address_1 ~ ' ' ~ site_settings.company_street_address_2)|trim,
+        'addressLocality': site_settings.company_city,
+        'addressRegion': site_settings.company_state,
+        'postalCode': site_settings.company_zip
+      }
+    },
+    {
+      '@type': 'Website',
+      '@id': site_settings.company_domain ~ '#website',
+      'name': site_settings.company_name,
+      'url': site_settings.company_domain,
+      'publisher': {
+        '@id': site_settings.company_domain ~ '#organization',
+      }
+    },
+    {
+      '@type': 'WebPage',
+      '@id': content.absolute_url ~ '#webpage',
+      'url': content.absolute_url,
+      'inLanguage': content.language,
+      'name': content.page_title,
+      'isPartOf': {
+        '@id': site_settings.company_domain ~ '#website',
+      },
+      'about': {
+        '@id': site_settings.company_domain ~ '#organization',
+      },
+      'datePublished': content.publish_date|datetimeformat(date_format),
+      'dateModified': content.modified|datetimeformat(date_format),
+      'description': page_meta.meta_description
+    }
+  ]
+} -%}
+
+{%- if type(module.award) == 'list' and module.award|count > 0 -%}
+  {%- do schema['@graph'][0].update({'awards': module.award}) -%}
+{%- endif -%}
+
+{%- if type(module.social_media_profile) == 'list' and module.social_media_profile|count > 0 -%}
+  {%- do schema['@graph'][0].update({'sameAs': module.social_media_profile|map('href')}) -%}
+{%- endif -%}
+
+{%- if content.featured_image -%}
+  {%- do schema['@graph'][2].update({
+    'image': {
+      '@type': 'ImageObject',
+      '@id': content.absolute_url ~ '#primaryimage',
+      'url': content.featured_image,
+      'caption': content.featured_image_alt_text
+    }
+  }) -%}
+{%- endif -%}
+
+{# Schema for employees #}
+{%- if module.employees -%}
+  {%- set employee_schema = [] -%}
+  {%- set employee_schema_simple = [] -%}
+  {%- set employees = hubdb_table_rows(module.employees) -%}
+  {%- set employee_columns = module.employee_hubdb_columns -%}
+  {%- for employee in employees  -%}
+    {%- set single_employee = {
+      '@type': 'Person',
+      '@id': site_settings.company_domain ~ '#' ~ slug(employee[employee_columns.name_column]),
+      'name': employee[employee_columns.name_column],
+      'sameAs': [employee[employee_columns.facebook_url_column], employee[employee_columns.linkedin_url_column], employee[employee_columns.twitter_url_column], employee[employee_columns.youtube_url_column], employee[employee_columns.website_url_column]]|select('truthy')
+    } -%}
+    {%- if employee[employee_columns.email_address_column] -%}
+      {%- do single_employee.update({
+        'email': employee[employee_columns.email_address_column]
+      }) -%}
+    {%- endif -%}
+    {%- if employee[employee_columns.bio_column] -%}
+      {%- do single_employee.update({
+        'description': employee[employee_columns.bio_column]|striptags
+      }) -%}
+    {%- endif -%}
+    {%- if employee[employee_columns.title_column] -%}
+      {%- do single_employee.update({
+        'jobTitle': employee[employee_columns.title_column]
+      }) -%}
+    {%- endif -%}
+    {%- if employee[employee_columns.portrait_column].url -%}
+      {%- do single_employee.update({
+        'image': {
+          '@type': 'ImageObject',
+          '@id': site_settings.company_domain ~ '#' ~ slug(employee[employee_columns.name_column]) ~ 'avatar',
+          'url': employee[employee_columns.portrait_column].url
+        }
+      }) -%}
+    {%- endif -%}
+    {%- do employee_schema_simple.append({
+        '@id': single_employee['@id']
+    }) -%}
+    {%- do employee_schema.append(single_employee) -%}
+    {%- do schema['@graph'].append(single_employee) -%}
+  {%- endfor -%}
+  {%- do schema['@graph'][0].update({
+   'employees': employee_schema_simple
+  }) -%}
+{%- endif -%}
+
+{# Schema for blog posts #}
+{%- if group.id and not is_listing_view -%}
+  {%- set author = content.blog_post_author -%}
+  {%- if module.employees -%}
+    {%- set author_schema = employee_schema|selectattr('name', 'equalto', author.display_name)|first -%}
+  {%- endif -%}
+  {%- unless author_schema -%}
+    {%- set author_schema = {
+      '@type': 'Person',
+      '@id': blog_author_url(group.id, author.slug) ~ '#author',
+      'name': author.display_name,
+      'sameAs': [author.facebook, author.linkedin, author.twitter, author.website]|select('truthy'),
+      'email': author.email
+    } -%}
+    {%- if author.avatar -%}
+      {%- do author_schema.update({
+        'image': {
+          '@type': 'ImageObject',
+          '@id': blog_author_url(group.id, author.slug) ~ '#authoravatar',
+          'url': author.avatar
+        }
+      }) -%}
+    {%- endif -%}
+    {%- do schema['@graph'].append(author_schema) -%}
+  {%- endunless -%}
+  {%- set post_schema = {
+    '@type': 'BlogPosting',
+    '@id': content.absolute_url ~ '#blogposting',
+    'url': content.absolute_url,
+    'inLanguage': content.language,
+    'name': content.name|striptags,
+    'headline': content.name|striptags,
+    'mainEntityOfPage': content.absolute_url,
+    'commentCount': content.comment_count,
+    'wordCount': content.post_body|striptags|wordcount,
+    'publisher': {
+      '@id': site_settings.company_domain ~ '#organization',
+    },
+    'author': {
+      '@id': author_schema['@id'],
+    },
+    'datePublished': content.publish_date|datetimeformat(date_format),
+    'dateModified': content.modified|datetimeformat(date_format),
+    'keywords': content.topic_list|map('name')
+  } -%}
+  {%- if content.featured_image -%}
+    {%- do post_schema.update({
+      'image': {
+        '@id': content.absolute_url ~ '#primaryimage'
+      }
+    }) -%}
+  {%- endif -%}
+  {%- do schema['@graph'].append(post_schema) -%}
+{%- endif -%}
+
+<script type='application/ld+json'>
+  {{ schema|tojson }}
+</script>

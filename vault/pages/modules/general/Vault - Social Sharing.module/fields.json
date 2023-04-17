@@ -1,0 +1,65 @@
+[ {
+  "id" : "author",
+  "name" : "author",
+  "display_width" : null,
+  "label" : "Author",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "author.person",
+    "name" : "person",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Author Name"
+  }, {
+    "id" : "author.title",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "author.bio",
+    "name" : "bio",
+    "display_width" : null,
+    "label" : "Bio",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicular. Integer adipiscing risus."
+  }, {
+    "id" : "author.headshot",
+    "name" : "headshot",
+    "display_width" : null,
+    "label" : "Headshot",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://via.placeholder.com/70x70",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group"
+} ]

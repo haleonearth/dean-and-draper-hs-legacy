@@ -1,0 +1,231 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+{% import 'Coded files/Custom/system/jade/jade-utility.html' as utility %}
+{% set theme = "jade" %}
+
+{% set blogs = {
+    "default": 2143624387
+} %}
+
+{% macro global_head() %}
+    {{ require_js(get_public_template_url('Coded files/Custom/system/jade/jade-script.js'), 'footer' ) }}
+    <script>
+        $("html")
+            .removeClass("no-js")
+            .addClass("js");
+    </script>
+{% endmacro %}
+
+{% macro breadcrumbs(items, extra_classes) %}
+    <nav class="breadcrumbs {{ extra_classes }}">
+        <ul class="hs-breadcrumb-menu">
+            {% for item in items %}{#
+                #}{% if item.label %}{#
+                    #}<li class="hs-breadcrumb-menu-item {% if loop.first %}first-crumb{% endif %} {% if loop.last %}last-crumb{% endif %}">{#
+                        #}<{% if item.link %}a href="{{ item.link }}"{% else %}span{% endif %} class="hs-breadcrumb-label">{#
+                            #}{{ item.label }}{#
+                        #}</{% if item.link %}a{% else %}span{% endif %}>{#
+                        #}{% if not loop.last %}<span class="hs-breadcrumb-menu-divider"></span>{% endif %}{#
+                    </li>{#
+                #}{% endif %}{#
+            #}{% endfor %}
+        </ul>
+    </nav>
+{% endmacro %}
+
+{% macro social_sharing(link, label = 'Share This', extra_classes = '') %}
+    <div class="social-media social-media--sharing {{ extra_classes }}">
+        {% if label %}<span class="social-media__label">{{ label }}:</span>{% endif %}
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ link.url|urlencode }}"
+            target="_blank" class="social-media__service social-media__service--facebook" title="Facebook"></a>
+        <a href="https://twitter.com/intent/tweet/?text={{ link.title|urlencode }}&url={{ link.url|urlencode }}"
+            target="_blank" class="social-media__service social-media__service--twitter" title="Twitter"></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ link.url|urlencode }}&title={{ link.title|urlencode }}&summary={{ link.summary|urlencode }}&source={{ site_settings.company_domain|urlencode }}"
+            target="_blank" class="social-media__service social-media__service--linkedin" title="LinkedIn"></a>
+    </div>
+{% endmacro %}
+
+{% macro search_form(action, id, value, placeholder = "Search", extra_classes) %}
+    <form class="{{ extra_classes }} search-form" action="{{ action }}">
+        <label class="screen-reader-text" for="{{ id }}">Search</label>
+        <input type="search" id="{{ id }}" name="q" class="search-form__input" {% if placeholder %}placeholder="{{ placeholder }}"{% endif %} {% if value %}value="{{ value }}"{% endif %}>
+        <button class="search-form__submit" title="Search"></button>
+    </form>
+{% endmacro %}
+
+{% macro testimonial_slider(service = '') %}
+    {% set filter = 'orderBy=order' %}
+    {% set table_id = 678373 %}
+    {% set services = hubdb_table_column(table_id, 'services') %}
+    {% if service %}
+        {% set filter = filter ~ '&service__contains=' ~ services.getOptionByName(service) %}
+    {% endif %}
+    {% set testimonials = hubdb_table_rows(table_id, filter) %}
+    {% if testimonials|count > 0 %}
+        <div class="slider slider--testimonials">
+            <div class="slider__slides">
+                {% for testimonial in testimonials %}
+                    <div class="slider__slide colored-section colored-section--alpha" {% if testimonial.image.url %}style="background-image: url(&quot;{{ testimonial.image.url }}&quot;)"{% endif %}>
+                        <div class="container container--full">
+                            <div class="testimonial">
+                                {% if testimonial.heading %}
+                                    <h3 class="testimonial__heading">{{ testimonial.heading }}</h3>
+                                {% endif %}
+                                {% if testimonial.quote %}
+                                    <blockquote class="testimonial__quote">{{ testimonial.quote|replace("“", "‘")|replace("”","’")|replace("\"", "'") }}</blockquote>
+                                {% endif %}
+                                {% if testimonial.name %}
+                                    <footer class="testimonial__source">{{ testimonial.name }}</footer>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro team_members() %}
+    {% set table_id = 678358 %}
+    {% set team_members = hubdb_table_rows(table_id, 'orderBy=order') %}
+    {% set columns = hubdb_table(table_id).columns %}
+    {% if team_members|count > 0 %}
+        <div class="team-members">
+            {%- for team_member in team_members -%}
+                <div class="team-member" {% if team_member.portrait.url %}style="background-image: url(&quot;{{ resize_image_url(team_member.portrait.url, 700) }}&quot;)"{% endif %}>
+                    <div class="team-member__body">
+                        <h3 class="team-member__name">{{ team_member.name }}</h3>
+                        {% if team_member.title %}
+                            <p class="team-member__title">{{ team_member.title }}</p>
+                        {% endif %}
+                        {{ team_member.bio }}
+                        <div class="social-media team-member__social">
+                            {% for column in columns %}
+                                {% if column.type == "URL" and team_member[column.name] %}
+                                    <a href="{{ team_member[column.name] }}" class="social-media__service social-media__service--{{ column.name }}" title="{{ column.label }}"></a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro collapsible_text(title, body, accordion = false, extra_classes = '') %}
+    {% if title and body %}
+        <div class="collapsible-text {{ 'collapsible-text--accordion' if accordion }} {{ extra_classes }}">
+            <h3 class="collapsible-text__title">{{ title }}</h3>
+            <div class="collapsible-text__body-wrapper">
+                <div class="collapsible-text__body">
+                    {{ body }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro faq(table_id) %}
+    {% set questions = hubdb_table_rows(table_id, 'orderBy=order&question__not_null=&answer__not_null=') %}
+    {% if questions|count > 0 %}
+        <section class="collapsible-text-wrapper collapsible-text-wrapper--faq">
+            {% for question in questions %}
+                {{ collapsible_text(question.question, question.answer, true, 'collapsible-text--faq') }}
+            {% endfor %}
+        </section>
+    {% endif %}
+{% endmacro %}
+
+{% macro industry_links(table_id) %}
+    {% set links = hubdb_table_rows(table_id, 'orderBy=order&link__not_null') %}
+    {% if links|count > 0 %}
+        <section class="industry-links">
+            {%- for link in links -%}
+                <a href="{{ link.link }}" class="industry-link"
+                    {% if link.image.url %}style="background-image: url(&quot;{{ link.image.url }}&quot;)"{% endif %}
+                >
+                    <div class="industry-link__body">
+                        {% if link.name %}
+                            <h3 class="industry-link__name">{{ link.name }}</h3>
+                            <hr>
+                        {% endif %}
+                        <div class="industry-link__summary">
+                            {{ link.summary }}
+
+                            <p><span class="industry-link__more">Learn More</span></p>
+                        </div>
+                    </div>
+                </a>
+            {%- endfor -%}
+        </section>
+    {% endif %}
+{% endmacro %}
+
+{% macro claims_contact(table_id, category = '') %}
+    {% set filter = 'orderBy=name&name__not_null=' %}
+    {% set categories = hubdb_table_column(table_id, 'categories') %}
+    {% if category %}
+        {% set filter = filter ~ '&categories__contains=' ~ categories.getOptionByName(category).id %}
+    {% endif %}
+    {% set companies = hubdb_table_rows(table_id, filter) %}
+    {% if companies|count > 0 %}
+        <ul class="claims-contact">
+            {% for company in companies %}
+                <li>
+                    <h3>{{ company.name }}</h3>
+                    {% if company.phone %}<a href="tel:{{ company.phone|trim }}">Phone: {{ company.phone|trim }}</a>{% endif %}
+                    {% if company.fax %}<a href="tel:{{ company.fax|trim }}">Fax: {{ company.fax|trim }}</a>{% endif %}
+                    {% if company.website %}<a href="{{ company.website }}" target="_blank">Website</a>{% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+{% macro person(info, heading, extra_classes) %}
+    <div class="person {{ extra_classes }}">
+        {% if info.avatar %}
+            <div class="person__avatar" style="background-image: url(&quot;{{ resize_image_url(info.avatar, 140) }}&quot;);">
+                <img src="{{ resize_image_url(info.avatar, 140) }}" alt="{{ info.display_name }}">
+            </div>
+        {% endif %}
+        <div class="person__body">
+            {% if heading %}<p class="person__heading">{{ heading }}</p>{% endif %}
+            <h3 class="person__name">{{ info.display_name }}</h3>
+            {{ info.bio }}
+            {% if info.has_social_profiles %}
+                <div class="person__social social-media">
+                    <span class="social-media__label">Connect:</span>
+                    {% if info.email %}
+                        <a href="mailto:{{ info.email }}" title="Email"
+                            class="social-media__service social-media__service--email"></a>
+                    {% endif %}
+                    {% if info.facebook %}
+                        <a href="{{ info.facebook }}" title="Facebook"
+                            class="social-media__service social-media__service--facebook"></a>
+                    {% endif %}
+                    {% if info.google_plus %}
+                        <a href="{{ info.google_plus }}" title="Google+"
+                            class="social-media__service social-media__service--googleplus"></a>
+                    {% endif %}
+                    {% if info.linkedin %}
+                        <a href="{{ info.linkedin }}" title="LinkedIn"
+                            class="social-media__service social-media__service--linkedin"></a>
+                    {% endif %}
+                    {% if info.twitter %}
+                        <a href="{{ info.twitter }}" title="Twitter"
+                            class="social-media__service social-media__service--twitter"></a>
+                    {% endif %}
+                    {% if info.website %}
+                        <a href="{{ info.website }}" title="Website"
+                            class="social-media__service social-media__service--website"></a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,205 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1388499702410506",
+        "label" : "Page Center",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "page-center",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14183631264255921",
+            "label" : "Connect With Us ",
+            "type" : "raw_html",
+            "params" : {
+              "overrideable" : false,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "footer-links mid",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "value" : "<div style=\"width: 170px; margin: 5px auto;\"><a class=\"rss\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.deandraper.com/CMS/UI/Modules/BizBlogger/rss.aspx?tabid=167052&amp;moduleid=264424&amp;maxcount=25&amp;u=38961&amp;t=77c545ab-7896-45c2-a1dd-49b858bba934\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/rss.png\" width=\"25\" height=\"25\" /></a>&nbsp;<a class=\"twi\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.twitter.com/deandraper\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/twitter.png\" width=\"25\" height=\"25\"/></a>&nbsp;<a class=\"fb\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.facebook.com/deandraperinsurance\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/facebook.png\" width=\"25\" height=\"25\" /></a>&nbsp;<a class=\"linkdin\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.linkedin.com/companies/dean-&amp;-draper-insurance-agency\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/linked-in.png\" width=\"25\" height=\"25\" /></a>&nbsp;<a class=\"youtube\" title=\"Youtube\" target=\"_blank\" rel=\"nofollow\" href=\"http://www.youtube.com/deandraperins\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/youtube.png\" width=\"25\" height=\"25\" /></a>&nbsp;<a class=\"pinterest\" title=\"Pinterest\" target=\"_blank\" rel=\"nofollow\" href=\"https://www.pinterest.com/deandraperins/\"><img src=\"http://cdn2.hubspot.net/hubfs/56434/images/pinterest.png\" width=\"25\" height=\"25\"/></a></div>",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14734403398001964",
+            "label" : "Contact",
+            "type" : "rich_text",
+            "params" : {
+              "overrideable" : false,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "footer-links copyright",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "html" : "<p><span>3131 West Alabama, Suite 150&nbsp;</span><span>Houston, TX 77098&nbsp;</span><span>(P) 713.527.0444&nbsp;</span><span>(P) 888.266.2680&nbsp;</span><span>(F) 713.527.0457</span></p>",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14789033703391815",
+            "label" : "Copyright",
+            "type" : "raw_jinja",
+            "params" : {
+              "overrideable" : false,
+              "value" : "<p>© {{ year }} Dean &amp; Draper Insurance, L.P. All rights reserved.</p>\r\n<ul>\r\n    <li><a href=\"http://www.deandraper.com/site-map\" rel=\"nofollow\">Site Map</a></li>\r\n    <li><a href=\"http://www.deandraper.com/privacy-policy/\" rel=\"nofollow\">Privacy Policy</a></li>\r\n    <li><a href=\"http://www.deandraper.com/terms-of-use\" rel=\"nofollow\">Terms of Use</a></li>\r\n</ul>",
+              "css_class" : "footer-links copyright",
+              "css_style" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14183606058863329",
+            "label" : "Footer Middlie Links",
+            "type" : "rich_text",
+            "params" : {
+              "overrideable" : false,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "footer-links mid",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "html" : "<ul>\n<li><a href=\"http://www.deandraper.com/spring\">Spring</a></li>\n<li><a href=\"http://www.deandraper.com/kingwood\">Kingwood</a></li>\n<li><a href=\"http://www.deandraper.com/katy\">Katy</a></li>\n<li><a href=\"http://www.deandraper.com/cypress\">Cypress</a></li>\n<li><a href=\"http://www.deandraper.com/montgomery\">Montgomery</a></li>\n<li><a href=\"http://www.deandraper.com/the-woodlands\">The Woodlands</a></li>\n</ul>",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14183602020882432",
+            "label" : "Footer Bottom Links",
+            "type" : "rich_text",
+            "params" : {
+              "overrideable" : false,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "footer-links mid",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "margin-bottom: 5px;",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "html" : "<ul style=\"text-align: center;\">\n<li><a href=\"http://www.deandraper.com/\">Home</a></li>\n<li><a href=\"http://www.deandraper.com/commercial-insurance/\">Commercial Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/employee-benefits/\">Employee Benefits</a></li>\n<li><a href=\"http://www.deandraper.com/personal-insurance/\">Personal Insurance</a></li>\n<li><a href=\"http://www.deandraper.com/about/\">About Us</a></li>\n<li><a href=\"http://www.deandraper.com/auxiliary-links/file-a-claim/#.UvJp6sLnbcs\">Claims</a></li>\n<li><a href=\"http://deandraper.hs-sites.com/blog\">Blog</a></li>\n</ul>",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

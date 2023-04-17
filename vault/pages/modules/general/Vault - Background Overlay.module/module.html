@@ -1,0 +1,7 @@
+<div class="vault-background-overlay" style="background-color: rgba({{ module.overlay.color|convert_rgb }}, {{ module.overlay.opacity/100 }});"></div>
+{% if request.postDict.inpageEditorUI %}
+  <div class="vault-overlay-notice">
+    <h3>Click here to change background overlay.</h3>
+    <p><small>(This notice only appears in the editor.)</small></p>
+  </div>
+{% endif %}

@@ -1,0 +1,16 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: false
+  label: "Basic Page"
+-->
+
+{% extends '../partials/base.html' %}
+
+{% block body %}
+  {% widget_container "main_content" %}
+    {% module "rich_text"
+       path="@hubspot/rich_text",
+       label="Rich Text",
+       html="<h1>Lorem Ipsum</h1><p>Fusce neque. Maecenas vestibulum mollis diam. Phasellus dolor. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Quisque rutrum.</p><ul><li>Pellentesque egestas, neque sit amet convallis pulvinar</li><li>Justo nulla eleifend augue, ac auctor orci leo non est.</li><li>Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Pellentesque auctor neque nec urna.</li></ul><p><a href='#' class='button'>Button</a></p>" %}
+  {% end_widget_container %}
+{% endblock %}

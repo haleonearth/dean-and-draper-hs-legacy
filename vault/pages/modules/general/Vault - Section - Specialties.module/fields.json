@@ -1,0 +1,245 @@
+[ {
+  "id" : "boxes",
+  "name" : "boxes",
+  "display_width" : null,
+  "label" : "Boxes",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "boxes.bg_image",
+    "name" : "bg_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/AdobeStock_265244367.png",
+      "alt" : null
+    }
+  }, {
+    "id" : "heading",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Commercial Insurance"
+  }, {
+    "id" : "link_text",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : "https://www.example.com"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/AdobeStock_265244367.png"
+    },
+    "heading" : "Commercial Insurance",
+    "link_text" : "Learn More",
+    "link" : {
+      "url" : {
+        "href" : "https://www.example.com"
+      }
+    }
+  }, {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/AdobeStock_296517871.png"
+    },
+    "heading" : "Employee Benefits",
+    "link_text" : "Learn More",
+    "link" : {
+      "url" : {
+        "href" : "https://www.example.com"
+      }
+    }
+  }, {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/AdobeStock_188665851.png"
+    },
+    "heading" : "Personal Insurance",
+    "link_text" : "Learn More",
+    "link" : {
+      "url" : {
+        "href" : "https://www.example.com"
+      }
+    }
+  }, {
+    "bg_image" : {
+      "src" : "https://f.hubspotusercontent30.net/hubfs/56434/vault/images/stock/Mask%20Group%2024.png"
+    },
+    "heading" : "Risk Management",
+    "link_text" : "Learn More",
+    "link" : {
+      "url" : {
+        "href" : "https://www.example.com"
+      }
+    }
+  } ]
+}, {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><em>What We Offer</em>Your true source for personalized insurance programs</h2><h3>Explore our solutions to find one that fits your needs.</h3><p>Whether you need to protect the business you built from the ground up or need help caring for you and your family’s assets, we have a dedicated team to partner with you. We’ll work collaboratively on a personal, business, or risk management policy that’s built on a foundation of trust. Then, we’ll help develop and execute a plan to its fullest.&nbsp;</p><p>Examples of our specialties include:</p><ul><li>Commercial Insurance</li><li>Employee Benefits</li><li>Personal Insurance</li><li>Risk Management Solutions</li></ul>"
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "type" : "cta",
+  "default" : [ ]
+}, {
+  "id" : "design",
+  "name" : "design",
+  "display_width" : null,
+  "label" : "Design",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "color_theme",
+    "name" : "color_theme",
+    "display_width" : null,
+    "label" : "Color Theme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "base", "Base" ], [ "dark", "Dark" ], [ "alpha", "Alpha" ], [ "alpha-dark", "Alpha Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "design.column_lists",
+    "name" : "column_lists",
+    "display_width" : null,
+    "label" : "Split Lists Into Two Columns?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "text_size",
+    "name" : "text_size",
+    "display_width" : null,
+    "label" : "Text Size",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "base", "Base" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "base"
+  }, {
+    "id" : "max_width",
+    "name" : "max_width",
+    "display_width" : null,
+    "label" : "Max Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "design.text_alignment",
+    "name" : "text_alignment",
+    "display_width" : null,
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "design.module_alignment",
+    "name" : "module_alignment",
+    "display_width" : null,
+    "label" : "Module Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

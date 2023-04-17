@@ -1,0 +1,36 @@
+{# Header #}
+{% if not module.hide %}
+<table align="center" class="container" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="header module module-vl {{ module.section_color }}">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="header--logo image-wrap center-m"
+							{% if module.date %}{% else %}align="center" valign="middle"{% endif %}>
+            {% set href = module.logo_link.url.href %}
+						{% logo
+              override_inherited_src="{{ module.logo.override_inherited_src }}?no-resize"
+              src="{{ module.logo.src }}"
+              alt="{{ module.logo.alt }}"
+              width="{{ module.logo.width }}"
+              height="{{ module.logo.height }}"
+              suppress_company_name="{{ module.logo.suppress_company_name }}",
+              link="{{ href }}",
+              no_wrapper=True
+            %}
+          </td>
+					{% if module.date %}
+          <td class="space-v"></td>
+          <td class="header--date text-wrap right center-m">
+            {{ module.date }}
+          </td>
+					{% endif %}
+        </tr>
+        <tr>
+          <td class="header--border" colspan="3"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{% endif %}

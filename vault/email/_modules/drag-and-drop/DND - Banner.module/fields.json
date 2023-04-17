@@ -1,0 +1,86 @@
+[ {
+  "id" : "02cedaf3-1bd1-c763-2d2d-47e14b8570f6",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "help_text" : "Be aware that not all email clients support background images. If this image is critical, use a regular image module instead.",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4236008/bengal/images/banners/email-banner.jpg",
+    "alt" : "",
+    "width" : 600,
+    "height" : 361
+  }
+}, {
+  "id" : "05751ca1-0f7f-d5a3-025a-aa3830aeacc6",
+  "name" : "banner_height",
+  "display_width" : null,
+  "label" : "Banner Height",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 20,
+  "step" : 1,
+  "type" : "number",
+  "default" : 234
+}, {
+  "id" : "2d9501c3-d02e-f8c8-bb6d-e9a3309d55f8",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "help_text" : "If you don't want text overlaying the image, you should use a plain image module instead.",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Optional Email Headline</h1>\n<p>Optional email sub-headline text lorem ipsum</p>"
+}, {
+  "id" : "85be3ec4-3f29-1e25-f74c-035f4ba3a918",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4dfa2d98-c1b2-ee3d-1d5e-f031e6b4b8f0",
+    "name" : "fallback_background_color",
+    "display_width" : null,
+    "label" : "Fallback Background Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#022169",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5643cefc-aede-0192-e6c9-867e73ac02ff",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "fallback_background_color" : {
+      "color" : "#022169",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }
+} ]

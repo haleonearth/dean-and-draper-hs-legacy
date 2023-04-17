@@ -1,0 +1,29 @@
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+	{% if module.thumbnail.src %}
+		<tr>
+			<td align="{{ module.style.image_alignment }}">
+				{% if module.url.href %}<a href="{{ module.url.href }}">{% endif %}
+				<img src="{{ module.thumbnail.src }}" alt="{{ module.thumbnail.alt }}" height="{{ module.thumbnail.height }}" width="{{ module.thumbnail.width }}">
+				{% if module.url.href %}</a>{% endif %}
+			</td>
+		</tr>
+	  {% if module.style.image_space > 0 %}
+	    <tr><td height="{{ module.style.image_space }}"></td></tr>
+		{% endif %}
+	{% endif %}
+	<tr>
+		<td style="{% if module.style.text_color.color %}color:{{ module.style.text_color.color }}{% endif %}{% if module.style.text_size %}font-size:{{ module.style.text_size }}px;{% endif %}">
+			{% if module.title %}
+			  <h3 style="{% if module.style.title_line_height %}line-height: {{ module.style.title_line_height * 100 }}%;{% endif %}{% if module.style.title_color.color %}color:{{ module.style.title_color.color }}{% endif %}">
+					{% if module.url.href %}<a href="{{ module.url.href }}" style="{% if module.style.title_color.color %}color:{{ module.style.title_color.color }};{% endif %}text-decoration:none;">{% endif %}{{ module.title }}{% if module.url.href %}</a>{% endif %}
+				</h3>
+				<br>
+			{% endif %}
+			{{ module.summary }}
+			{% if module.url.href and module.link_text %}
+			  <br>
+				<p><a href="{{ module.url.href }}" {% if module.style.link_color.color %}style="color:{{ module.style.link_color.color }}"{% endif %}>{{ module.link_text }}</a></p>
+			{% endif %}
+		</td>
+	</tr>
+</table>

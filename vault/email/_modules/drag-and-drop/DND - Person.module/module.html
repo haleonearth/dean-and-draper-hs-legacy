@@ -1,0 +1,22 @@
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+	{% if module.image.src %}
+		<tr>
+			<td align="{{ module.style.image_alignment }}" align="center">
+				{% if module.url.href %}<a href="{{ 'mailto:' if module.url.type == 'EMAIL_ADDRESS' }}{{ module.url.href }}">{% endif %}
+				<img src="{{ module.image.src }}" alt="{{ module.image.alt }}" height="{{ module.image.height }}" width="{{ module.image.width }}">
+				{% if module.url.href %}</a>{% endif %}
+			</td>
+		</tr>
+	  <tr><td height="10"></td></tr>
+	{% endif %}
+	<tr>
+		<td align="center">
+			<h2 style="font-size:13px;margin:0;font-weight:bold;{% if module.style.name_color.color %}color:{{ module.style.name_color.color }};{% endif %}">
+				{% if module.url.href %}<a href="{{ 'mailto:' if module.url.type == 'EMAIL_ADDRESS' }}{{ module.url.href }}" style="text-decoration:none;{% if module.style.name_color.color %}color:{{ module.style.name_color.color }};{% endif %}">{% endif %}{{ module.person_name|upper }}{% if module.url.href %}</a>{% endif %}
+			</h2>
+			{% if module.job_title %}
+				<p style="font-size:13px;margin:0;">{{ module.job_title }}</p>
+			{% endif %}
+		</td>
+	</tr>
+</table>

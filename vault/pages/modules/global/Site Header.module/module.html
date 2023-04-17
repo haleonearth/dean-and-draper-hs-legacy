@@ -1,0 +1,227 @@
+<a href="#body" class="skip-link" data-noscroll="true">Skip to Content</a>
+
+<header class="site-header site-header--not-scrolled">
+  <div class="container container--large">
+    <a href="{{ module.logo_link.url.href }}" {% if module.logo_link.open_in_new_tab %}target="_blank" {% endif %}
+      {% if module.logo_link.no_follow %}rel="nofollow" {% endif %} class="site-header__logo">
+      {{ components.inline_svg('logo') }}
+    </a>
+
+    <div class="site-header__menu">
+      <form class="search-form site-header__search" action="/{{ site_settings.content_search_results_page_path }}">
+        <div class="search-form__inner container">
+          <label class="search-form__label screen-reader-text" for="header-search">Search</label>
+          <input type="search" class="search-form__input" value="{{ request.query_dict.term|escape }}"
+            id="header-search" name="term" placeholder="Search">
+
+          <button class="search-form__submit" aria-label="Search">{{ components.inline_svg('search') }}</button>
+
+          <button class="search-form__close" aria-label="Close"></button>
+        </div>
+      </form>
+      <nav class="site-header__navigation forulafax" aria-label="Main Site Navigation">
+        <span id="hs_cos_wrapper_header_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu">
+          <div class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal">
+            <ul>
+              <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children ">
+                <button class="hs-menu-item__child-toggle" aria-label="Toggle Submenu"></button>
+
+                <a href="https://www.deandraper.com/solutions" aria-haspopup="true" aria-expanded="false">
+                  Solutions
+                </a>
+
+                <ul class="hs-menu-children-wrapper megamenu">
+
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/commercial-insurance">
+
+                      <span
+                        style="background-image: url(https://www.deandraper.com/hubfs/vault/images/icons/icon-building.svg);"
+                        class="menuitem__icon" id=""></span>
+
+                      <p>
+                        <strong>Commercial Insurance</strong>
+
+                        <span id="">General liability, property, auto, worker’s compensation, and more.</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/employee-benefits">
+
+                      <span
+                        style="background-image: url(https://www.deandraper.com/hubfs/vault/images/icons/icon-briefcase.svg);"
+                        class="menuitem__icon" id=""></span>
+
+                      <p>
+                        <strong>Employee Benefits</strong>
+
+                        <span id="">Group Health, Dental, Vision, Life, and more.</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/personal-insurance">
+
+                      <span
+                        style="background-image: url(https://www.deandraper.com/hubfs/vault/images/icons/icon-user-tie.svg);"
+                        class="menuitem__icon" id=""></span>
+
+                      <p>
+                        <strong>Personal Insurance</strong>
+
+                        <span id="">Auto, home, flood, motor, personal umbrella, and more.</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/risk-management">
+
+                      <span
+                        style="background-image: url(https://www.deandraper.com/hubfs/vault/images/icons/icon-alert.svg);"
+                        class="menuitem__icon" id=""></span>
+
+                      <p>
+                        <strong>Risk Management</strong>
+
+                        <span id="">Risk tolerance, loss modeling, risk mitigation, non-insurance transfer, and
+                          more.</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/international">
+                      <span
+                        style="background-image: url(https://www.deandraper.com/hubfs/vault/images/icons/icon-globe.svg);"
+                        class="menuitem__icon" id=""></span>
+                      <p>
+                        <strong>International</strong>
+                        <span id="">International risk management strategies and innovative enterprise solutions.</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hs-menu-item hs-menu-depth-1  ">
+                <a href="https://www.deandraper.com/industries">
+                  Industries
+                </a>
+              </li>
+              <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children nolink">
+                <button class="hs-menu-item__child-toggle" aria-label="Toggle Submenu"></button>
+                <a href="javascript:void(0);" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <ul class="hs-menu-children-wrapper ">
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/blog">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/file-a-claim">
+                      Claims
+                    </a>
+                  </li>
+                  <li class="hs-menu-item hs-menu-depth-2">
+                    <a href="https://www.deandraper.com/request-updated-certificate-of-insurance">
+                      Request COI
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hs-menu-item hs-menu-depth-1  ">
+                <a href="https://www.deandraper.com/our-story">
+                  About
+                </a>
+              </li>
+
+              <li class="hs-menu-item hs-menu-depth-1  ">
+                <a href="https://www.deandraper.com/dean-draper-careers">
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </span></nav>
+
+      {% if module.cta %}
+      <div class="site-header__cta">
+        {{ cta(module.cta) }}
+      </div>
+      {% endif %}
+
+      {% if module.icon_links %}
+      <div class="site-header__icons">
+        {% for link in module.icon_links %}
+        {% set icon_href = link.link.url.href %}
+
+        {% if link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set icon_href = "mailto:" + href %}
+        {% endif %}
+
+        {% set rel = [] %}
+
+        {% if link.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+
+        {% if link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+
+        <a href="{{ icon_href }}" {% if link.open_in_new_tab %}target="_blank" {% endif %}
+          {% if rel %}rel="{{ rel|join(" ") }}" {% endif %}>
+          <img src="{{ link.icon.src }}" alt="{{ link.label }}"><span>{{ link.label }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <button class="site-header__toggle site-header__toggle--search" aria-label="Toggle Search"
+      type="button">{{ components.inline_svg('search') }}</button>
+
+    <button class="site-header__toggle site-header__toggle--menu" aria-label="Toggle Menu" type="button"></button>
+  </div>
+</header>
+
+<section id="search-results" :class="['search-results', searchActive ? 'search-results--active' : '']"
+  :data-loading="loading" v-cloak>
+  <div class="container">
+    <button class="search-results__close" aria-label="Close" @click="closeSearch"></button>
+    <p v-if="!currentTerm">{{ module.search_prompt }}</p>
+    <p class="search-results__term-label" v-else>
+      Your search:
+      {% raw %}<strong class="search-results__current-term">"{{ currentTerm }}"</strong>{% endraw %}
+    </p>
+    <ul class="search-results__list" v-if="results.length > 0">
+      <li v-for="result in results" class="search-result">
+        <div class="search-result__body">
+          <h4 class="search-result__title"><a :href="result.url" v-html="result.title"></a></h4>
+          <p v-html="result.description" class="search-result__description"></p>
+          <a :href="result.url" class="search-result__link" v-html="result.url"></a>
+          <ul class="search-result__tags" v-if="typeof result.tags !== 'undefined' && result.tags.length > 0">
+            <li class="search-result__tag" v-for="tag in result.tags">{% raw %}{{ tag }}{% endraw %}</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <p v-else-if="!loading && currentTerm" class="search-results__error">
+      {{ module.no_results_message }}
+    </p>
+
+    <nav class="search-results__pagination pagination" v-if="totalPages > 0">
+      <button class="pagination__link pagination__link--previous" :disabled="loading" v-if="page > 1 && perPage !== 100"
+        @click="setPage(page - 1)">
+        Previous Page
+      </button>
+      <button class="pagination__link pagination__link--next" :disabled="loading"
+        v-if="page < totalPages && perPage !== 100" @click="setPage(page + 1)">
+        Next Page
+      </button>
+    </nav>
+  </div>
+</section>

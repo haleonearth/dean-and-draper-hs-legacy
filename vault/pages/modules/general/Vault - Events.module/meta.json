@@ -1,0 +1,23 @@
+{
+  "content_tags" : [ {
+    "name" : "FEED",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 40697013016,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../assets/vue-min.js",
+    "name" : "vue-min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../../assets/fuse.js",
+    "name" : "fuse.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../../assets/underscore.js",
+    "name" : "underscore.js"
+  } ],
+  "is_available_for_new_content" : true
+}

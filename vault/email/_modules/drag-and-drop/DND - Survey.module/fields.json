@@ -1,0 +1,274 @@
+[ {
+  "id" : "b78dcf73-dfae-ed20-ebc8-3c5e8209333a",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "CONTENT",
+    "href" : null,
+    "content_id" : 30979222776
+  }
+}, {
+  "id" : "5fbb3f61-0d1b-cd0c-129c-0ba7c0867912",
+  "name" : "form_field_name",
+  "display_width" : null,
+  "label" : "Form Field Name",
+  "inline_help_text" : "Use the internal HubSpot property name. This property should appear in a form on the linked page(s), which will be prefilled with the user's selected value. Leave blank if you don't want to use the form pre-filling feature.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "fe138bb8-3e1c-a7b5-d703-1d4524587c40",
+  "name" : "answer",
+  "display_width" : null,
+  "label" : "Answer",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c82b481a-8c94-99d5-715e-fec07e46b0cb",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "c82b481a-8c94-99d5-715e-fec07e46b0cb",
+    "name" : "item_id",
+    "display_width" : null,
+    "label" : "Item ID",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A"
+  }, {
+    "id" : "3cfbbb00-89d2-b337-1128-63db5a2c57c3",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Label",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "An answer goes here."
+  }, {
+    "id" : "d7930a44-6a37-e48c-eb81-c04db3105958",
+    "name" : "form_value",
+    "display_width" : null,
+    "label" : "Form Value",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "5fbb3f61-0d1b-cd0c-129c-0ba7c0867912",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "An answer goes here"
+  }, {
+    "id" : "caca0834-b0ee-2133-e6ca-9d42798fd155",
+    "name" : "url",
+    "display_width" : null,
+    "label" : "URL",
+    "help_text" : "If set, this will override the main \"URL\" field for this answer.",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT", "EXTERNAL", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "6566bcae-52c2-faa0-0f9d-6610c0199547",
+    "name" : "color",
+    "display_width" : null,
+    "label" : "Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c55e6361-217a-6dfd-4d0d-4ab9f0440964",
+    "name" : "button_text_color",
+    "display_width" : null,
+    "label" : "Button Text Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "color" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "color" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "color" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "color" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }, {
+    "item_id" : "A",
+    "title" : "An answer goes here.",
+    "form_value" : "An answer goes here",
+    "color" : {
+      "color" : "#2ba8d0",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  } ]
+}, {
+  "id" : "49bd9e06-bcc6-d273-b71b-d128af35f510",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "849ac44b-d451-1c56-2fc3-bd5d231a1c52",
+    "name" : "primary_text_color",
+    "display_width" : null,
+    "label" : "Primary Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c131ebd1-71d0-8b66-b0d8-bd40dc17ce7b",
+    "name" : "space_between_items",
+    "display_width" : null,
+    "label" : "Space Between Items",
+    "required" : true,
+    "locked" : false,
+    "display" : "text",
+    "min" : 5,
+    "max" : 20,
+    "step" : 1,
+    "type" : "number",
+    "default" : 10
+  }, {
+    "id" : "69f5a043-c49b-ac15-fede-36ee62bdba07",
+    "name" : "space_under_button",
+    "display_width" : null,
+    "label" : "Space Under Button",
+    "required" : true,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 20,
+    "step" : 1,
+    "type" : "number",
+    "default" : 5
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "primary_text_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "space_between_items" : 10,
+    "space_under_button" : 5
+  }
+} ]

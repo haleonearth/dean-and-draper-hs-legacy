@@ -1,0 +1,22 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: false
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="{{ site_settings.company_name }}">
+  <meta name="description" content="{{ page_meta.meta_description }}">
+  <meta name="generator" content="HubSpot">
+  {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+  <title>{{ page_meta.html_title }}</title>
+  {{ standard_header_includes }}
+</head>
+<body id="Body" bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginwidth="0" marginheight="0">
+  {% widget_container "contentpane" %}
+  {% end_widget_container %}
+  {{ standard_footer_includes }}
+</body>
+</html>

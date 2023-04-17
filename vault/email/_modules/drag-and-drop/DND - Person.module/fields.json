@@ -1,0 +1,86 @@
+[ {
+  "id" : "7fcc1709-d451-fb37-d865-958efd04e8f5",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4236008/Imported%20images/100.png",
+    "alt" : "100",
+    "size_type" : "exact",
+    "width" : 100,
+    "height" : 100
+  }
+}, {
+  "id" : "ba35fd61-d3d8-4008-a798-76359364144d",
+  "name" : "person_name",
+  "display_width" : null,
+  "label" : "Name",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Joel Dickson, Ph.D."
+}, {
+  "id" : "c6ad4dc6-1ca4-b128-8ec6-45cd2b8bc0d8",
+  "name" : "job_title",
+  "display_width" : null,
+  "label" : "Job Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vanguard Global Head of Advice Methodology"
+}, {
+  "id" : "3cce017f-2404-5d79-7926-c2cd04f9f68a",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG", "EMAIL_ADDRESS" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "3f5370d3-447c-18a7-5ab4-1d0993d85eb3",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "938767f6-e9f7-e0cd-f6e8-5490eb5882d8",
+    "name" : "name_color",
+    "display_width" : null,
+    "label" : "Name Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "name_color" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }
+} ]

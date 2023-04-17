@@ -1,0 +1,197 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_view_as_web_page",
+        "label" : "View As Web Page",
+        "type" : "email_view_as_web_page",
+        "params" : {
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}\">\n    Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "logo_image",
+        "label" : "Logo",
+        "type" : "logo",
+        "params" : {
+          "suppress_company_name" : true,
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "column1",
+        "label" : "Column Above Body",
+        "type" : "rich_text",
+        "params" : {
+          "html" : "",
+          "css_style" : "font-size: 12px; line-height: 1.5em; text-align: center"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "hs_email_body",
+        "label" : "Main Email Body",
+        "type" : "email_body",
+        "params" : {
+          "default_html" : "\n<p>Hi {{contact.firstname}},</p>\n<p>This is an example of an email in HubSpot. You can add and format text, include your own images, and even personalize the message with details about the recipient, like their {{contact.company}} or {{contact.city}}.</p>\n<p>In HubSpot, the Email tool is closely linked with the <em>Lists</em> and <em>Workflows</em> tools. You can create a list of recipients on the \"Sending\" tab up above. If you want this email to be part of a nurturing series, you can make it part of a workflow.</p>\n<p>Need help? Check out the documentation on <a href=\"http://help.hubspot.com/articles/Tutorial/how-to-use-email-tool\">creating an email</a>, <a href=\"http://help.hubspot.com/articles/How_To_Doc/how-to-create-a-smart-list-in-hubspot\">creating a list</a>, or <a href=\"http://help.hubspot.com/articles/Tutorial/set-up-workflows\">creating a workflow</a>.</p>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "social_sharing_label",
+        "label" : "Social Sharing Label",
+        "type" : "text",
+        "params" : {
+          "css_style" : "padding: 10px 0px 0px 0px; text-align: right"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Social Sharing",
+        "label" : "Social Sharing",
+        "type" : "social_sharing",
+        "params" : {
+          "css_style" : "padding: 10px 0px 0px 0px; text-align: right",
+          "use_page_url" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_can_spam",
+        "label" : "Office Location Information",
+        "type" : "email_can_spam",
+        "params" : {
+          "html" : "<p id=\"footer\" style=\"font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: center; font-size: 12px; line-height: 1.34em; color: {{ secondary_font_color }}; display: block\">\n<input class=\"hubspot-mergetag\" type=\"button\" value=\"Name\" data-canspam=\"{{ site_settings.company_name }}\">\n&nbsp;&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"Address 1\" data-canspam=\"{{ site_settings.company_street_address_1 }}\">\n&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"Address 2\" data-canspam=\"{{ site_settings.company_street_address_2 }}\">\n&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"City\" data-canspam=\"{{ site_settings.company_city }}\">,\n&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"State\" data-canspam=\"{{ site_settings.company_state }}\">\n&nbsp;&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"Zip\" data-canspam=\"{{ site_settings.company_zip }}\">\n&nbsp;&nbsp;<input class=\"hubspot-mergetag\" type=\"button\" value=\"Country\" data-canspam=\"{{ site_settings.company_country }}\">\n<br/><br/>\nYou received this email because you are subscribed to <input class=\"hubspot-mergetag\" type=\"button\" value=\"Email Type\" data-canspam=\"{{ subscription_name }}\"> from <input class=\"hubspot-mergetag\" type=\"button\" value=\"Name\" data-canspam=\"{{ site_settings.company_name }}\">.\n<br/><br/>\nUpdate your <a class=\"hubspot-mergetag\" data-unsubscribe=\"true\" href=\"{{ unsubscribe_link }}\" style=\"text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};\">email preferences</a> to choose the types of emails you receive.\n<br/><br/>\n&nbsp;<a class=\"hubspot-mergetag\" data-unsubscribe=\"true\" href=\"{{ unsubscribe_link_all }}\" style=\"text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};\">Unsubscribe from all future emails</a>&nbsp;\n</p>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

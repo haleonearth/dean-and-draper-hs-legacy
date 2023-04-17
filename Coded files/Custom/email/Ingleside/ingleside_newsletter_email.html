@@ -1,0 +1,250 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    <meta content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}" property="og:title">
+	<meta content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}" name="twitter:title">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+	<style id="hs-inline-css" type="text/css">
+
+		{% set horizontalPadding = "50px" %}
+		{% set textBaselineColor = "#444" %}
+		{% set textBaselineSize = "15px" %}
+
+   		/*<![CDATA[*/
+		/* everything in this node will be inlined */
+
+		/* ==== Specific to this email ==== */
+		body{
+			background: #efefef;
+		}
+
+		#backgroundTable{
+			width: 600px; 
+			margin: 10px auto 20px; 
+			background: #fff;
+			border: 1px solid #ddd;
+		}
+
+		.main-heading,
+		.main-content{
+			font-family: Georgia, serif;
+		}
+
+		/* cross platform inset */
+		.main-inset{
+			padding: 0 {{ horizontalPadding }} 50px;
+		}
+
+		p{
+			line-height: 1.75em;
+		}
+
+		/* ==== Baseline Styles ==== */
+
+       	*{
+	        -webkit-font-smoothing: antialiased;
+		}
+
+		/* ==== Base utility classes ==== */
+		/* cross platform full width */
+		.hundred-wide{
+			width: 100%;
+			min-width: 100%;
+		}
+
+		/* ==== Resets ==== */
+		.ExternalClass{
+		   width:100%;
+		} /* Force Hotmail to display emails at full width */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+		   line-height: 100%;
+		} /* Force Hotmail to display normal line spacing */
+		body, table, td, p, a, li, blockquote{
+		   -webkit-text-size-adjust:100%;
+		   -ms-text-size-adjust:100%;
+		} /* Prevent WebKit and Windows mobile changing default text sizes */
+		table, td {
+		   mso-table-lspace:0pt;
+		   mso-table-rspace:0pt;
+		} /* Remove spacing between tables in Outlook 2007 and up */
+		img {
+		   vertical-align: bottom;
+		   -ms-interpolation-mode:bicubic;
+		} /* Allow smoother rendering of resized image in Internet Explorer */
+
+		/* Reset Styles */
+		body {
+		   margin:0;
+		   padding:0;
+		}
+		table {
+		  /* border-collapse:collapse !important;*/
+		}
+		a:link, a:visited {
+		   border-bottom: none;
+		}
+
+		/* iOS automatically adds a link to addresses */
+		/* Style the footer with the same color as the footer text */
+		#footer a {
+		   color: {{ secondary_font_color }};;
+		   -webkit-text-size-adjust: none;
+		   text-decoration: underline;
+		   font-weight: normal
+		}
+   
+       	/*]]>*/
+	</style>
+	<style type="text/css">
+
+		/* ==== Styles for progressive clients ==== */
+		
+		@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
+		[style*="serif"] {
+			font-family: 'Merriweather', Georgia, serif !important;
+		}
+    	[style*="sans-serif"] {
+			font-family: 'Open Sans', Helvetica, Arial serif !important;
+		}
+
+		@media screen{
+			.newsletter-name{
+				font-weight: 300 !important;
+				letter-spacing: -.02em;
+			}
+			.main-heading{
+				font-weight: 700 !important;
+			}
+			h2, 
+			strong,
+			.newsletter-name,
+			.caption{
+				font-family: 'Open Sans', Helvetica, Arial, Verdana, Trebuchet MS !important;
+			}
+			h2,
+			strong{
+				font-weight: 700 !important;
+			}
+			p{
+				font-weight: 300 !important;
+			}
+		}
+		@media (max-width: 650px){
+			.main-heading{
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+			.social-media img{
+				width: 20px !important;
+			}
+			img{
+				width: 100% !important;
+				height: auto !important;
+			}
+		}
+		@media (max-width: 480px){
+			body,
+			#backgroundTable,
+            #vapTable{
+				width: 100% !important;
+			}
+			.main-inset{
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+			.main-heading{
+				font-size: 32px !important;
+			}
+			.social-media{
+				margin: 0 auto;
+				float: none;
+			}
+			.logo,
+			.social{
+				text-align: center !important;
+			}
+			.social{
+				padding-bottom: 50px;
+			}
+		}
+
+	</style>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 600px; margin: 20px auto 0px;" id="vapTable">
+        <tr>
+            <td class="hundred-wide" style="text-align: right; font-size: 11px; font-family: sans-serif;">
+                {{ view_as_page_section }}
+            </td>
+        </tr>
+    </table>
+	<table align="center" bgcolor="{{ background_color }}" border="0" cellpadding="0" cellspacing="0" id="backgroundTable">
+		<tr><td class="main-inset hundred-wide"><!-- For cross platform padding -->
+		<table class="hundred-wide"><!-- Main content table -->
+		<tbody>
+		<tr>
+			<td class="hundred-wide" style="padding-top: 20px; padding-bottom: 30px;">
+				<table class="hundred-wide">
+					<tr>
+						<td style="width: 50%;">{% logo "logo_image" overrideable=true, suppress_company_name=true, src='http://design-assets.hubspot.com/hubfs/Ingleside/ingleside-logo.png', original_width=80, original_height=21, img_alt='riggs-logo.png', width=80, height=21, img_load_error=false, override_inherited_src=true, alt='riggs-logo.png', link='null', open_in_new_tab=false, label='Logo'%}</td>
+						<td style="width: 50%; text-align: right;">{% custom_widget "social_media" overrideable=true, ending_html='', starting_html='', widget_name='Ingleside Social Media', label='Social Media'%}</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="newsletter-name" style="font-size: 14px; text-align: center; text-transform: uppercase; font-weight: 600; padding-top: 50px;">{% text "newsletter_name" overrideable=true, ending_html='', starting_html='', value='Ingleside Weekly', label='Newsletter Name'%}</td>
+		</tr>
+		<tr>
+			<td class="main-heading" style="font-size: 2.533333em; font-weight: bold; text-align: center; padding: 0 50px 20px 50px; line-height: 1em;">{% text "main_heading" overrideable=true, ending_html='', starting_html='', value='What we\'ve been excited about this week', label='Main Heading'%}</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">{% linked_image "splash_image" overrideable=true, ending_html='', starting_html='', src='http://design-assets.hubspot.com/hubfs/Ingleside/ingleside_splash_placeholder.jpg', original_width=1200, original_height=800, img_alt='wd3y2ygdjpk-josh-boot.jpg', img_load_error=false, width=600, height=400, alt='wd3y2ygdjpk-josh-boot.jpg', link='', open_in_new_tab=false, label='Main Image', style='max-width: 100% !important;' %}</td>
+		</tr>
+		<tr>
+			<td class="caption" style="font-size: 14px; font-weight: 100; text-align: center; padding: 20px 30px; line-height: 1.5em;">{% text "caption" overrideable=true, ending_html='', starting_html='', value='Add some text here to describe the image and encourage the reader to click on the CTA below. Make it fun and interesting.', label='Image Caption Intro Text'%}</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+                {% cta "ingleside_cta" label='Select a CTA', guid='87355c71-1d8c-45e4-92a8-cb25e12e0ade' %}
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-top: 100px;" class="main-content">
+				{% content_attribute "email_body" %}
+				<h1>Catchy Heading Here</h1>
+				<p><strong>Here's some optional supporting text that helps introduce the things you will say in this newsletter. Use it to convince the reader that there is value in reading the rest of your content.</strong></p>
+				<p>This is main content of your newsletter article. Hopefully it's about something people love. Like cute animals or ROI.</p>
+				<p>Try to maintain a balance between educational and promotional content. It's recommended to lean heavily towards the educational end of the spectrum.  Focus on sending your subscribers educational, relevant, timely information.</p>
+				<h2>Another Headline Perhaps</h2>
+				<p>Some easy sources of content include your company's blog, social media accounts, internal newsletters, or training documents.</p>
+				<p>Also, try to curate other relevant content. Some great ways to do this are to read and subscribe to other people's blogs, follow them on social media, set up social media monitoring streams, search forums like reddit and quora, or set up google search alerts for relevant terms. </p>
+				<p>&nbsp;</p>
+				<p>A nice clever signoff,</p>
+				<p>Your Name</p>
+				<p>&nbsp;</p>
+				{% end_content_attribute %}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="footer" style="text-align: center; font-size: 12px; line-height: 1em; color: {{ secondary_font_color }}; display: block"><input class="hubspot-mergetag" data-canspam="{{ site_settings.company_name }}" type="button" value="Name"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_street_address_1 }}" type="button" value="Address 1"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_street_address_2 }}" type="button" value="Address 2"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_city }}" type="button" value="City"> &nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_state }}" type="button" value="State"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_zip }}" type="button" value="Zip"> &nbsp;&nbsp;<input class="hubspot-mergetag" data-canspam="{{ site_settings.company_country }}" type="button" value="Country"><br>
+				<br>
+				You received this email because you are subscribed to <input class="hubspot-mergetag" data-canspam="{{ subscription_name }}" type="button" value="Email Type"> from <input class="hubspot-mergetag" data-canspam="{{ site_settings.company_name }}" type="button" value="Name"> .<br>
+				<br>
+				Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}" style="text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};">email preferences</a> to choose the types of emails you receive.<br>
+				<br>
+				&nbsp;<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};">Unsubscribe from all future emails</a> &nbsp;</p>
+			</td>
+		</tr>
+		</tbody>
+	</table><!-- Main content table -->
+	</td><!-- Cross platform padding cell -->
+	</tr></table>
+</body>
+</html>

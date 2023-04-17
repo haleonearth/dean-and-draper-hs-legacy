@@ -1,0 +1,7 @@
+/**
+ * This CSS was automatically generated on 2021-04-22 from a source file.
+ * Editing this file directly isn't recommended. Modifying the styles of this module can be done
+ * with an external stylesheet attached to the page or module.
+ */
+
+.author{display:flex;align-items:flex-start;margin-top:3em}.author__thumbnail{flex-basis:70px;margin-right:20px}.author__bio{flex-basis:calc(100% - 90px);margin:0;font-size:14px}

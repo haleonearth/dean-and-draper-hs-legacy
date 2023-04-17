@@ -1,0 +1,62 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% image_src "listing_thumbnail"
+    label = "Listing Thumbnail",
+    export_to_template_context = true
+%}
+{% text "primary_topic_slug"
+    label = "Primary Topic Slug",
+    export_to_template_context = true
+%}
+
+<article class="blog-post">
+    <div class="container container--small blog-post__body">
+        {{ content.post_body }}
+    </div>
+
+    <footer class="blog-post__footer">
+        <div class="container container--small blog-post__meta">
+            {% set social_link = {
+                'title': content.name|striptags,
+                'url': content.absolute_url,
+                'summary': (content.post_list_content or content.post_summary)|striptags|truncate(100)
+            } %}
+            {{ components.social_sharing(social_link, 'Share this article', 'blog-post__sharing') }}
+            {% if content.blog_post_author.bio %}
+                {{ components.person(content.blog_post_author, 'About the Author', 'blog-post__author') }}
+            {% endif %}
+        </div>
+
+        {% if group.allow_comments and (content.are_comments_allowed or content.comment_count > 0) %}
+            <div class="blog-post__comments comments colored-section colored-section--dark">
+                <div class="container container--small">
+                    <h2 class="comments__heading">Comment On This Article</h2>
+                    {% blog_comments "blog_comments" overrideable=false %}
+                </div>
+            </div>
+        {% endif %}
+    </footer>
+</article>
+
+{% if sticky_footer.form %}
+    <div class="sticky-footer colored-section colored-section--beta-darker">
+        <div class="container sticky-footer__form">
+            {% form "my_form" form_to_use='{{ sticky_footer.form }}', title='{{ sticky_footer.heading }}' %}
+        </div>
+    </div>
+{% endif %}
+
+<nav class="blog-post-more">
+    <div class="container">
+        <h3 class="blog-post-more__heading">Want More? Read On</h3>
+
+        <ul class="blog-post-more__list">
+            <li><a href="{{ group.absolute_url }}">Back to All</a></li>
+            {% for topic in content.topic_list %}
+                <li><a href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

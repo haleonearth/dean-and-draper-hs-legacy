@@ -1,0 +1,193 @@
+[ {
+  "id" : "43cc600b-ef69-2ddf-f9da-c76189e62f20",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : true,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "CONTENT",
+    "href" : null,
+    "content_id" : 30979222776
+  }
+}, {
+  "id" : "ba35fd61-d3d8-4008-a798-76359364144d",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vestibulum fringilla pede sit"
+}, {
+  "id" : "474bf776-e4a1-05e3-116d-101233caec1e",
+  "name" : "summary",
+  "display_width" : null,
+  "label" : "Summary",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Phasellus ullamcorper ipsum rutrum nunc. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Praesent ac massa at ligula laoreet iaculis. Morbi nec metus.</p>"
+}, {
+  "id" : "9b7f323d-681b-4198-bc0a-b54411acdbfb",
+  "name" : "link_text",
+  "display_width" : null,
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "7fcc1709-d451-fb37-d865-958efd04e8f5",
+  "name" : "thumbnail",
+  "display_width" : null,
+  "label" : "Thumbnail",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://placehold.it/160x100",
+    "alt" : "160x100",
+    "size_type" : "exact",
+    "width" : 160,
+    "height" : 100
+  }
+}, {
+  "id" : "197b95e6-6ef5-db1a-1c0a-ea67bfe4ff92",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f82b58e7-3a6d-f9cf-5fd6-901f3a7190be",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9e8b0977-80b2-1707-359a-23578070799b",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "de576a04-791b-2915-6e5c-7b2b077afde1",
+    "name" : "link_color",
+    "display_width" : null,
+    "label" : "Link Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "6f1db0a2-96a0-00ac-8740-d3cb6d6121a0",
+    "name" : "image_alignment",
+    "display_width" : null,
+    "label" : "Image Alignment",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "7fcc1709-d451-fb37-d865-958efd04e8f5",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "ec6df22b-1b9d-9ebd-e61e-a4942c015725",
+    "name" : "image_space",
+    "display_width" : null,
+    "label" : "Image Space",
+    "required" : true,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 50,
+    "step" : 1,
+    "type" : "number",
+    "default" : 10
+  }, {
+    "id" : "bcc47714-cbc7-1840-389c-9f7fc33316d7",
+    "name" : "text_size",
+    "display_width" : null,
+    "label" : "Text Size",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 10,
+    "max" : 20,
+    "step" : 1,
+    "type" : "number",
+    "default" : 14
+  }, {
+    "id" : "931f95c0-296b-dcbc-fda6-07039d9206c6",
+    "name" : "title_line_height",
+    "display_width" : null,
+    "label" : "Title Line Height",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 0.5,
+    "max" : 2,
+    "step" : 0.25,
+    "type" : "number",
+    "default" : 1.25
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "title_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "link_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "image_alignment" : "center",
+    "image_space" : 10,
+    "text_size" : 14,
+    "title_line_height" : 1.25
+  }
+} ]
